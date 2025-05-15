@@ -1,0 +1,19 @@
+Day 1 - Starting HTML & Web Dev!
+
+Decided today that I will finally learn Web Development seriously alongside college 2nd year.
+Everyone in 3rd year is building MERN stack projects and getting internships, so I need to get my basics crystal clear.
+
+Notes from today:
+1. HTML = HyperText Markup Language. It gives structure to a webpage, like the brick skeleton of a house in Bengaluru.
+2. Checked how the browser actually parses tags into the DOM tree.
+3. VS Code setup:
+   - Installed 'Live Server' extension by Ritwick Dey (super helpful, auto-refreshes page on save!).
+   - Emmet abbreviation: type '!' and hit Tab -> instant HTML5 boilerplate.
+4. Tags:
+   - Opening tag: <p>, closing tag: </p>
+   - Empty/void tags don't have closing tags: <br>, <hr>, <img>
+5. Headings:
+   - <h1> is the main topic. Never use more than one <h1> per page.
+   - <h6> is hilariously tiny, even smaller than a paragraph haha.
+
+Goal for tomorrow: Learn text formatting tags and build a small bio page.
