@@ -1,0 +1,11 @@
+Kushal's VS Code Emmet Cheat Sheet (Day 1)
+---------------------------------------
+!           -> Generates standard HTML5 boilerplate
+h1{Hello}   -> <h1>Hello</h1>
+p*3         -> Creates 3 empty paragraph tags
+lorem20     -> Generates 20 words of dummy placeholder text
+a:blank     -> <a href="" target="_blank" rel="noopener noreferrer"></a>
+link:css    -> <link rel="stylesheet" href="style.css">
+script:src  -> <script src=""></script>
+
+Note: Emmet saves so much typing time, glad I learned this on day 1!
