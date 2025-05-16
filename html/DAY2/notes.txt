@@ -1,0 +1,21 @@
+Day 2 - Text Formatting & Quotes
+
+Today's focus: Formatting tags inside text.
+
+Learnings:
+1. <b> vs <strong>:
+   - <b> is just visually bold (no special meaning).
+   - <strong> tells the browser and screen reader that this text has strong importance/urgency.
+   - Keep an eye on: always prefer <strong> over <b> in modern HTML for accessibility.
+2. <i> vs <em>:
+   - <i> is just visual italic.
+   - <em> means stress emphasis (changes pronunciation in screen readers).
+3. Useful tags:
+   - <mark>: yellow highlighter pen effect.
+   - <del> & <ins>: useful for showing old price vs sale price (like on Flipkart/Amazon).
+   - <sub> and <sup>: super useful for math (a² + b²) and chemistry (H₂O).
+   - <pre>: preserves exact spaces and line breaks (great for showing code blocks!).
+   - <blockquote> and <q>: for quotations.
+
+Doubts cleared:
+- Don't use <br> for margin/spacing! College sir said use CSS for layout, <br> is only for actual line breaks like poems or addresses.
