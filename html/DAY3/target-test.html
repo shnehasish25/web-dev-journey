@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 3 - Target Attribute & Security Test</title>
+</head>
+<body>
+
+  <a href="links-demo.html">&larr; Back to Links</a>
+  <hr>
+
+  <h1>Understanding <code>target</code> and Tab Security</h1>
+
+  <h2>1. <code>target="_self"</code> (Default behavior)</h2>
+  <p>
+    Opens the link inside the current tab itself:
+    <a href="https://en.wikipedia.org" target="_self">Wikipedia (Opens in current tab)</a>
+  </p>
+
+  <h2>2. <code>target="_blank"</code> (Opens new tab)</h2>
+  <!-- Always put rel="noopener noreferrer" for safety -->
+  <p>
+    Opens the link in a fresh new tab:
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub (Opens in new tab safely)</a>
+  </p>
+
+  <!-- Note for self: why noopener matters -->
+  <!--
+    Rahul told me if you omit rel="noopener", the target page can execute:
+    window.opener.location = "fake-phishing-login.html"
+    which tricks users into re-entering their passwords!
+  -->
+
+  <p><em>Note to self: Never forget rel="noopener noreferrer" when targeting blank!</em></p>
+
+</body>
+</html>
