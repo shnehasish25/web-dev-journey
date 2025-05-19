@@ -1,0 +1,20 @@
+Day 3 - Hyperlinks & Navigation
+
+Today's focus: The anchor tag <a>.
+
+Learnings:
+1. 'href' attribute = Hypertext Reference (where the link goes).
+2. Absolute URL: Full web address like https://google.com or https://geeksforgeeks.org.
+3. Relative URL: Path to a file on my own laptop:
+   - './page.html' -> same folder
+   - '../DAY2/formatting.html' -> go up one folder
+4. target="_blank":
+   - Opens link in a brand new browser tab.
+   - SECURITY RULE: Always add rel="noopener noreferrer" when using target="_blank"!
+     Otherwise the newly opened tab can exploit window.opener and redirect your page.
+5. Special links:
+   - mailto:kushal.codes@gmail.com -> opens user's email client
+   - tel:+919876543210 -> opens phone dialer on mobile!
+   - href="#section-id" -> jumps smoothly to an ID on the same page.
+
+Experiment today: Made a long Wikipedia-style page with Table of Contents jumps!
