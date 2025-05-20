@@ -1,0 +1,18 @@
+Day 4 - Images & Figures in HTML
+
+Today's focus: The <img> tag and <figure> element.
+
+Learnings:
+1. <img> is a self-closing tag.
+2. 'src' attribute: Source URL (can be Unsplash link or local ./images/cat.jpg).
+3. 'alt' attribute is MANDATORY:
+   - For visually impaired users using screen readers.
+   - If the user has slow 2G/3G network in train and image fails to load, alt text shows up.
+   - Google SEO indexes images based on alt descriptions.
+4. <figure> and <figcaption>:
+   - Semantic wrapper for images with a visible caption underneath.
+   - Much cleaner than doing <p>Caption text</p> below an image.
+5. Wrapping an <img> inside an <a> makes the entire photo clickable!
+
+Mistake today:
+- Forgot to add width and height attributes, and the 4K wallpaper blew up my entire monitor haha. Always set reasonable width!
