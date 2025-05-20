@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 4 - Broken Image & Alt Text Test</title>
+</head>
+<body>
+
+  <a href="gallery.html">&larr; Back to Gallery</a>
+  <hr>
+
+  <h1>Testing What Happens When Images Break</h1>
+  <p>
+    This tests why the <code>alt</code> attribute is so critical for users on patchy 3G/4G network connections.
+  </p>
+
+  <h2>Intentional Broken Path:</h2>
+  <!-- Intentionally pointing to non-existent file -->
+  <img 
+    src="./non-existent-folder/masala-dosa-4k.jpg" 
+    alt="Delicious hot Masala Dosa with coconut chutney and piping hot sambar"
+    width="300"
+    height="200"
+  >
+
+  <p>
+    Notice how the browser displays a broken icon along with the descriptive alt text! 
+    Without the alt text, the user would see an empty white box with zero context.
+  </p>
+
+</body>
+</html>
