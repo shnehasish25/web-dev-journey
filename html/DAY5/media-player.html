@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5 - HTML5 Video & Audio Player</title>
+</head>
+<body>
+
+  <h1>Day 5: HTML5 Native Media Players</h1>
+  <p>Testing video and audio playback directly in the browser.</p>
+
+  <hr>
+
+  <h2>1. Native Video Player</h2>
+  <p>Using open-source test video with fallback text and controls:</p>
+
+  <!-- Video tag with standard attributes -->
+  <video 
+    width="560" 
+    height="315" 
+    controls 
+    poster="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop&q=80"
+  >
+    <!-- Multiple source formats for cross-browser compatibility -->
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+    <p>Your browser does not support HTML5 video. Please upgrade your browser to view this clip.</p>
+  </video>
+
+  <hr>
+
+  <h2>2. Audio Player (Hostel Study Playlist Mock)</h2>
+  <p>Classical Sitar &amp; Lo-Fi beats for late night coding:</p>
+
+  <audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <hr>
+  <p><a href="podcast.html">Listen to Kushal's Tech Podcast Episode &rarr;</a></p>
+
+</body>
+</html>
