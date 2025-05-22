@@ -1,0 +1,14 @@
+Day 5 - Audio & Video in HTML5
+
+Today's focus: Native media players without Flash plugin!
+
+Learnings:
+1. Back in the day, websites required Adobe Flash player to play media. HTML5 introduced native <video> and <audio> tags.
+2. <video> tag attributes:
+   - controls: Displays play, pause, volume, full screen buttons.
+   - autoplay: Browser generally blocks autoplay WITH sound because it annoys users.
+   - muted: If combined with autoplay, modern browsers will allow video to autoplay!
+   - loop: Video replays automatically when finished.
+   - poster: Thumbnail image shown before the video starts playing.
+3. Fallback text: Always put text between <video>...</video> for ancient browsers that don't support HTML5.
+4. <audio> tag works similarly with controls and source tags.
