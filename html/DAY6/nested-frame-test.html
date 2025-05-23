@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 6 - Iframe Sandbox & Security</title>
+</head>
+<body>
+
+  <a href="youtube-embeds.html">&larr; Back to Iframe Index</a>
+  <hr>
+
+  <h1>Iframe Sandboxing Notes</h1>
+
+  <h2>Why the <code>sandbox</code> attribute exists:</h2>
+  <p>
+    If you embed an external site you do not fully trust, you can add <code>sandbox</code> to lock it down:
+  </p>
+  <ul>
+    <li><code>sandbox=""</code>: Blocks everything (scripts, popups, forms).</li>
+    <li><code>sandbox="allow-scripts"</code>: Lets JavaScript run inside the iframe.</li>
+    <li><code>sandbox="allow-same-origin"</code>: Lets the frame retain its origin identity.</li>
+  </ul>
+
+  <!-- Embedding local Day 1 file safely -->
+  <h3>Safe Embed of Local Day 1 File:</h3>
+  <iframe 
+    src="../DAY1/bio.html" 
+    width="500" 
+    height="300" 
+    title="Kushal Day 1 Bio Embed"
+    sandbox="allow-scripts allow-same-origin"
+  ></iframe>
+
+</body>
+</html>
