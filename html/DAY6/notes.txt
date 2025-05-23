@@ -1,0 +1,14 @@
+Day 6 - Iframes & External Embeds
+
+Today's focus: <iframe> (Inline Frame).
+
+Learnings:
+1. <iframe> embeds another HTML document inside your current page!
+2. Practical use cases:
+   - Embedding tutorial videos and study music.
+   - Embedding Google Maps for a college or business address.
+   - Embedding Spotify playlists or CodePen demos.
+3. Security considerations:
+   - 'sandbox' attribute limits what the embedded page can do (stops malicious scripts from popping alerts or reading cookies).
+   - 'loading="lazy"' stops the iframe from downloading until the user scrolls near it (huge performance boost!).
+4. Many websites like Google.com or Facebook send 'X-Frame-Options: DENY' header, meaning they intentionally forbid being loaded inside an iframe to prevent clickjacking attacks!
