@@ -1,0 +1,19 @@
+Day 7 - Working with HTML Lists
+
+Today's focus: <ul>, <ol>, <li>, and <dl>.
+
+Learnings:
+1. <ul> = Unordered list (bullet points).
+2. <ol> = Ordered list (1, 2, 3 or A, B, C or I, II, III).
+   - 'type' attribute: '1', 'A', 'a', 'I', 'i'.
+   - 'start' attribute: starts numbering at a custom number (e.g. start="5").
+   - 'reversed' attribute: counts backwards (3, 2, 1)!
+3. Nested lists:
+   - Always put the child <ul> INSIDE an <li> tag!
+   - Common beginner bug: putting <ul> directly inside another <ul> without wrapping in <li>.
+4. <dl>, <dt>, <dd> = Description Lists:
+   - <dt> = Description Term.
+   - <dd> = Description Definition.
+   - Super clean for glossaries, FAQs, or key-value specifications.
+
+Real-world project today: Authentic Masala Chai step-by-step recipe with nested lists!
