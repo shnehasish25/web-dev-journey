@@ -1,0 +1,14 @@
+Day 8 - HTML Tables Part 1
+
+Today's focus: Basic Table structure.
+
+Learnings:
+1. <table>: Container for the entire table.
+2. <tr>: Table Row.
+3. <th>: Table Header (bold and centered automatically).
+   - Always add scope="col" (for column headers) or scope="row" (for row headers) for screen reader accessibility!
+4. <td>: Table Data (the standard table cell).
+5. <caption>: Title of the table, always placed right after <table> tag.
+6. border-collapse: In CSS, default tables have ugly double borders. Setting border-collapse: collapse makes borders crisp and single!
+
+Fun practice today: Built the official Indian Premier League (IPL) points table!
