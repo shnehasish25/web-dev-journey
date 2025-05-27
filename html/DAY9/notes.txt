@@ -1,0 +1,21 @@
+Day 9 - Advanced Tables (Colspan & Rowspan)
+
+Today's focus: <thead>, <tbody>, <tfoot>, colspan, and rowspan.
+
+Learnings:
+1. `colspan="n"`:
+   - Expands a cell HORIZONTALLY across n columns.
+   - Example: Merging lunch break across Monday to Friday.
+2. `rowspan="n"`:
+   - Expands a cell VERTICALLY across n rows downwards.
+   - CAUTION: This is the trickiest concept in HTML!
+   - When you put `rowspan="2"` on a cell in row 1, remember that in row 2, that spot is already taken! 
+     If you write the same number of <td> tags in row 2, everything gets pushed out to the right and ruins your table layout!
+3. Semantic table tags:
+   - <thead>: Header section
+   - <tbody>: Main rows
+   - <tfoot>: Summary row at the bottom
+
+Projects today:
+- Indian Railways Vande Bharat timetable with merged station stops.
+- College weekly timetable with labs spanning multiple hours.
