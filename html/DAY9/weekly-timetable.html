@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 9 - College Timetable with Merged Slots</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 850px;
+      font-family: sans-serif;
+    }
+    th, td {
+      border: 1px solid #94a3b8;
+      padding: 8px 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #334155;
+      color: white;
+    }
+    .lunch-cell {
+      background-color: #fef3c7;
+      font-weight: bold;
+      color: #92400e;
+    }
+    .lab-cell {
+      background-color: #dbeafe;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="irctc-schedule.html">&larr; Back to Vande Bharat Schedule</a>
+  <hr>
+
+  <h1>Computer Science Department - Weekly Schedule</h1>
+  <p>Student: <strong>Kushal</strong> | Section: <strong>CSE-B</strong></p>
+
+  <table>
+    <caption>Semester Class &amp; Lab Schedule</caption>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>09:00 - 10:00</th>
+        <th>10:00 - 11:00</th>
+        <th>11:15 - 12:15</th>
+        <th>12:15 - 01:15</th>
+        <th>01:15 - 02:00</th>
+        <th>02:00 - 04:00 (Afternoon Block)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Monday</th>
+        <td>DBMS</td>
+        <td>OS</td>
+        <td>CN</td>
+        <td>Maths</td>
+        <!-- Rowspan 5 spans the lunch break for all 5 days! -->
+        <td rowspan="5" class="lunch-cell">L<br>U<br>N<br>C<br>H</td>
+        <td class="lab-cell">DBMS Lab (Batch B1)</td>
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <td>CN</td>
+        <td>Maths</td>
+        <td>DBMS</td>
+        <td>OS</td>
+        <td>Self-Study / Library</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td>OS</td>
+        <td>DBMS</td>
+        <td>Maths</td>
+        <td>CN</td>
+        <td class="lab-cell">Algorithms Lab (Batch B1)</td>
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <td>Maths</td>
+        <td>CN</td>
+        <td>OS</td>
+        <td>DBMS</td>
+        <td>Mini-Project Review</td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td>DBMS</td>
+        <td>OS</td>
+        <td>CN</td>
+        <td>Maths</td>
+        <td>Sports / Extra-Curricular</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><a href="pricing-table.html">Check Indian Broadband Plans Comparison Table &rarr;</a></p>
+
+</body>
+</html>
