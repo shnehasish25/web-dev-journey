@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 9 - Vande Bharat Express Timetable</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      font-family: sans-serif;
+    }
+    th, td {
+      border: 1px solid #475569;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #0369a1;
+      color: white;
+    }
+    .header-row {
+      background-color: #e0f2fe;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Day 9: Advanced Tables (Colspan &amp; Rowspan)</h1>
+  <p>By Kushal | Practicing complex merged cells.</p>
+
+  <hr>
+
+  <table>
+    <caption><strong>Train No: 20608 | KSR Bengaluru to MGR Chennai Central Vande Bharat Express</strong></caption>
+    <thead>
+      <tr>
+        <th scope="col">Station Code</th>
+        <th scope="col">Station Name</th>
+        <th scope="col">Arrival</th>
+        <th scope="col">Departure</th>
+        <th scope="col">Halt Time</th>
+        <th scope="col">Distance</th>
+        <th scope="col">Day</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>SBC</strong></td>
+        <td>KSR Bengaluru City Jn</td>
+        <!-- Colspan used because origin station has no arrival time -->
+        <td colspan="2">Source (05:45 AM)</td>
+        <td>--</td>
+        <td>0 km</td>
+        <!-- Rowspan spans across all stops because it's a same-day train! -->
+        <td rowspan="4">Day 1</td>
+      </tr>
+      <tr>
+        <td><strong>BNC</strong></td>
+        <td>Bengaluru Cantt</td>
+        <td>05:53 AM</td>
+        <td>05:55 AM</td>
+        <td>2 mins</td>
+        <td>5 km</td>
+      </tr>
+      <tr>
+        <td><strong>KPD</strong></td>
+        <td>Katpadi Junction</td>
+        <td>08:38 AM</td>
+        <td>08:40 AM</td>
+        <td>2 mins</td>
+        <td>229 km</td>
+      </tr>
+      <tr>
+        <td><strong>MAS</strong></td>
+        <td>MGR Chennai Central</td>
+        <!-- Destination station has no departure -->
+        <td colspan="2">Destination (10:15 AM)</td>
+        <td>--</td>
+        <td>359 km</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="7">
+          <strong>Total Travel Time:</strong> 4 hours 30 mins | <strong>Operating Days:</strong> Except Wednesday
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!--
+    Student note:
+    Notice how clean the Day 1 column looks with rowspan="4"!
+    It vertically merges the cell for all 4 station rows without repeating "Day 1".
+  -->
+
+  <hr>
+  <p><a href="weekly-timetable.html">Check College Weekly Timetable with Colspan &rarr;</a></p>
+
+</body>
+</html>
