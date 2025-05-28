@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 10 - College Portal Login</title>
+</head>
+<body>
+
+  <h1>Day 10: HTML Forms Practice</h1>
+  <p>By Kushal | Mastering input fields and label associations.</p>
+
+  <hr>
+
+  <h2>Student ERP Portal Login</h2>
+
+  <!-- Using method="POST" so passwords aren't exposed in the URL! -->
+  <form action="#" method="POST">
+
+    <p>
+      <!-- Label 'for' matches Input 'id' -->
+      <label for="student-usn">University Seat Number (USN):</label><br>
+      <input 
+        type="text" 
+        id="student-usn" 
+        name="usn" 
+        placeholder="e.g. CS-2024-089" 
+        required
+      >
+    </p>
+
+    <p>
+      <label for="student-password">Portal Password:</label><br>
+      <!-- type="password" hides input -->
+      <input 
+        type="password" 
+        id="student-password" 
+        name="password" 
+        placeholder="Enter your password" 
+        required
+      >
+    </p>
+
+    <p>
+      <!-- Checkbox for remembering credentials -->
+      <input type="checkbox" id="remember-me" name="remember">
+      <label for="remember-me">Remember this laptop for 30 days</label>
+    </p>
+
+    <p>
+      <button type="submit">Sign In to Student Portal &rarr;</button>
+      <button type="reset">Clear Fields</button>
+    </p>
+
+  </form>
+
+  <!-- Note for self:
+       Rahul asked why clicking the word "Remember this laptop" checks the box:
+       It's because the label 'for="remember-me"' is linked to 'id="remember-me"'!
+  -->
+
+  <hr>
+  <p><a href="signup.html">Go to Community Signup Form &rarr;</a></p>
+
+</body>
+</html>
