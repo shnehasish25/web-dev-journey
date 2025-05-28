@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 10 - Contact Kushal</title>
+</head>
+<body>
+
+  <a href="login.html">&larr; Back to Login</a>
+  <hr>
+
+  <h1>Send a Message to Kushal</h1>
+  <p>Got questions about 2nd year CS or want to collaborate on a web project?</p>
+
+  <form action="#" method="POST">
+    <p>
+      <label for="sender-name">Your Name:</label><br>
+      <input type="text" id="sender-name" name="sender_name" required>
+    </p>
+
+    <p>
+      <label for="sender-email">Your Email Address:</label><br>
+      <input type="email" id="sender-email" name="sender_email" required>
+    </p>
+
+    <p>
+      <label for="subject-line">Subject:</label><br>
+      <input type="text" id="subject-line" name="subject" placeholder="Project Collaboration">
+    </p>
+
+    <p>
+      <label for="message-body">Message:</label><br>
+      <!-- textarea allows multiline messages! -->
+      <textarea id="message-body" name="message" rows="5" cols="45" placeholder="Hey Kushal, saw your HTML practice notes..."></textarea>
+    </p>
+
+    <p>
+      <button type="submit">Send Message</button>
+    </p>
+  </form>
+
+</body>
+</html>
