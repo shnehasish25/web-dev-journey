@@ -1,0 +1,26 @@
+Day 10 - Introduction to HTML Forms
+
+Today's focus: Basic Form inputs and labels.
+
+Learnings:
+1. <form> element wraps all interactive user inputs.
+   - 'action' attribute: Where to send the form data (URL of backend server).
+   - 'method' attribute:
+     * 'GET': Appends inputs to URL query string (never use for passwords!).
+     * 'POST': Sends data in HTTP body (secure for sensitive data).
+2. The Golden Rule of <label>:
+   - ALWAYS connect <label for="xyz"> with <input id="xyz">.
+   - Why? Clicking the text label focuses the input cursor automatically!
+3. Input types:
+   - type="text": Standard single-line text.
+   - type="email": Checks for @ and domain format.
+   - type="password": Masks typed characters with dots.
+   - type="number": Restricts input to numbers.
+   - type="submit": Button that submits the form.
+4. 'placeholder' vs 'value':
+   - placeholder is just gray hint text.
+   - value is actual entered data.
+
+Projects today:
+- Student Portal Login Form.
+- Dev Community Registration Form.
