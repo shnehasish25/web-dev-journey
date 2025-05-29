@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 11 - College Fest Registration</title>
+</head>
+<body>
+
+  <a href="swiggy-mock-order.html">&larr; Back to Food Order</a>
+  <hr>
+
+  <h1>Tarang 2024 - Annual College Cultural Fest</h1>
+  <p>Register your team for intra-college technical and cultural competitions.</p>
+
+  <form action="#" method="POST">
+
+    <p>
+      <label for="leader-name">Team Leader Name:</label><br>
+      <input type="text" id="leader-name" name="leader" required>
+    </p>
+
+    <p>
+      <label for="tshirt-size">Official Fest T-Shirt Size:</label><br>
+      <select id="tshirt-size" name="size">
+        <option value="S">Small (38)</option>
+        <option value="M" selected>Medium (40)</option>
+        <option value="L">Large (42)</option>
+        <option value="XL">Extra Large (44)</option>
+      </select>
+    </p>
+
+    <h3>Select Events to Participate in:</h3>
+    <p>
+      <input type="checkbox" id="ev-hackathon" name="events" value="hackathon">
+      <label for="ev-hackathon">CodeStorm 24-Hour Hackathon (₹300/team)</label><br>
+
+      <input type="checkbox" id="ev-bgmi" name="events" value="bgmi">
+      <label for="ev-bgmi">BGMI Esports Tournament (₹200/squad)</label><br>
+
+      <input type="checkbox" id="ev-battlebands" name="events" value="battle_bands">
+      <label for="ev-battlebands">Battle of the Bands (Rock/Fusion)</label><br>
+
+      <input type="checkbox" id="ev-quiz" name="events" value="tech_quiz">
+      <label for="ev-quiz">National Tech Trivia Quiz</label>
+    </p>
+
+    <p>
+      <button type="submit">Submit Fest Entry</button>
+    </p>
+
+  </form>
+
+  <p><a href="datalist-demo.html">Check Datalist Auto-Complete Demo &rarr;</a></p>
+
+</body>
+</html>
