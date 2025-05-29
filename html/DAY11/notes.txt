@@ -1,0 +1,21 @@
+Day 11 - Forms Part 2 (Radios, Checkboxes, Dropdowns & Datalist)
+
+Today's focus: Choice selection elements in HTML forms.
+
+Learnings:
+1. Radio Buttons (type="radio"):
+   - For choosing EXACTLY ONE option among several (e.g. Veg vs Non-Veg).
+   - CRITICAL: All radio buttons in the group MUST have the exact same 'name' attribute! If names differ, you can select all of them simultaneously, breaking the radio logic!
+2. Checkboxes (type="checkbox"):
+   - For choosing MULTIPLE options (e.g. Extra Cheese + Butter Naan + Green Chutney).
+3. Dropdowns (<select> and <option>):
+   - Dropdown menu for saving screen space.
+   - <optgroup>: Groups options logically (e.g. North Indian vs South Indian).
+4. <datalist>:
+   - Mind-blowing tag! It creates an input box WITH auto-suggestions as you type, but still allows custom text if the user wants.
+5. <fieldset> and <legend>:
+   - Creates a nice border box grouping related inputs together with a title.
+
+Projects today:
+- Swiggy / Zomato food delivery mock order form.
+- College Cultural Fest registration form.
