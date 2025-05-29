@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 11 - Swiggy Style Food Order Form</title>
+</head>
+<body>
+
+  <h1>Day 11: Radio Buttons, Checkboxes &amp; Dropdowns</h1>
+  <p>By Kushal | Building a Swiggy/Zomato style food delivery form.</p>
+
+  <hr>
+
+  <form action="#" method="POST">
+
+    <!-- Fieldset groups related inputs -->
+    <fieldset>
+      <legend><strong>1. Select Your Main Course</strong></legend>
+
+      <p>Choose dietary preference (Radio buttons - pick one):</p>
+      <!-- All radio buttons share name="food_type" -->
+      <input type="radio" id="pref-veg" name="food_type" value="veg" checked>
+      <label for="pref-veg">🟢 Pure Veg</label><br>
+
+      <input type="radio" id="pref-nonveg" name="food_type" value="nonveg">
+      <label for="pref-nonveg">🔴 Non-Veg</label><br>
+
+      <input type="radio" id="pref-jain" name="food_type" value="jain">
+      <label for="pref-jain">🟡 Jain (No onion / garlic)</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><strong>2. Choose Cuisine &amp; Dish</strong></legend>
+
+      <p>
+        <label for="dish-select">Select Dish:</label>
+        <select id="dish-select" name="selected_dish" required>
+          <option value="" disabled selected>-- Select an item --</option>
+          
+          <!-- Optgroup categories -->
+          <optgroup label="South Indian Specials">
+            <option value="masala-dosa">Masala Dosa (₹110)</option>
+            <option value="ghee-roast">Ghee Paper Roast (₹140)</option>
+            <option value="idli-vada">Idli Vada Combo (₹80)</option>
+            <option value="bisibelebath">Bisi Bele Bath (₹90)</option>
+          </optgroup>
+
+          <optgroup label="North Indian Specials">
+            <option value="paneer-butter">Paneer Butter Masala (₹240)</option>
+            <option value="dal-makhani">Dal Makhani (₹210)</option>
+            <option value="butter-chicken">Butter Chicken (₹320)</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p>
+        <label for="spice-level">Spice Level:</label>
+        <select id="spice-level" name="spice">
+          <option value="mild">Mild (Less chilly)</option>
+          <option value="medium" selected>Medium Spicy (Standard)</option>
+          <option value="kolhapuri">Extreme Indian Spicy (Kolhapuri style 🔥)</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><strong>3. Extra Add-ons (Checkboxes - select any)</strong></legend>
+
+      <input type="checkbox" id="add-chutney" name="addons" value="extra_chutney" checked>
+      <label for="add-chutney">Extra Coconut &amp; Tomato Chutney (+₹15)</label><br>
+
+      <input type="checkbox" id="add-naan" name="addons" value="butter_naan">
+      <label for="add-naan">Garlic Butter Naan (2 pcs) (+₹70)</label><br>
+
+      <input type="checkbox" id="add-gulabjamun" name="addons" value="gulab_jamun">
+      <label for="add-gulabjamun">Hot Gulab Jamun (2 pcs) (+₹60)</label><br>
+
+      <input type="checkbox" id="cutlery" name="no_cutlery" value="yes" checked>
+      <label for="cutlery">🌱 Do not send plastic cutlery (Save environment)</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><strong>4. Delivery Address</strong></legend>
+      <p>
+        <label for="hostel-room">Hostel / Flat Address:</label><br>
+        <textarea id="hostel-room" name="address" rows="3" cols="40" placeholder="Room 304, Boys Hostel Block B..."></textarea>
+      </p>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Place Order &rarr;</button>
+
+  </form>
+
+  <hr>
+  <p><a href="college-fest-registration.html">Check College Fest Registration Form &rarr;</a></p>
+
+</body>
+</html>
