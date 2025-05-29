@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 11 - HTML5 Datalist Tag</title>
+</head>
+<body>
+
+  <a href="swiggy-mock-order.html">&larr; Back to Swiggy Form</a>
+  <hr>
+
+  <h1>The Magic of &lt;datalist&gt; (Auto-Suggest)</h1>
+  <p>Start typing an Indian city name (e.g. "Ben" or "Mum") to see suggestions:</p>
+
+  <form action="#">
+    <label for="city-input">Choose Your Nearest City:</label>
+    <!-- Connect input to datalist using list="cities-list" -->
+    <input list="cities-list" id="city-input" name="city" placeholder="Type city name...">
+
+    <!-- Datalist provides options -->
+    <datalist id="cities-list">
+      <option value="Bengaluru">
+      <option value="Mumbai">
+      <option value="New Delhi">
+      <option value="Hyderabad">
+      <option value="Chennai">
+      <option value="Kolkata">
+      <option value="Pune">
+      <option value="Ahmedabad">
+      <option value="Jaipur">
+      <option value="Chandigarh">
+      <option value="Kochi">
+    </datalist>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!--
+    Student note:
+    Datalist is amazing because unlike <select>, the user can still type a custom city
+    that isn't in the list!
+  -->
+
+</body>
+</html>
