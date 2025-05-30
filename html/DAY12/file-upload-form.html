@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 12 - Resume & Document Upload</title>
+</head>
+<body>
+
+  <a href="indian-kyc-form.html">&larr; Back to KYC Form</a>
+  <hr>
+
+  <h1>Internship Application - Document Upload</h1>
+  <p>Testing <code>type="file"</code> with format restrictions.</p>
+
+  <!-- enctype="multipart/form-data" is MANDATORY when uploading files! -->
+  <form action="#" method="POST" enctype="multipart/form-data">
+
+    <p>
+      <label for="resume-doc">Upload Resume (PDF format only, Max 5MB): *</label><br>
+      <!-- accept attribute limits file types in browser picker -->
+      <input 
+        type="file" 
+        id="resume-doc" 
+        name="resume" 
+        accept=".pdf,application/pdf" 
+        required
+      >
+    </p>
+
+    <p>
+      <label for="photo-id">Passport Size Photograph (JPG/PNG only):</label><br>
+      <input 
+        type="file" 
+        id="photo-id" 
+        name="photograph" 
+        accept="image/png,image/jpeg"
+      >
+    </p>
+
+    <p>
+      <label for="cert-docs">College Semester Marksheets (Upload multiple):</label><br>
+      <!-- multiple attribute allows picking more than 1 file! -->
+      <input 
+        type="file" 
+        id="cert-docs" 
+        name="certificates" 
+        multiple
+      >
+    </p>
+
+    <p>
+      <button type="submit">Submit Application</button>
+    </p>
+
+  </form>
+
+</body>
+</html>
