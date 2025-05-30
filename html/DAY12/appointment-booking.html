@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 12 - Appointment Date & Time Constraints</title>
+</head>
+<body>
+
+  <a href="indian-kyc-form.html">&larr; Back to KYC Form</a>
+  <hr>
+
+  <h1>Book Campus Health Center Appointment</h1>
+  <p>Testing date, time, and numeric limits in HTML5 inputs.</p>
+
+  <form action="#" method="POST">
+
+    <p>
+      <label for="doctor-select">Consulting Doctor:</label><br>
+      <select id="doctor-select" name="doctor" required>
+        <option value="general">Dr. Rajesh Rao (General Physician)</option>
+        <option value="dental">Dr. Sunita Murthy (Dentist)</option>
+        <option value="physio">Dr. Arun Kumar (Physiotherapy)</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="appt-date">Preferred Date (Available this month only): *</label><br>
+      <!-- min and max bounds for date picking -->
+      <input 
+        type="date" 
+        id="appt-date" 
+        name="date" 
+        min="2024-11-01" 
+        max="2024-11-30" 
+        required
+      >
+    </p>
+
+    <p>
+      <label for="appt-time">Preferred Time Slot (09:00 AM to 05:00 PM): *</label><br>
+      <input 
+        type="time" 
+        id="appt-time" 
+        name="time" 
+        min="09:00" 
+        max="17:00" 
+        required
+      >
+    </p>
+
+    <p>
+      <button type="submit">Confirm Slot Booking</button>
+    </p>
+
+  </form>
+
+  <p><a href="file-upload-form.html">Check File &amp; Resume Upload Form &rarr;</a></p>
+
+</body>
+</html>
