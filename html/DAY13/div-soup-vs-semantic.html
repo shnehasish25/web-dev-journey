@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 13 - Div Soup vs Semantic Code Comparison</title>
+</head>
+<body>
+
+  <a href="tech-news-portal.html">&larr; Back to Tech News</a>
+  <hr>
+
+  <h1>Div Soup (The Bad Way) vs Semantic HTML (The Clean Way)</h1>
+
+  <h2>Bad Code (Div Soup):</h2>
+  <pre><code>&lt;!-- Notice how everything is a div with endless classes! --&gt;
+&lt;div class="site-header-wrapper"&gt;
+  &lt;div class="site-title"&gt;My Blog&lt;/div&gt;
+  &lt;div class="menu-container"&gt;
+    &lt;div class="menu-item"&gt;Home&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+  <h2>Good Code (Modern Semantic HTML5):</h2>
+  <pre><code>&lt;!-- Clean, meaningful tags that screen readers understand! --&gt;
+&lt;header&gt;
+  &lt;h1&gt;My Blog&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+
+  <p>
+    <em>Lesson learned: Always choose the semantic tag before reaching for a &lt;div&gt;!</em>
+  </p>
+
+</body>
+</html>
