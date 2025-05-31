@@ -1,0 +1,21 @@
+Day 13 - Semantic HTML5 Architecture
+
+Today's focus: Replacing "div soup" with meaningful semantic elements.
+
+Learnings:
+1. "Div Soup" is when beginners build websites like:
+   <div class="header">
+     <div class="nav-bar">
+       <div class="menu-item">...</div>
+     </div>
+   </div>
+   This gives ZERO meaning to browsers, search engines, or blind users.
+2. Semantic HTML5 tags:
+   - <header>: Introductory content or logo banner.
+   - <nav>: Primary navigational links.
+   - <main>: Central, unique content of this specific webpage (only ONE <main> per HTML document!).
+   - <article>: Complete, self-contained piece of content (blog post, news article, forum comment).
+   - <section>: Thematic group of content with a heading.
+   - <aside>: Content tangentially related to the main article (sidebar, author bio, trending topics).
+   - <footer>: Author, copyright, back to top links.
+3. Rule of thumb: If the content makes sense standalone (like on an RSS reader), use <article>. If it's a thematic group within a page, use <section>.
