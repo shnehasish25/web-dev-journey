@@ -1,0 +1,17 @@
+Day 14 - Meta Tags, SEO & OpenGraph Social Cards
+
+Today's focus: What goes inside the <head> tag.
+
+Learnings:
+1. The <head> holds metadata: data about the webpage that browsers, search engines, and social apps read.
+2. Essential meta tags:
+   - `<meta charset="UTF-8">`: Character encoding for all international alphabets, math symbols, and emojis.
+   - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: CRITICAL for mobile responsiveness! Without this, smartphones render the page in a microscopic desktop zoomed-out view!
+   - `<meta name="description" content="...">`: The 1-2 sentence snippet shown beneath your page title on Google search results.
+   - `<meta name="author" content="Kushal">`: Author credit.
+3. Open Graph (OG) Tags (Created by Facebook):
+   - When someone shares your link on WhatsApp, LinkedIn, Twitter, or Discord, these tags create that rich visual preview card with a title, description, and thumbnail image!
+   - og:title, og:description, og:image, og:url, og:type.
+4. Favicon:
+   - `<link rel="icon" type="image/x-icon" href="favicon.ico">`
+   - The tiny logo that appears on browser tabs.
