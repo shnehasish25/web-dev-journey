@@ -1,0 +1,18 @@
+Kushal's Essential Meta Tag Checklist (Day 14)
+-----------------------------------------------
+1. Responsive Viewport:
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+2. Google Search Snippet:
+   <meta name="description" content="Max 155-160 characters describing the page accurately.">
+
+3. Social Media Sharing Card (Open Graph):
+   <meta property="og:title" content="...">
+   <meta property="og:description" content="...">
+   <meta property="og:image" content="https://mysite.com/preview.jpg">
+   <meta property="og:url" content="https://mysite.com">
+
+4. Android Chrome URL Bar Accent:
+   <meta name="theme-color" content="#2563eb">
+
+Rule of thumb: Always copy-paste this baseline into every new project!
