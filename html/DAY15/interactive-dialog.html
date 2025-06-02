@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 15 - Native HTML5 Dialog Element</title>
+</head>
+<body>
+
+  <a href="faq-accordion.html">&larr; Back to FAQ</a>
+  <hr>
+
+  <h1>Native HTML5 &lt;dialog&gt; Modal</h1>
+  <p>Modern HTML has a built-in dialog tag for popups without Bootstrap!</p>
+
+  <!-- Dialog element with open attribute for static preview -->
+  <dialog open style="border: 2px solid #2563eb; border-radius: 8px; padding: 20px; max-width: 400px;">
+    <h3>🎉 Milestone Unlocked!</h3>
+    <p>
+      Congratulations Kushal! You have completed 15 consecutive days of HTML fundamentals. 
+      You know tables, forms, validation, semantic tags, and modern multimedia!
+    </p>
+    <!-- Using form method="dialog" closes the dialog natively without JS! -->
+    <form method="dialog">
+      <button type="submit">Awesome! Close Notification</button>
+    </form>
+  </dialog>
+
+</body>
+</html>
