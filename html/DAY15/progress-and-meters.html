@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 15 - HTML5 Progress & Meter Tags</title>
+</head>
+<body>
+
+  <a href="faq-accordion.html">&larr; Back to FAQ Accordion</a>
+  <hr>
+
+  <h1>HTML5 &lt;progress&gt; and &lt;meter&gt; Elements</h1>
+
+  <h2>1. Progress Elements (Tasks in progress)</h2>
+
+  <p>
+    Kushal's 100 Days of Web Dev Course Progress:<br>
+    <!-- Value 15 out of 100 days -->
+    <progress value="15" max="100"></progress> <strong>15% completed (HTML module done!)</strong>
+  </p>
+
+  <p>
+    Downloading VS Code Installer (65 MB / 100 MB):<br>
+    <progress value="65" max="100"></progress> 65%
+  </p>
+
+  <hr>
+
+  <h2>2. Meter Elements (Measurements on a fixed scale)</h2>
+
+  <p>
+    Hostel Laptop Battery Level:<br>
+    <!-- value 85 out of 100 -->
+    <meter min="0" max="100" low="20" high="80" optimum="95" value="85"></meter> 85% (Healthy)
+  </p>
+
+  <p>
+    Critical Disk Storage Space:<br>
+    <!-- low warning test -->
+    <meter min="0" max="512" low="50" high="450" optimum="200" value="480"></meter> 480 GB / 512 GB (Disk Almost Full!)
+  </p>
+
+  <p><a href="interactive-dialog.html">Check Native &lt;dialog&gt; Tag &rarr;</a></p>
+
+</body>
+</html>
