@@ -1,0 +1,16 @@
+Day 16 - Web Accessibility (a11y) & ARIA
+
+Today's focus: Making the web usable for everyone, including people with visual, motor, or cognitive disabilities.
+
+Learnings:
+1. 'a11y' is shorthand for accessibility (11 letters between 'a' and 'y').
+2. Screen readers (like NVDA, JAWS, or Mac VoiceOver) read HTML top-to-bottom.
+3. Why accessibility is not optional:
+   - It's a moral responsibility.
+   - Search engines like Google crawl websites similarly to screen readers. If a blind user can't navigate your site, Google won't index it well either!
+4. Core a11y principles:
+   - Always have descriptive 'alt' tags on images.
+   - Never use <div onclick="..."> for buttons! Use a real <button> tag because screen readers know it's clickable and users can press Space/Enter on keyboard.
+   - Use 'aria-label' when a button has only an icon (like a search magnifying glass or hamburger menu) so the screen reader announces "Search button" instead of "Unlabeled button".
+   - Color contrast: text must be easily readable against its background.
+   - Tabindex: use tabindex="0" to make an element focusable; NEVER use positive numbers like tabindex="3" because it scrambles the natural reading order!
