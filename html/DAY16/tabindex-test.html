@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 16 - Tabindex & Focus Flow</title>
+</head>
+<body>
+
+  <a href="accessible-card.html">&larr; Back to Accessible Card</a>
+  <hr>
+
+  <h1>Understanding <code>tabindex</code> for Keyboard Users</h1>
+  <p>Press the <kbd>Tab</kbd> key repeatedly on your keyboard to navigate through elements!</p>
+
+  <h2>1. Natural Focusable Elements</h2>
+  <p>Buttons, links, and inputs are naturally focusable without any tabindex attribute:</p>
+  <a href="#">First Link</a> | 
+  <button type="button">Action Button</button> | 
+  <input type="text" placeholder="Type here...">
+
+  <hr>
+
+  <h2>2. <code>tabindex="0"</code> (Custom focusable element)</h2>
+  <p>Allows a non-interactive element like a &lt;div&gt; to receive keyboard tab focus in natural order:</p>
+  <div tabindex="0" style="padding: 10px; border: 2px dashed #4f46e5; display: inline-block;">
+    I am a div, but you can tab to me!
+  </div>
+
+  <h2>3. <code>tabindex="-1"</code> (Programmatic focus only)</h2>
+  <p>Removed from natural tab order, but can be focused via JavaScript (useful for error alerts):</p>
+  <div tabindex="-1" style="padding: 10px; border: 1px solid #ef4444; display: inline-block;">
+    You cannot tab to me with keyboard directly.
+  </div>
+
+  <p><a href="screen-reader-friendly.html">Check Screen-Reader Skip Link &rarr;</a></p>
+
+</body>
+</html>
