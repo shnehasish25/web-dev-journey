@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 16 - Skip to Main Content Link</title>
+  <style>
+    /* Skip link: visible when focused via keyboard Tab */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip directly to main content &darr;</a>
+
+  <header>
+    <h1>College Tech Fest Portal</h1>
+    <nav>
+      <p>Huge navigation menu with 20 links that a blind user doesn't want to listen to every page reload:</p>
+      <ul>
+        <li><a href="#">Nav Item 1</a></li>
+        <li><a href="#">Nav Item 2</a></li>
+        <li><a href="#">Nav Item 3</a></li>
+        <li><a href="#">Nav Item 4</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main id="main-content">
+    <h2>Main Content Area</h2>
+    <p>
+      Keyboard users can press <kbd>Tab</kbd> on load and immediately jump here without tabbing through 
+      all navigation links! This is a standard requirement on government and enterprise websites.
+    </p>
+  </main>
+
+</body>
+</html>
