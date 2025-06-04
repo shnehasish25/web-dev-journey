@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 16 - Accessible Product Card (a11y)</title>
+  <style>
+    .card {
+      border: 1px solid #94a3b8;
+      border-radius: 8px;
+      padding: 16px;
+      max-width: 320px;
+      font-family: sans-serif;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Day 16: Accessible Web Design</h1>
+  <p>By Kushal | Implementing ARIA attributes and keyboard-friendly markup.</p>
+
+  <hr>
+
+  <!-- Accessible Product Card -->
+  <article class="card" aria-labelledby="product-title">
+    
+    <img 
+      src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&auto=format&fit=crop&q=80" 
+      alt="Noise ColorFit Ultra 3 Smartwatch with black strap and bright AMOLED display"
+      width="280"
+    >
+
+    <h2 id="product-title">Noise ColorFit Smartwatch</h2>
+    <p>1.96" AMOLED display, Bluetooth calling, 7-day battery backup.</p>
+    <p><strong>Price:</strong> ₹2,499 <small><del>₹4,999</del></small></p>
+
+    <!-- Accessible Button with aria-label -->
+    <!--
+      If this was an icon-only button like a cart icon,
+      aria-label="Add Noise ColorFit Smartwatch to shopping cart"
+      ensures screen readers announce exactly what happens when clicked!
+    -->
+    <button type="button" aria-label="Add Noise ColorFit Smartwatch to your cart">
+      🛒 Add to Cart
+    </button>
+  </article>
+
+  <hr>
+  <p><a href="tabindex-test.html">Check Tabindex &amp; Keyboard Navigation &rarr;</a></p>
+
+</body>
+</html>
