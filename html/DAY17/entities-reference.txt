@@ -1,0 +1,17 @@
+Kushal's Top 15 HTML Entities Cheat Sheet
+-----------------------------------------
+&nbsp;   -> Non-breaking space
+&lt;     -> < (Less than)
+&gt;     -> > (Greater than)
+&amp;    -> & (Ampersand)
+&quot;   -> " (Double quote)
+&#8377;  -> ₹ (Indian Rupee)
+&copy;   -> © (Copyright)
+&reg;    -> ® (Registered)
+&trade;  -> ™ (Trademark)
+&deg;    -> ° (Degree symbol, e.g. 37°C)
+&frac12; -> ½ (One half)
+&frac14; -> ¼ (One quarter)
+&bull;   -> • (Bullet point)
+&rarr;   -> → (Right arrow)
+&larr;   -> ← (Left arrow)
