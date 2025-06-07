@@ -1,0 +1,24 @@
+Day 17 - HTML Entities, Symbols & Emojis
+
+Today's focus: Special characters that cannot be typed directly in HTML.
+
+Learnings:
+1. Why HTML Entities exist:
+   - Characters like `<` and `>` are reserved by HTML for tags! If you type `5 < 10`, the browser might think `< 10` is an unclosed tag!
+   - To show literal angle brackets, we use entities:
+     * `&lt;` = Less than (<)
+     * `&gt;` = Greater than (>)
+     * `&amp;` = Ampersand (&)
+     * `&quot;` = Quotation mark (")
+2. Indian Rupee Symbol:
+   - Character: ₹
+   - Entity: `&#8377;`
+   - Super useful on Indian ecommerce portals (Flipkart, Amazon India, Zomato)!
+3. Non-Breaking Space:
+   - `&nbsp;`: Creates a space that guarantees two words will NEVER break onto separate lines (e.g. `₹&nbsp;500` or `10&nbsp;kg`).
+4. Other useful entities:
+   - `&copy;` = Copyright symbol (©)
+   - `&reg;` = Registered trademark (®)
+   - `&trade;` = Trademark (™)
+   - `&bull;` = Bullet point (•)
+   - `&rarr;` / `&larr;` / `&uarr;` / `&darr;` = Directional arrows (→ ← ↑ ↓)
