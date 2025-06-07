@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 17 - Non-Breaking Space & Typography</title>
+</head>
+<body>
+
+  <a href="indian-symbols-and-entities.html">&larr; Back to Entities</a>
+  <hr>
+
+  <h1>The Magic of <code>&amp;nbsp;</code> (Non-Breaking Space)</h1>
+
+  <h2>Problem:</h2>
+  <p>
+    When a screen gets very narrow on mobile phones, sometimes words split awkwardly. 
+    For instance, having "₹" at the end of line 1 and "500" pushed down to line 2 looks super unprofessional!
+  </p>
+
+  <h2>Solution:</h2>
+  <p>
+    Use <code>&amp;nbsp;</code> between them:
+  </p>
+  <p>Special Biryani Price: <strong>₹&nbsp;350</strong></p>
+  <p>Bag Weight: <strong>15&nbsp;kg</strong></p>
+  <p>Meeting Time: <strong>10&nbsp;PM</strong></p>
+
+  <p>
+    <em>The browser will treat "₹&nbsp;350" as a single glued unit that always moves together!</em>
+  </p>
+
+</body>
+</html>
