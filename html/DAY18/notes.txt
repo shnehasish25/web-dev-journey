@@ -1,0 +1,21 @@
+Day 18 - HTML Capstone Project: Kushal's Tech Hub
+
+MILESTONE REACHED: 18 CONSECUTIVE DAYS OF HTML COMPLETE! 🎉
+
+Today I built my biggest project so far: A full 4-page connected personal website without using any CSS frameworks or templates, purely using clean, semantic, accessible HTML5!
+
+What I built in `kushal-hub/`:
+1. `index.html`: Home page with personal background, photo, quick elevator pitch, and education table.
+2. `projects.html`: Portfolio gallery showing all the mini-projects built over the last 18 days with links and descriptions.
+3. `skills.html`: Detailed breakdown of my HTML5 knowledge, semantic tags checklist, and study resources used.
+4. `contact.html`: Accessible contact form with Indian mobile number validation, PIN code, and subject options.
+
+Looking back at Day 1:
+On Day 1, I barely knew what a <div> was or how <head> differs from <body>.
+Now after 18 days:
+- I understand semantic landmarks (<header>, <nav>, <main>, <article>, <aside>, <footer>).
+- I can build complex accessible tables with `rowspan` and `colspan`.
+- I can create verified forms with custom regex for Indian mobile numbers and PAN cards.
+- I know how to structure OpenGraph meta tags so my links look awesome when shared on WhatsApp.
+
+Next module is CSS! I can't wait to learn colors, box model, and Flexbox to make this entire project look like a modern startup website!
