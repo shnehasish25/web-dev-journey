@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Kushal Sharma</title>
+</head>
+<body>
+
+  <header>
+    <h1>Kushal Sharma</h1>
+    <nav aria-label="Main Portfolio Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects &amp; Practice</a></li>
+        <li><a href="skills.html">Skills &amp; Roadmaps</a></li>
+        <li><a href="contact.html"><strong>Contact Me</strong></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <h2>Get in Touch with Kushal</h2>
+    <p>
+      Have a question about my engineering study notes, want to work together on an open-source project, 
+      or just want to talk tech over filter coffee in Bengaluru? Drop a message!
+    </p>
+
+    <!-- Accessible Contact Form -->
+    <form action="#" method="POST">
+      <fieldset>
+        <legend><strong>Send a Direct Message</strong></legend>
+
+        <p>
+          <label for="contact-name">Your Full Name: *</label><br>
+          <input type="text" id="contact-name" name="name" required placeholder="Aarav Patel">
+        </p>
+
+        <p>
+          <label for="contact-email">Email Address: *</label><br>
+          <input type="email" id="contact-email" name="email" required placeholder="aarav@example.com">
+        </p>
+
+        <p>
+          <label for="contact-phone">Phone / WhatsApp (Optional):</label><br>
+          +91 <input 
+            type="tel" 
+            id="contact-phone" 
+            name="phone" 
+            pattern="[6-9][0-9]{9}" 
+            placeholder="9876543210"
+            title="10-digit Indian mobile number"
+          >
+        </p>
+
+        <p>
+          <label for="purpose-select">Reason for Reaching Out:</label><br>
+          <select id="purpose-select" name="reason">
+            <option value="collab">Hackathon / Project Collaboration</option>
+            <option value="college">College &amp; Branch Query</option>
+            <option value="chat">Just saying hello!</option>
+            <option value="feedback">Feedback on HTML study logs</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message-content">Your Message: *</label><br>
+          <textarea 
+            id="message-content" 
+            name="message" 
+            rows="6" 
+            cols="45" 
+            required 
+            placeholder="Hey Kushal, I saw your 18-day HTML study logs..."
+          ></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send Message &rarr;</button>
+          <button type="reset">Clear Form</button>
+        </p>
+      </fieldset>
+    </form>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2024 Kushal Sharma &bull; <a href="index.html">&larr; Back to Home</a></p>
+  </footer>
+
+</body>
+</html>
