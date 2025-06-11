@@ -1,0 +1,18 @@
+Day 19 - Introduction to CSS (Cascading Style Sheets)
+
+Finally started CSS! After 18 days of raw HTML skeleton, things will finally look colorful.
+
+Learnings today:
+1. CSS syntax: selector { property: value; }
+2. 3 ways to add CSS:
+   - Inline: <h1 style="color: red;"> (Horrible practice! Violates separation of concerns, impossible to maintain).
+   - Internal: <style> tag in the <head> (Okay for tiny one-file tests or email templates).
+   - External: <link rel="stylesheet" href="style.css"> (The industry gold standard!).
+3. Why external is king:
+   - You can style 50 HTML pages using ONE single CSS file.
+   - Browsers cache the external CSS file, making subsequent page visits lightning fast!
+4. Resetting defaults:
+   - Browsers apply their own default user-agent styles (like 8px margin on body). That's why elements don't touch the screen edge by default!
+
+Funny mistake:
+- Forgot to add rel="stylesheet" in my <link> tag and spent 10 minutes wondering why the page was still plain black and white haha!
