@@ -1,0 +1,16 @@
+Day 20 - CSS Selectors & Combinators
+
+Today's focus: How to target exact elements without adding 50 unnecessary classes.
+
+Learnings:
+1. Basic Selectors:
+   - Universal (*): Targets every single element.
+   - Element (p, h1, div): Targets all matching tags.
+   - Class (.card, .btn): Reusable on multiple elements.
+   - ID (#header, #user-profile): Unique per page.
+2. Combinators:
+   - Descendant (`div p`): All p inside div.
+   - Child combinator (`div > p`): Only direct children.
+   - Adjacent sibling (`h2 + p`): Next p immediately following h2.
+   - General sibling (`h2 ~ p`): All p coming after h2 under same parent.
+3. Pseudo-classes: :hover, :active, :focus, :first-child, :last-child.
