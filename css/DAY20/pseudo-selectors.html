@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 20 - Pseudo Classes Playground</title>
+  <style>
+    body { font-family: sans-serif; padding: 30px; background: #f8fafc; }
+    .hover-btn {
+      background: #2563eb; color: white; border: none; padding: 12px 24px;
+      font-size: 16px; border-radius: 6px; cursor: pointer;
+    }
+    .hover-btn:hover { background: #1d4ed8; box-shadow: 0 4px 12px rgba(37,99,235,0.3); }
+    .hover-btn:active { transform: scale(0.96); }
+    input:focus { outline: 2px solid #2563eb; background: #eff6ff; }
+  </style>
+</head>
+<body>
+  <h1>Testing :hover, :active, and :focus</h1>
+  <button class="hover-btn">Click Me for Bangalore Tech Meetup</button>
+  <p style="margin-top: 20px;"><input type="text" placeholder="Focus me..."></p>
+</body>
+</html>
