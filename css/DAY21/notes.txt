@@ -1,0 +1,7 @@
+Day 21 - Specificity Wars & The Cascade
+
+Today's focus: The CSS Cascade and how the browser resolves conflicts.
+
+Learnings:
+1. Specificity score: Inline (1000) > ID (100) > Class (10) > Element (1).
+2. Keep an eye on: !important beats everything, but avoid using it because it breaks the cascade.
