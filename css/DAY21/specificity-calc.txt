@@ -1,0 +1,5 @@
+Specificity Formula:
+Inline: 1000 pts
+ID: 100 pts
+Class/Pseudo: 10 pts
+Tag: 1 pt
