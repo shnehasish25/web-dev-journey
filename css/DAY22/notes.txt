@@ -1,0 +1,6 @@
+Day 22 - Colors, Gradients & Backgrounds
+
+Learnings:
+1. Formats: HEX, RGB/RGBA, HSL/HSLA.
+2. Gradients: linear-gradient, radial-gradient.
+3. Background overlay trick: combining gradient with image!
