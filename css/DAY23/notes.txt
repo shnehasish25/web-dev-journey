@@ -1,0 +1,6 @@
+Day 23 - Typography & Web Units
+
+Learnings:
+1. Google Fonts: Inter + Merriweather.
+2. px (absolute) vs rem (relative to root 16px) vs em.
+3. line-height: 1.6 gives great readability.
