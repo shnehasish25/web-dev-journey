@@ -1,0 +1,5 @@
+Day 24 - The Box Model & Border-Box
+
+Learnings:
+1. Content, Padding, Border, Margin.
+2. * { box-sizing: border-box; } should be at the top of every single stylesheet!
