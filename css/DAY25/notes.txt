@@ -1,0 +1,5 @@
+Day 25 - Margin Collapse & Auto Centering
+
+Learnings:
+1. Vertical margins collapse to largest value.
+2. Centering: max-width + margin: 0 auto!
