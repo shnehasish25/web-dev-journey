@@ -1,0 +1,5 @@
+body { font-family: sans-serif; background: #e2e8f0; padding: 30px; }
+.container { max-width: 650px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; }
+.card { padding: 15px; border-radius: 6px; }
+.card-1 { background: #dbeafe; margin-bottom: 30px; }
+.card-2 { background: #dcfce7; margin-top: 20px; }
