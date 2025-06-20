@@ -1,0 +1,7 @@
+Day 26 - CSS Display Properties
+
+Learnings:
+1. display: block (takes full width, starts on new line).
+2. display: inline (flows with text, ignores width/height!).
+3. display: inline-block (flows inline BUT respects width/height/padding!).
+4. display: none (removes element completely) vs visibility: hidden (hides element but preserves its physical blank gap).
