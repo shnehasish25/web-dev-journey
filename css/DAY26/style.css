@@ -1,0 +1,6 @@
+body { font-family: sans-serif; padding: 20px; background: #f8fafc; }
+.block-demo { background: #3b82f6; color: white; padding: 10px; margin-bottom: 15px; border-radius: 4px; }
+.inline-badge { padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 12px; }
+.veg { background: #dcfce7; color: #166534; }
+.nonveg { background: #fee2e2; color: #991b1b; }
+.ib-badge { display: inline-block; width: 100px; height: 35px; line-height: 35px; text-align: center; background: #6366f1; color: white; margin: 4px; border-radius: 4px; }
