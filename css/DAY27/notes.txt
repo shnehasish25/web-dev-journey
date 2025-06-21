@@ -1,0 +1,11 @@
+Day 27 - Positioning (Static, Relative & Absolute)
+
+Learnings:
+1. position: static (default browser flow).
+2. position: relative:
+   - Nudges element with top/left/right/bottom without affecting surrounding elements.
+   - CRITICAL: Acts as the coordinate anchor for any child with position: absolute!
+3. position: absolute:
+   - Taken completely out of document flow.
+   - Positions relative to nearest positioned ancestor (an ancestor with position other than static).
+   - Real world use: Discount tags on product cards (Swiggy / Amazon 50% OFF badge in top-right corner)!
