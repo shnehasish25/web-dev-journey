@@ -1,0 +1,14 @@
+Day 28 - Fixed & Sticky Positioning + Z-Index
+
+Learnings:
+1. position: fixed:
+   - Pinned relative to viewport window.
+   - Stays on screen even when scrolling down 5000px!
+   - Perfect for: Floating WhatsApp support button, bottom mobile navigation.
+2. position: sticky:
+   - Hybrid! Acts like normal relative element until you scroll past its threshold (e.g. top: 0), then sticks like fixed!
+   - Great for: Sticky table headers, sticky navbar.
+3. z-index:
+   - Controls 3D layer depth (stacking order).
+   - Higher number sits on top of lower number.
+   - NOTE: z-index ONLY works on elements with a position property (relative, absolute, fixed, sticky)!
