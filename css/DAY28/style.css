@@ -1,0 +1,26 @@
+body { margin: 0; font-family: sans-serif; background: #f8fafc; }
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #1e3a8a;
+  color: white;
+  padding: 16px 24px;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.sticky-nav h2 { margin: 0; font-size: 18px; }
+.fixed-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25d366; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
