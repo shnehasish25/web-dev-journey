@@ -1,0 +1,20 @@
+Day 29 - Flexbox Part 1 (Container Properties)
+
+Today's focus: The revolution of 1-Dimensional CSS Flexbox.
+
+Learnings:
+1. Mental Model:
+   - Flex Container: Parent with display: flex.
+   - Flex Items: Direct children.
+   - Main Axis vs Cross Axis:
+     * flex-direction: row (default) -> Main axis is horizontal (left to right).
+     * flex-direction: column -> Main axis is vertical (top to bottom)!
+2. Container properties:
+   - justify-content: aligns along the MAIN axis (flex-start, center, flex-end, space-between, space-around, space-evenly).
+     * space-between is the secret weapon for building navbars (brand logo on left, nav links on right)!
+   - align-items: aligns along the CROSS axis (stretch, center, flex-start, flex-end).
+   - gap: adds clean spacing between flex items without annoying margin hacks!
+3. Perfect Centering in 3 lines:
+   display: flex;
+   justify-content: center;
+   align-items: center;
