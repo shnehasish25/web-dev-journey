@@ -1,0 +1,9 @@
+Day 30 - Flexbox Part 2 (Items, Growth & Wrapping)
+
+Learnings:
+1. `flex-wrap: wrap`: Essential for responsive card layouts! Without wrap, flex items squish infinitely and spill off screen.
+2. `flex-grow: 1`: Item grows to occupy remaining empty space.
+3. `flex-shrink: 1`: Item shrinks when screen gets narrow.
+4. `flex-basis`: Default starting size before growing/shrinking.
+5. Shorthand `flex: 1`: Sets grow to 1, shrink to 1, basis to 0. All cards share equal width!
+6. Played all levels of Flexbox Froggy today, beat the final level!
