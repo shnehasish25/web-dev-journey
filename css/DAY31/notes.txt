@@ -1,0 +1,18 @@
+Day 31 - CSS Grid Part 1 (2D Layouts & The fr Unit)
+
+Today's focus: 2-Dimensional CSS Grid.
+
+Learnings:
+1. Flexbox vs Grid:
+   - Flexbox is 1D (rows OR columns).
+   - Grid is 2D (rows AND columns at the exact same time!).
+2. Key Grid properties:
+   - display: grid
+   - grid-template-columns: 200px 1fr 1fr;
+   - grid-template-rows
+   - gap: 20px;
+3. The 'fr' (fraction) unit:
+   - 1fr means 1 fraction of available free space!
+   - `grid-template-columns: 1fr 2fr 1fr;` -> Middle column is twice as wide as outer columns!
+4. `repeat()` function:
+   - `grid-template-columns: repeat(3, 1fr);` creates 3 equal columns without typing 1fr 3 times.
