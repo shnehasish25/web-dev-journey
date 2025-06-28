@@ -1,0 +1,16 @@
+body { font-family: sans-serif; padding: 20px; background: #f1f5f9; }
+.magazine-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 70px 1fr 50px;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+  gap: 12px;
+  height: 80vh;
+}
+.area-header { grid-area: header; background: #1e3a8a; color: white; padding: 20px; }
+.area-sidebar { grid-area: sidebar; background: #e2e8f0; padding: 20px; }
+.area-main { grid-area: main; background: #ffffff; padding: 20px; }
+.area-footer { grid-area: footer; background: #0f172a; color: white; padding: 15px; text-align: center; }
