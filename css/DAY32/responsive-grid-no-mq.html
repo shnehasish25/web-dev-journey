@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 32 - auto-fit Responsive Grid</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f8fafc; }
+    /* The magic 1-line responsive grid! */
+    .auto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card { background: white; border: 1px solid #cbd5e1; padding: 20px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Resize browser to test zero-media-query responsiveness!</h1>
+  <div class="auto-grid">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+  </div>
+</body>
+</html>
