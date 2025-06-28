@@ -1,0 +1,16 @@
+Day 32 - CSS Grid Part 2 (Areas & Responsive Auto-Fit)
+
+Today's focus: Advanced Grid & The Holy Grail Responsive Grid.
+
+Learnings:
+1. `grid-template-areas`:
+   - You can name sections like an ASCII art map:
+     "header header"
+     "sidebar main"
+     "footer footer"
+   - In child elements: `grid-area: header;`
+   - Super readable and intuitive!
+2. The Holy Grail Responsive Grid (NO MEDIA QUERIES NEEDED!):
+   `grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));`
+   - Automatically rearranges columns based on available space!
+   - Drops from 4 columns to 3 to 2 to 1 column smoothly on phones!
