@@ -1,0 +1,22 @@
+/* Base Mobile-First Styles (Default for Phones < 768px) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #f1f5f9; padding: 16px; }
+.site-header { background: #2563eb; color: white; padding: 20px; border-radius: 8px; margin-bottom: 16px; text-align: center; }
+.sidebar { background: #e2e8f0; padding: 16px; border-radius: 8px; margin-bottom: 16px; }
+.main-content { background: white; padding: 20px; border-radius: 8px; }
+
+/* Tablet & Desktop Viewport (min-width: 768px) */
+@media (min-width: 768px) {
+  body { padding: 32px; }
+  .layout-body {
+    display: flex;
+    gap: 20px;
+  }
+  .sidebar {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  .main-content {
+    flex: 3;
+  }
+}
