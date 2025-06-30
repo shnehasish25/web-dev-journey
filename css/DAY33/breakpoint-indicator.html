@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakpoint Visualizer</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; transition: background 0.3s; }
+    /* Mobile */
+    body { background: #fee2e2; }
+    .label::after { content: "📱 Mobile (< 768px)"; }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+      body { background: #fef3c7; }
+      .label::after { content: "💻 Tablet (768px - 1023px)"; }
+    }
+
+    /* Desktop */
+    @media (min-width: 1024px) {
+      body { background: #dcfce7; }
+      .label::after { content: "🖥️ Desktop (>= 1024px)"; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Current Active Breakpoint:</h1>
+  <h2 class="label"></h2>
+</body>
+</html>
