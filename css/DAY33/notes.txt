@@ -1,0 +1,15 @@
+Day 33 - Media Queries & Mobile-First Design
+
+Today's focus: Responsive Web Design across phones, tablets, and laptops.
+
+Learnings:
+1. Mobile-First Philosophy:
+   - Over 70% of Indian web users browse on Android smartphones.
+   - Write base CSS for small screens first, then add media queries with `(min-width: ...)` to expand layout as screens get wider!
+2. Standard Breakpoints:
+   - 480px: Large phones
+   - 768px: Tablets / iPads
+   - 1024px: Laptops
+   - 1280px: Desktop monitors
+3. Viewport tag in HTML is mandatory:
+   `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
