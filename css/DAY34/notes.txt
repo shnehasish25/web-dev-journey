@@ -1,0 +1,12 @@
+Day 34 - CSS Transitions & Micro-Interactions
+
+Today's focus: Smooth state changes and button polish.
+
+Learnings:
+1. `transition: property duration timing-function delay;`
+   - Example: `transition: background-color 0.25s ease, transform 0.2s ease;`
+2. Timing functions:
+   - linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier.
+3. Accessible focus states:
+   - Always style `:focus-visible` so keyboard Tab navigators have a glowing outline!
+4. Built a custom toggle switch using pure CSS `:checked` selector (no JavaScript!).
