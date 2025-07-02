@@ -1,0 +1,16 @@
+Day 35 - CSS Transforms (2D & 3D)
+
+Today's focus: Manipulating element geometry with GPU hardware acceleration.
+
+Learnings:
+1. `transform` properties:
+   - `translate(x, y)`: Moves element without triggering document reflow!
+   - `scale(x, y)`: Zooms in or out.
+   - `rotate(deg)`: Rotates element (e.g. rotate(45deg)).
+   - `skew(x, y)`: Distorts angles.
+2. Why transforms are fast:
+   - Changes top/left cause the browser to recalculate layout of the whole page (laggy).
+   - Transforms run directly on your GPU at buttery-smooth 60 frames per second!
+3. 3D Transforms:
+   - `perspective: 1000px;` gives 3D depth.
+   - `transform: rotateY(180deg);` flips a card over like a coin!
