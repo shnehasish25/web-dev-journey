@@ -1,0 +1,12 @@
+Day 36 - CSS Keyframe Animations
+
+Today's focus: Native browser animations without JavaScript!
+
+Learnings:
+1. `@keyframes animationName { from {} to {} }` or `{ 0% {}, 50% {}, 100% {} }`.
+2. Animation properties:
+   - `animation-name`: connects to @keyframes.
+   - `animation-duration`: e.g. 1.5s.
+   - `animation-iteration-count: infinite`: loops forever.
+   - `animation-timing-function`: ease, linear.
+3. Performance tip: ONLY animate `transform` and `opacity` for smooth 60fps animations. Never animate width, height, or margin!
