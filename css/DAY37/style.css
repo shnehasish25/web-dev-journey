@@ -1,0 +1,62 @@
+/* 1. Design Tokens (Light Mode Default) */
+:root {
+  --bg-app: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --primary: #4f46e5;
+  --border-color: #e2e8f0;
+}
+
+/* 2. Automatic System Dark Mode Override */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-app: #0f172a;
+    --bg-card: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --primary: #6366f1;
+    --border-color: #334155;
+  }
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.card h2 { margin: 10px 0; }
+.card p { color: var(--text-muted); line-height: 1.5; margin-bottom: 20px; }
+
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
