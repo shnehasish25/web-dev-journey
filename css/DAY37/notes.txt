@@ -1,0 +1,18 @@
+Day 37 - CSS Variables & Dark Mode Architecture
+
+Today's focus: Design tokens & system dark mode detection.
+
+Learnings:
+1. CSS Custom Properties (Variables):
+   - Defined on root:
+     :root {
+       --primary-color: #2563eb;
+       --bg-color: #ffffff;
+       --text-color: #1e293b;
+     }
+   - Consumed with `var()`:
+     body { background: var(--bg-color); color: var(--text-color); }
+2. Dark Mode Media Query:
+   - `@media (prefers-color-scheme: dark)`: Automatically detects if user phone/laptop is in dark mode and reassigns variables!
+3. Why variables beat Sass:
+   - Native CSS variables exist at runtime in the browser DOM and can be read/updated dynamically with JavaScript!
