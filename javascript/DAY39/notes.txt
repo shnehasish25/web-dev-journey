@@ -1,0 +1,9 @@
+Day 39 - JS Setup & Console Output
+
+Topic Overview:
+Console utilities, V8 engine basics, script linking.
+
+Keep an eye on:
+- console.log, console.table, console.time and execution speed.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
