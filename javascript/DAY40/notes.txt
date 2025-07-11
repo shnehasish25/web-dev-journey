@@ -1,0 +1,9 @@
+Day 40 - Variables & Data Types
+
+Topic Overview:
+let vs const vs var, primitives vs reference types.
+
+Keep an eye on:
+- Always default to const. Avoid var due to function scoping bugs. typeof null quirk.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
