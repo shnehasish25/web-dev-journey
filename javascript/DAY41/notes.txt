@@ -1,0 +1,9 @@
+Day 41 - Operators & Math Methods
+
+Topic Overview:
+Modulus, exponentiation, Math.floor, Math.random.
+
+Keep an eye on:
+- Math.floor rounds down. Generating random numbers. Modulus for remainder.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
