@@ -1,0 +1,9 @@
+Day 42 - Conditionals & Strict Equality
+
+Topic Overview:
+if, else if, switch, ternary, truthy vs falsy.
+
+Keep an eye on:
+- Always use === to avoid type coercion bugs. Falsy values: false, 0, '', null, undefined, NaN.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
