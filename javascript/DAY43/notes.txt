@@ -1,0 +1,9 @@
+Day 43 - Functions & Scope
+
+Topic Overview:
+Declarations, expressions, arrow functions, return values.
+
+Keep an eye on:
+- Arrow functions have implicit return for single expressions. Default parameters prevent undefined.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
