@@ -1,0 +1,9 @@
+Day 44 - Scope & Hoisting
+
+Topic Overview:
+Global, function, and block scope. Temporal dead zone.
+
+Keep an eye on:
+- let and const are block-scoped. var is function-scoped. Avoid polluting global scope.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
