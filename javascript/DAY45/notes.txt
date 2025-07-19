@@ -1,0 +1,9 @@
+Day 45 - Loops: for & while
+
+Topic Overview:
+Standard counting loop, while loops, infinite loop traps.
+
+Keep an eye on:
+- Ensure loop counter advances toward exit condition. Use for when count is known.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
