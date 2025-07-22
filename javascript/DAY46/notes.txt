@@ -1,0 +1,9 @@
+Day 46 - Loops: for...of & for...in
+
+Topic Overview:
+Iterating arrays with for...of and object keys with for...in.
+
+Keep an eye on:
+- for...of is for values of iterables. for...in is for object keys. Never use for...in on arrays.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
