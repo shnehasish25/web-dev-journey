@@ -1,0 +1,9 @@
+Day 47 - String Methods
+
+Topic Overview:
+slice, substring, trim, toUpperCase, includes, split.
+
+Keep an eye on:
+- Strings are immutable in JS. Methods return new strings rather than modifying in place.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
