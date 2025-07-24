@@ -1,0 +1,9 @@
+Day 48 - Number Methods & Precision
+
+Topic Overview:
+parseInt, parseFloat, toFixed, Number.isNaN.
+
+Keep an eye on:
+- 0.1 + 0.2 === 0.30000000000000004 floating point issue. toFixed returns a string.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
