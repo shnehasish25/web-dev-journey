@@ -1,0 +1,9 @@
+Day 49 - Date Object & Formatting
+
+Topic Overview:
+new Date, getFullYear, toLocaleDateString, timestamps.
+
+Keep an eye on:
+- Month is 0-indexed in JS. Use en-IN locale for Indian date format.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
