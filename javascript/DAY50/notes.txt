@@ -1,0 +1,9 @@
+Day 50 - Mini-Project: Attendance & Mess Splitter
+
+Topic Overview:
+Combining logic, conditionals, math, and strings.
+
+Keep an eye on:
+- Calculates college attendance percentage and checks if below 75% limit.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
