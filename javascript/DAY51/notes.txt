@@ -1,0 +1,9 @@
+Day 51 - Array Basics & Indexing
+
+Topic Overview:
+Zero-indexed lists, length property, array literals.
+
+Keep an eye on:
+- Accessing out-of-bounds indices returns undefined. Arrays can hold mixed types.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
