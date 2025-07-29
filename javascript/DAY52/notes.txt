@@ -1,0 +1,9 @@
+Day 52 - Array Mutation: push, pop, shift, unshift
+
+Topic Overview:
+Adding and removing elements at start and end.
+
+Keep an eye on:
+- push/pop operate on the end (fast). shift/unshift re-index the entire array (slower).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
