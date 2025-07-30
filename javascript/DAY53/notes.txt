@@ -1,0 +1,9 @@
+Day 53 - Array Methods: slice, splice, concat, join
+
+Topic Overview:
+Copying, modifying in place, and joining strings.
+
+Keep an eye on:
+- slice does NOT mutate original array. splice DOES mutate original array. join creates string.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
