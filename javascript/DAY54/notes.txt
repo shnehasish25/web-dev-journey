@@ -1,0 +1,9 @@
+Day 54 - Array Iteration: forEach
+
+Topic Overview:
+Executing a callback function for each array element.
+
+Keep an eye on:
+- forEach does not return a new array and cannot be stopped with break.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
