@@ -1,0 +1,9 @@
+Day 55 - Array Transformation: map()
+
+Topic Overview:
+Creating a brand new transformed array.
+
+Keep an eye on:
+- map always returns an array of identical length. Ideal for data transformation.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
