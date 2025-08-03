@@ -1,0 +1,9 @@
+Day 56 - Array Filtering: filter()
+
+Topic Overview:
+Selecting a subset of elements passing a condition.
+
+Keep an eye on:
+- filter returns a new array with elements where callback returned truthy.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
