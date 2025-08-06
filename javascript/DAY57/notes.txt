@@ -1,0 +1,9 @@
+Day 57 - Array Aggregation: reduce()
+
+Topic Overview:
+Accumulating an array into a single total value.
+
+Keep an eye on:
+- Always pass an initial value as second argument to avoid empty array errors.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
