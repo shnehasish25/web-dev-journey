@@ -1,0 +1,9 @@
+Day 58 - Array Search: find, findIndex, some, every
+
+Topic Overview:
+Searching items and checking conditions.
+
+Keep an eye on:
+- find returns first matching element. some returns boolean if at least one matches.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
