@@ -1,0 +1,9 @@
+Day 59 - Object Basics & Key-Value Pairs
+
+Topic Overview:
+Object literals, dot vs bracket notation.
+
+Keep an eye on:
+- Use bracket notation when key is stored in a variable or contains spaces.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
