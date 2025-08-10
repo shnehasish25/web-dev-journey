@@ -1,0 +1,9 @@
+Day 60 - Object Methods & 'this' Keyword
+
+Topic Overview:
+Adding functions to objects, contextual 'this'.
+
+Keep an eye on:
+- Arrow functions do not get their own 'this'. Use regular function for object methods.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
