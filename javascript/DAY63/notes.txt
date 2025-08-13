@@ -1,0 +1,9 @@
+Day 63 - Spread Operator & Rest Parameters
+
+Topic Overview:
+Copying objects/arrays and variable arguments.
+
+Keep an eye on:
+- Spread expands elements. Rest gathers multiple arguments into an array.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
