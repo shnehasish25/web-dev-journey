@@ -1,0 +1,9 @@
+Day 64 - Optional Chaining & Nullish Coalescing
+
+Topic Overview:
+Safe property navigation and default values.
+
+Keep an eye on:
+- ?. stops error if property is null/undefined. ?? returns right side only if left is null/undefined.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
