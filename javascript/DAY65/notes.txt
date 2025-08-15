@@ -1,0 +1,9 @@
+Day 65 - Mini-Project: Swiggy Multi-Filter Engine
+
+Topic Overview:
+map, filter, reduce applied to food catalogue.
+
+Keep an eye on:
+- Filters veg/nonveg dishes, sorts by rating, and calculates cart summary with GST.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
