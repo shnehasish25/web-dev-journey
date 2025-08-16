@@ -1,0 +1,9 @@
+Day 66 - The DOM Tree & document Object
+
+Topic Overview:
+Document Object Model architecture.
+
+Keep an eye on:
+- DOM is a tree of nodes representing the HTML document in browser memory.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
