@@ -1,0 +1,9 @@
+Day 67 - Selecting Elements: querySelector
+
+Topic Overview:
+Grabbing DOM nodes with CSS selector syntax.
+
+Keep an eye on:
+- querySelector returns first match. querySelectorAll returns a static NodeList.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
