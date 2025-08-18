@@ -1,0 +1,9 @@
+Day 68 - Modifying Content: textContent vs innerHTML
+
+Topic Overview:
+Updating node text and HTML safely.
+
+Keep an eye on:
+- textContent is fast and safe against XSS attacks. innerHTML parses raw HTML tags.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
