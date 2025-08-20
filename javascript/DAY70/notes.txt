@@ -1,0 +1,9 @@
+Day 70 - Manipulating Styles & classList
+
+Topic Overview:
+classList.add, remove, toggle, contains.
+
+Keep an eye on:
+- Avoid writing inline styles in JS. Toggle CSS classes to trigger styling instead.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
