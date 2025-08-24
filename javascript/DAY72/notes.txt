@@ -1,0 +1,9 @@
+Day 72 - Removing & Replacing DOM Nodes
+
+Topic Overview:
+element.remove() and parent.removeChild().
+
+Keep an eye on:
+- element.remove() directly deletes the node from DOM tree.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
