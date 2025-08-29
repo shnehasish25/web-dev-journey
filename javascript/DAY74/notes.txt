@@ -1,0 +1,9 @@
+Day 74 - The Event Object: target & currentTarget
+
+Topic Overview:
+Reading user event details.
+
+Keep an eye on:
+- e.target is the element that originated the event. e.type tells event name.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
