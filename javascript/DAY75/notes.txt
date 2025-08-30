@@ -1,0 +1,9 @@
+Day 75 - Event Bubbling & Event Delegation
+
+Topic Overview:
+Events bubbling up the DOM tree.
+
+Keep an eye on:
+- Event delegation puts one listener on parent instead of 100 listeners on children.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
