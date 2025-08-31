@@ -1,0 +1,9 @@
+Day 76 - Keyboard Events: keydown & keyup
+
+Topic Overview:
+Listening to keyboard shortcuts and inputs.
+
+Keep an eye on:
+- Use e.key to read key name ('Enter', 'ArrowUp', 'Escape').
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
