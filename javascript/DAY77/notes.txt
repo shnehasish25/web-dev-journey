@@ -1,0 +1,9 @@
+Day 77 - Mouse Events & Hover States
+
+Topic Overview:
+mouseenter, mouseleave, mousemove.
+
+Keep an eye on:
+- mouseenter does not bubble, mouseover does. Used for custom cursor and hover cards.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
