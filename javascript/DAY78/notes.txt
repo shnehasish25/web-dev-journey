@@ -1,0 +1,9 @@
+Day 78 - Input & Change Events
+
+Topic Overview:
+Real-time live typing vs commit change.
+
+Keep an eye on:
+- input event triggers on every single keystroke. change event triggers on blur/commit.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
