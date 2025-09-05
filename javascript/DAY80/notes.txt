@@ -1,0 +1,9 @@
+Day 80 - Mini-Project: Interactive Tatkal Booking Form
+
+Topic Overview:
+Live validation, regex check, dynamic review summary.
+
+Keep an eye on:
+- Validates Indian mobile number and disables submit until all required fields pass.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
