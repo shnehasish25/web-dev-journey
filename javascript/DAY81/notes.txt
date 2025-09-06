@@ -1,0 +1,9 @@
+Day 81 - Timers: setTimeout & clearTimeout
+
+Topic Overview:
+Running code after a delay.
+
+Keep an eye on:
+- setTimeout returns a timer ID used to cancel it with clearTimeout.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
