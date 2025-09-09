@@ -1,0 +1,9 @@
+Day 82 - Recurring Timers: setInterval
+
+Topic Overview:
+Executing code repeatedly on an interval.
+
+Keep an eye on:
+- Always clear intervals when done to avoid memory leaks and background CPU spikes.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
