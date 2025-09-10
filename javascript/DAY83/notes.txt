@@ -1,0 +1,9 @@
+Day 83 - Web Storage: localStorage Basics
+
+Topic Overview:
+Persisting key-value data across page reloads.
+
+Keep an eye on:
+- Data stored in localStorage survives browser restarts. Only stores strings.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
