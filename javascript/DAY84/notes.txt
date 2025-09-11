@@ -1,0 +1,9 @@
+Day 84 - Web Storage: Storing Objects & JSON
+
+Topic Overview:
+JSON.stringify and JSON.parse.
+
+Keep an eye on:
+- Convert object to JSON string before saving; parse back to object when reading.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
