@@ -1,0 +1,9 @@
+Day 86 - Custom Modal Dialogs vs Native Alerts
+
+Topic Overview:
+Building accessible overlay popups.
+
+Keep an eye on:
+- Native alert blocks browser UI thread. Custom HTML/CSS modals offer smooth non-blocking UX.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
