@@ -1,0 +1,9 @@
+Day 87 - Window & Viewport Dimensions
+
+Topic Overview:
+innerWidth, innerHeight, scrollX, scrollY.
+
+Keep an eye on:
+- window represents browser window; document represents the loaded HTML page.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
