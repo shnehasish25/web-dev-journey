@@ -1,0 +1,9 @@
+Day 88 - Smooth Scrolling & Floating Button
+
+Topic Overview:
+window.scrollTo and behavior: smooth.
+
+Keep an eye on:
+- Listen to scroll event to reveal floating 'Back to Top' button.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
