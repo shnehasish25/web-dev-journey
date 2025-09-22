@@ -1,0 +1,9 @@
+Day 89 - Clipboard API: Copy to Clipboard
+
+Topic Overview:
+navigator.clipboard.writeText.
+
+Keep an eye on:
+- Asynchronous API that copies text directly to user clipboard (great for UPI IDs / coupon codes).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
