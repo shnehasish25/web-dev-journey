@@ -1,0 +1,9 @@
+Day 90 - Geolocation API Basics
+
+Topic Overview:
+navigator.geolocation.getCurrentPosition.
+
+Keep an eye on:
+- Requires user permission. Returns latitude and longitude coordinates.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
