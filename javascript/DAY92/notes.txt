@@ -1,0 +1,9 @@
+Day 92 - Audio API & Sound Effects
+
+Topic Overview:
+new Audio() and playback control.
+
+Keep an eye on:
+- Web browsers require user gesture before allowing audio playback.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
