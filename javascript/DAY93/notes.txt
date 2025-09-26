@@ -1,0 +1,9 @@
+Day 93 - UI Component: Tab Switcher
+
+Topic Overview:
+Clickable tab navigation showing active panel.
+
+Keep an eye on:
+- Hide all panels, remove active classes, show clicked panel via dataset target.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
