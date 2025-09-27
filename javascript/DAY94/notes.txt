@@ -1,0 +1,9 @@
+Day 94 - UI Component: Collapsible Accordion
+
+Topic Overview:
+Single and multi-open accordion panels.
+
+Keep an eye on:
+- Toggle max-height or display property on click of accordion header.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
