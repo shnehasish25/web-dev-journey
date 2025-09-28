@@ -1,0 +1,9 @@
+Day 95 - Mini-Project: Kadak Chai Brewing Timer
+
+Topic Overview:
+Stopwatch with audio notification and controls.
+
+Keep an eye on:
+- Counts down 3 minutes with start, pause, and reset actions.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
