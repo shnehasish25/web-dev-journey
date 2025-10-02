@@ -1,0 +1,9 @@
+Day 97 - Callbacks & Callback Hell
+
+Topic Overview:
+Passing functions to handle async completion.
+
+Keep an eye on:
+- Deeply nested callbacks create unreadable 'Pyramid of Doom'. Promises solve this.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
