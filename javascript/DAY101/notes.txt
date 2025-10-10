@@ -1,0 +1,9 @@
+Day 101 - Promise Combinators: all, race, allSettled
+
+Topic Overview:
+Running parallel async tasks.
+
+Keep an eye on:
+- Promise.all fails fast if any promise rejects. allSettled waits for all to finish regardless.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
