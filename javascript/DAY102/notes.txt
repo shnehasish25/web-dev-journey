@@ -1,0 +1,9 @@
+Day 102 - Async / Await Syntax
+
+Topic Overview:
+Syntactic sugar making async code read synchronously.
+
+Keep an eye on:
+- async functions always return a promise. await pauses execution until promise resolves.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
