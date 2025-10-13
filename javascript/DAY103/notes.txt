@@ -1,0 +1,9 @@
+Day 103 - Error Handling with try...catch
+
+Topic Overview:
+Catching async errors cleanly.
+
+Keep an eye on:
+- Always wrap await statements in try...catch to handle network failures gracefully.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
