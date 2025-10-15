@@ -1,0 +1,9 @@
+Day 104 - The Event Loop & Microtask Queue
+
+Topic Overview:
+Macrotasks vs Microtasks execution order.
+
+Keep an eye on:
+- Promise callbacks (microtasks) have higher priority than setTimeout callbacks (macrotasks).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
