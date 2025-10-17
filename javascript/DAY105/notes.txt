@@ -1,0 +1,9 @@
+Day 105 - Introduction to HTTP & REST APIs
+
+Topic Overview:
+HTTP verbs, status codes (200, 404, 500), JSON payloads.
+
+Keep an eye on:
+- REST APIs use standard HTTP methods: GET to read, POST to create, PUT to update, DELETE to remove.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
