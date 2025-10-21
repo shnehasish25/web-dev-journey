@@ -1,0 +1,9 @@
+Day 107 - Fetch API: POST Requests & Headers
+
+Topic Overview:
+Sending JSON payloads to server.
+
+Keep an eye on:
+- Specify method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
