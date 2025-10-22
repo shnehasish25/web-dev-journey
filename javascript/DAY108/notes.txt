@@ -1,0 +1,9 @@
+Day 108 - Robust Fetch Error Handling
+
+Topic Overview:
+Network errors vs HTTP error statuses.
+
+Keep an eye on:
+- if(!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
