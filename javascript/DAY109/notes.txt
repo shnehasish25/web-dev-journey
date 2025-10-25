@@ -1,0 +1,9 @@
+Day 109 - URL Query Parameters & Search Params
+
+Topic Overview:
+Building dynamic request URLs.
+
+Keep an eye on:
+- Use URLSearchParams to construct query strings cleanly without string concatenation.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
