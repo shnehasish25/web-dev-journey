@@ -1,0 +1,9 @@
+Day 110 - Live API: Indian PIN Code Lookup
+
+Topic Overview:
+Fetching post office & district details.
+
+Keep an eye on:
+- India Post API: https://api.postalpincode.in/pincode/{PINCODE}
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
