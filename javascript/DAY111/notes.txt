@@ -1,0 +1,9 @@
+Day 111 - Live API: Real-time Weather Lookup
+
+Topic Overview:
+Open-Meteo public API without API keys.
+
+Keep an eye on:
+- Fetches current temperature and weather code for Bengaluru coordinates.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
