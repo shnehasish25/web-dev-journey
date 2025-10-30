@@ -1,0 +1,9 @@
+Day 112 - Crypto & Exchange Rate Tracker
+
+Topic Overview:
+Public currency rates API.
+
+Keep an eye on:
+- Live conversion between INR, USD, and EUR.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
