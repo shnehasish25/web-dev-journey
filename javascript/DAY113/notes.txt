@@ -1,0 +1,9 @@
+Day 113 - Loading Spinners & Skeleton Screens
+
+Topic Overview:
+User feedback during async operations.
+
+Keep an eye on:
+- Show loading indicator before fetch, hide indicator in finally block.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
