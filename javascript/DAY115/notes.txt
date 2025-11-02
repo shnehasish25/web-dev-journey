@@ -1,0 +1,9 @@
+Day 115 - Mini-Project: Cricinfo Match Tracker
+
+Topic Overview:
+Live scores, match summaries, and poll refresh.
+
+Keep an eye on:
+- Combines fetch with periodic refresh timer to show simulated match stats.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
