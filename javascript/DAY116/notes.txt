@@ -1,0 +1,9 @@
+Day 116 - Constructor Functions & new Keyword
+
+Topic Overview:
+Object creation before ES6 classes.
+
+Keep an eye on:
+- Calling a function with 'new' creates a fresh empty object and binds 'this' to it.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
