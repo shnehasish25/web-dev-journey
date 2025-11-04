@@ -1,0 +1,9 @@
+Day 117 - Prototypes & Prototype Chain
+
+Topic Overview:
+How JavaScript shares methods between instances.
+
+Keep an eye on:
+- Methods placed on Constructor.prototype are shared by all instances, saving memory.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
