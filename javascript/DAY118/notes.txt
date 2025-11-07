@@ -1,0 +1,9 @@
+Day 118 - Prototypal Inheritance
+
+Topic Overview:
+Inheriting properties and methods via prototype chain.
+
+Keep an eye on:
+- All objects ultimately inherit from Object.prototype.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
