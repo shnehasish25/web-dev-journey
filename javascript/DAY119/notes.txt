@@ -1,0 +1,9 @@
+Day 119 - ES6 Classes & Syntax
+
+Topic Overview:
+Modern syntax for object-oriented programming.
+
+Keep an eye on:
+- Classes in JS are syntactic sugar over prototypal inheritance under the hood.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
