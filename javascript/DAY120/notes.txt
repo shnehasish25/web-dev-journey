@@ -1,0 +1,9 @@
+Day 120 - Class Methods, Getters & Setters
+
+Topic Overview:
+get and set keywords.
+
+Keep an eye on:
+- Getters compute values on access; setters validate data before assigning.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
