@@ -1,0 +1,9 @@
+Day 121 - Class Inheritance: extends & super
+
+Topic Overview:
+Subclassing and calling parent constructors.
+
+Keep an eye on:
+- Must call super() in child constructor before accessing 'this'.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
