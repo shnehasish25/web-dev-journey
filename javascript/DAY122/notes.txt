@@ -1,0 +1,9 @@
+Day 122 - Static Methods & Properties
+
+Topic Overview:
+Methods called on the Class itself, not instances.
+
+Keep an eye on:
+- e.g. Math.round or Array.from. Defined with 'static' keyword.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
