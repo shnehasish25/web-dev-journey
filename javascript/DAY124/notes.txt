@@ -1,0 +1,9 @@
+Day 124 - The 'this' Keyword Masterclass
+
+Topic Overview:
+Default binding, implicit binding, arrow functions.
+
+Keep an eye on:
+- In regular functions, 'this' depends on HOW the function was called, not where it was written.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
