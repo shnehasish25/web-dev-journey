@@ -1,0 +1,9 @@
+Day 127 - Module Pattern & Encapsulation
+
+Topic Overview:
+Using IIFE to hide implementation details.
+
+Keep an eye on:
+- Immediately Invoked Function Expressions (IIFE) create isolated private scopes.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
