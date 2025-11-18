@@ -1,0 +1,9 @@
+Day 128 - ES6 Modules: import & export
+
+Topic Overview:
+Modularizing codebase across multiple files.
+
+Keep an eye on:
+- Requires <script type='module'> in HTML. Supports named exports and default exports.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
