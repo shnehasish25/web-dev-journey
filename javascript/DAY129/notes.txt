@@ -1,0 +1,9 @@
+Day 129 - Modern Collections: Set & Map
+
+Topic Overview:
+Unique value collections and key-value maps.
+
+Keep an eye on:
+- Set eliminates duplicates automatically. Map allows ANY data type as key (even objects!).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
