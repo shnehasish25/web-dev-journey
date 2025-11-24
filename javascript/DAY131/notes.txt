@@ -1,0 +1,9 @@
+Day 131 - Closures in Depth
+
+Topic Overview:
+Functions remembering their outer lexical scope.
+
+Keep an eye on:
+- A closure gives an inner function access to its outer function scope even after outer has returned.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
