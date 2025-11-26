@@ -1,0 +1,9 @@
+Day 132 - Closure Applications: Memoization
+
+Topic Overview:
+Caching expensive function results.
+
+Keep an eye on:
+- Memoization stores previous input/output pairs in a closure object to skip re-computation.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
