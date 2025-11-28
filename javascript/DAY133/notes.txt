@@ -1,0 +1,9 @@
+Day 133 - Currying & Partial Application
+
+Topic Overview:
+Converting f(a,b,c) into f(a)(b)(c).
+
+Keep an eye on:
+- Currying allows configuring generic functions into specialized reusable functions.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
