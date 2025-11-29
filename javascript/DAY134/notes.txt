@@ -1,0 +1,9 @@
+Day 134 - Performance: Debouncing
+
+Topic Overview:
+Limiting high-frequency event firing.
+
+Keep an eye on:
+- Debounce waits until user pauses typing before executing search (saves API calls).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
