@@ -1,0 +1,9 @@
+Day 135 - Performance: Throttling
+
+Topic Overview:
+Guaranteeing execution at regular time intervals.
+
+Keep an eye on:
+- Throttle runs function at most once every X milliseconds (ideal for scroll and resize).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
