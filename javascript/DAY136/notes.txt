@@ -1,0 +1,9 @@
+Day 136 - Shallow Copy vs Deep Copy
+
+Topic Overview:
+structuredClone and reference mutations.
+
+Keep an eye on:
+- Object.assign and spread create shallow copies. Use structuredClone() for deep nested copies.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
