@@ -1,0 +1,9 @@
+Day 137 - Memory Management & Leaks
+
+Topic Overview:
+Garbage collection and reference cycles.
+
+Keep an eye on:
+- Common leaks: Forgotten intervals, detached DOM nodes, uncleared global event listeners.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
