@@ -1,0 +1,9 @@
+Day 138 - Regular Expressions (Regex) in JS
+
+Topic Overview:
+RegExp constructor, test(), match(), replace().
+
+Keep an eye on:
+- Validate Indian mobile numbers, emails, and passwords with regex patterns.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
