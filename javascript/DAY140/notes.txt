@@ -1,0 +1,9 @@
+Day 140 - HTML5 Drag and Drop API
+
+Topic Overview:
+dragstart, dragover, drop events.
+
+Keep an eye on:
+- e.dataTransfer.setData('text/plain', id); e.preventDefault() in dragover allows drop.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
