@@ -1,0 +1,9 @@
+Day 142 - Canvas API: 2D Drawing Basics
+
+Topic Overview:
+HTML5 canvas element and 2D context.
+
+Keep an eye on:
+- canvas.getContext('2d'), fillRect, strokeRect, beginPath, arc (circles).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
