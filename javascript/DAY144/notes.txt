@@ -1,0 +1,9 @@
+Day 144 - Unit Testing Concepts: Assertions
+
+Topic Overview:
+Writing test helpers without external libraries.
+
+Keep an eye on:
+- Test function checks expected vs actual and logs pass/fail status.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
