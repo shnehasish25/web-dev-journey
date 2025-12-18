@@ -1,0 +1,9 @@
+Day 145 - Mini-Project: Drag-and-Drop Kanban Board
+
+Topic Overview:
+To-Do, In-Progress, Done task columns.
+
+Keep an eye on:
+- Drag task cards between columns, updating status in real-time.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
