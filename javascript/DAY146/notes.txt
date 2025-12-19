@@ -1,0 +1,9 @@
+Day 146 - Project Architecture & State Patterns
+
+Topic Overview:
+Clean modular structure for vanilla apps.
+
+Keep an eye on:
+- Separate State (data), View (DOM rendering), and Controller (event handling).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
