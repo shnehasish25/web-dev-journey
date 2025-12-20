@@ -1,0 +1,9 @@
+Day 147 - Project 1: Indian Tech Quiz (Part 1)
+
+Topic Overview:
+Question bank, timer, dynamic choice rendering.
+
+Keep an eye on:
+- Tracks current question index, selected answer, and score.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
