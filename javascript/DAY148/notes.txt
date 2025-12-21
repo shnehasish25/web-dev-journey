@@ -1,0 +1,9 @@
+Day 148 - Project 1: Quiz App Leaderboard (Part 2)
+
+Topic Overview:
+Review incorrect answers, save high scores in localStorage.
+
+Keep an eye on:
+- Persists high score leaderboard and shows celebration badge.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
