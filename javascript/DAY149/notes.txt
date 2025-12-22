@@ -1,0 +1,9 @@
+Day 149 - Project 2: Hostel Expense Tracker (Part 1)
+
+Topic Overview:
+Expense entries with category, amount in ₹, and date.
+
+Keep an eye on:
+- Adds transactions to state, recalculates balance, renders table.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
