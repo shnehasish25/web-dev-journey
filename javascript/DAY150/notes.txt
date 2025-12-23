@@ -1,0 +1,9 @@
+Day 150 - Project 2: Expense Charts & Budget Limits (Part 2)
+
+Topic Overview:
+Visual breakdown and budget warning alerts.
+
+Keep an eye on:
+- Alerts when total monthly spending exceeds custom limit (e.g. ₹5,000).
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
