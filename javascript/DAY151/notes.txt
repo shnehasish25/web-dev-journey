@@ -1,0 +1,9 @@
+Day 151 - Project 3: Markdown Notes App (Part 1)
+
+Topic Overview:
+Live preview editor, auto-saving to localStorage.
+
+Keep an eye on:
+- Listens to textarea input, parses simple markdown (#, **, `), updates preview.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
