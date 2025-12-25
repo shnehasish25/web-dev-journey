@@ -1,0 +1,9 @@
+Day 152 - Project 3: Notes Tags & Search (Part 2)
+
+Topic Overview:
+Tag filtering, pinned notes, and keyword search.
+
+Keep an eye on:
+- Filters note cards in real-time as user types in search box.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
