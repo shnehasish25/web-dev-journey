@@ -1,0 +1,9 @@
+Day 154 - Project 4: Typing Mistake Highlighting (Part 2)
+
+Topic Overview:
+Real-time character comparison (green/red feedback).
+
+Keep an eye on:
+- Splits target passage into spans and colors each character as user types.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
