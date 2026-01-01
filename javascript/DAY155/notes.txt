@@ -1,0 +1,9 @@
+Day 155 - Project 5: Weather Dashboard (Part 1)
+
+Topic Overview:
+Multi-city weather search, dynamic icons, humidity.
+
+Keep an eye on:
+- Fetches temperature, wind speed, and weather condition from Open-Meteo.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
