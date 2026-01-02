@@ -1,0 +1,9 @@
+Day 156 - Project 5: 5-Day Forecast & Storage (Part 2)
+
+Topic Overview:
+Saving favorite Indian cities in localStorage.
+
+Keep an eye on:
+- Stores favorite cities (Bengaluru, Mumbai, Delhi) for quick 1-click weather view.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
