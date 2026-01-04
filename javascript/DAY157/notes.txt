@@ -1,0 +1,9 @@
+Day 157 - Capstone: E-Commerce / Swiggy Engine Architecture
+
+Topic Overview:
+Planning state, modules, cart, and checkout flow.
+
+Keep an eye on:
+- System architecture for the final graduation project.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
