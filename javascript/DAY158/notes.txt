@@ -1,0 +1,9 @@
+Day 158 - Capstone Part 1: Product Catalog & Cart State
+
+Topic Overview:
+Dynamic item cards, quantity increment/decrement, live totals.
+
+Keep an eye on:
+- Cart state tracks item IDs and quantities, re-rendering floating counter.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
