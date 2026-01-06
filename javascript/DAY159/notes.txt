@@ -1,0 +1,9 @@
+Day 159 - Capstone Part 2: Discounts, 5% GST & Coupons
+
+Topic Overview:
+Promo code validation ('FIRST50' = 50% off up to ₹100).
+
+Keep an eye on:
+- Calculates subtotal, applies coupon discount, adds 5% GST and ₹30 delivery fee.
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
