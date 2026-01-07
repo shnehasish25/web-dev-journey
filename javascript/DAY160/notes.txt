@@ -1,0 +1,9 @@
+Day 160 - Capstone Part 3: Mock UPI QR Code Checkout & Graduation! 🎉
+
+Topic Overview:
+Complete checkout modal with QR code, order confirmation animation.
+
+Keep an eye on:
+- Generates dynamic UPI payment QR modal (PhonePe / GPay) and marks 160-Day Web Dev completion!
+- Practice writing the code from scratch without copy-pasting.
+- Check the browser console (F12) to observe outputs.
