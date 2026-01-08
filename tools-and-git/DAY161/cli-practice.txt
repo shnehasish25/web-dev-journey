@@ -1,0 +1,5 @@
+Terminal Practice Log:
+1. Checked active shell: echo $SHELL (zsh on macOS)
+2. Tested piping: ls -l | wc -l (counted total files in directory)
+3. Created directory tree: mkdir -p my-app/{src,public,tests}
+4. Tested environment variable: echo $PATH
