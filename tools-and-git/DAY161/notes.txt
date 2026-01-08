@@ -1,0 +1,11 @@
+Day 161 - Terminal & Shell Mastery (CLI)
+
+Topic Overview:
+The command line is where all serious developer tooling runs. Moving away from clicking folders in GUI to lightning-fast terminal navigation.
+
+Keep an eye on:
+- 'pwd' prints current working directory, 'ls -la' lists all files including hidden dotfiles.
+- 'cd ..' moves up one directory, 'cd ~' jumps straight to home directory.
+- Pipes (|) send the output of one command as input to another (e.g. 'history | grep git').
+- 'rm -rf' forcefully deletes without asking - be extremely careful with it, there is no Recycle Bin / Trash in terminal!
+- Tab completion in zsh/bash saves tons of typing time.
