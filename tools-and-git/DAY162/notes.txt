@@ -1,0 +1,13 @@
+Day 162 - Git Basics & Local Repository Initialization
+
+Topic Overview:
+Git is a distributed version control system that tracks snapshots of your files over time.
+
+Keep an eye on:
+- The 3 States of Git:
+  1. Working Directory: Untracked or modified files.
+  2. Staging Area (Index): Files prepared and queued for the next commit ('git add').
+  3. Git Repository: Permanently recorded snapshot in history ('git commit').
+- First-time setup: configure user.name and user.email once globally.
+- 'git status' is the single most important command; run it constantly to see what state your files are in.
+- Commit messages should be concise and imperative (e.g. 'Add responsive navbar' rather than 'Added navbar').
