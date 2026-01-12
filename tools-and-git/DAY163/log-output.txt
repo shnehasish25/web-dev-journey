@@ -1,0 +1,6 @@
+Sample git log --oneline output:
+
+a8f3b12 (HEAD -> main) Add responsive food card grid
+d4c8e19 Add navigation bar and brand logo
+92b1a04 Set up semantic HTML skeleton
+1b04c8f Initial commit
