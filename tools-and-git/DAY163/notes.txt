@@ -1,0 +1,12 @@
+Day 163 - Inspecting History, Undoing Changes & .gitignore
+
+Topic Overview:
+Examining previous commits, reverting accidental edits, and excluding junk files from version control.
+
+Keep an eye on:
+- Always create a .gitignore file BEFORE running 'git add .'.
+- Never commit node_modules, .env secrets, or OS temporary files (.DS_Store).
+- 'git diff': shows unstaged changes line-by-line (+ green for added, - red for deleted).
+- 'git restore <file>': discards uncommitted changes in working directory (be careful, cannot be undone!).
+- 'git restore --staged <file>': removes file from staging area back to working directory.
+- 'git log --oneline --graph': clean visual tree of commit history.
