@@ -1,0 +1,13 @@
+Day 164 - Git Branching, Switching & Resolving Merge Conflicts
+
+Topic Overview:
+Branches allow you to build new features in complete isolation without breaking the working 'main' branch.
+
+Keep an eye on:
+- 'git switch -c feature-name' (or 'git checkout -b feature-name') creates and jumps to a new branch.
+- Branches in Git are lightweight 41-byte pointer files, making branching virtually instantaneous.
+- Fast-forward merge happens when 'main' hasn't changed since branch was created.
+- Merge Conflict happens when two branches edit the exact same lines in the same file!
+- Resolving conflicts:
+  * Look for conflict markers: <<<<<<< HEAD (current branch) ======= >>>>>>> incoming branch.
+  * Pick the correct code, remove markers, save file, and run 'git add' + 'git commit'.
