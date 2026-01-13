@@ -1,0 +1,8 @@
+Branching Quick Reference:
+git branch                  -> List local branches (* shows active)
+git branch -a               -> List local and remote branches
+git switch <name>           -> Switch to existing branch
+git switch -c <name>        -> Create and switch to new branch
+git merge <name>            -> Merge branch into current branch
+git branch -d <name>        -> Safe delete (only if already merged)
+git branch -D <name>        -> Force delete branch
