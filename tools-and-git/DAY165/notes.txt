@@ -1,0 +1,12 @@
+Day 165 - Remote Repositories & GitHub Integration
+
+Topic Overview:
+Connecting local git repositories to GitHub for cloud backup, team collaboration, and open-source sharing.
+
+Keep an eye on:
+- A 'remote' is a hosted repository URL (usually on GitHub, GitLab, or Bitbucket).
+- 'origin' is the conventional default name given to your primary remote repository.
+- 'git push -u origin main': pushes commits and sets up upstream tracking so future pushes only require 'git push'.
+- SSH keys are vastly superior to passwords: authenticate once and never get prompted for passwords again.
+- 'git clone <url>' downloads an existing online repository with its entire commit history.
+- 'git pull' = 'git fetch' (downloads new remote data) + 'git merge' (merges remote data into active branch).
