@@ -1,0 +1,13 @@
+Conventional Commits Standard:
+
+Good examples:
+- feat: add UPI payment modal with QR code generator
+- fix: correct margin collapse on mobile food cards
+- docs: update setup instructions in README
+- refactor: simplify array reduce calculation in cart module
+- chore: update npm dependencies
+
+Bad examples:
+- "fixed stuff" (vague)
+- "changes" (useless)
+- "asdfghjk" (lazy)
