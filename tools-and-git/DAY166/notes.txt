@@ -1,0 +1,15 @@
+Day 166 - Collaborative Workflows, Forking & Pull Requests
+
+Topic Overview:
+How real-world engineering teams and open-source maintainers collaborate on shared codebases.
+
+Keep an eye on:
+- Pull Request (PR): A proposal to merge changes from your feature branch into another branch or repository.
+- Forking: Making your own personal copy of someone else's public repository on GitHub.
+- Conventional Commits standard:
+  * feat: a new feature for the user
+  * fix: bug fix
+  * docs: documentation only changes
+  * style: formatting, missing semicolons, no code change
+  * refactor: restructuring code without changing behaviour
+- Code reviews: Reviewers comment line-by-line, suggest edits, and approve before merging.
