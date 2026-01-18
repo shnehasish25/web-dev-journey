@@ -1,0 +1,10 @@
+Git Danger Zone Reminders:
+
+1. git reset --hard HEAD~1
+   -> Deletes the last commit and WIPES OUT all working changes! Only use when you truly want to destroy changes.
+
+2. git push --force
+   -> Overwrites remote branch history. Never force push to 'main'! Use --force-with-lease if force pushing to personal feature branch.
+
+3. git clean -fd
+   -> Deletes all untracked files and folders permanently.
