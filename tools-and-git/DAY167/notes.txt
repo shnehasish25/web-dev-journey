@@ -1,0 +1,13 @@
+Day 167 - Advanced Git: Stashing, Rebasing & Cherry-Picking
+
+Topic Overview:
+Professional git utilities for managing urgent hotfixes, clean history, and surgical commit transfers.
+
+Keep an eye on:
+- 'git stash': Temporarily shelve uncommitted changes so you have a clean working directory to switch branches.
+- 'git stash pop': Re-applies the shelved changes and drops them from stash list.
+- Rebase vs Merge:
+  * Merge creates a new commit joining two histories together.
+  * Rebase re-writes history by placing your commits directly on top of the target branch, creating a completely linear history!
+- GOLDEN RULE OF REBASING: Never rebase commits that have already been pushed to a public/shared branch!
+- 'git cherry-pick <commit-hash>': Grabs one specific commit from another branch and copies it onto your active branch.
