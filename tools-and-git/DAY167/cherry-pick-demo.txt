@@ -1,0 +1,10 @@
+Cherry-Pick Walkthrough:
+
+Scenario:
+You fixed a critical bug on branch 'experimental-ui' (commit hash: b3e8a1c).
+You don't want to merge the whole experimental branch into main yet, only the bugfix.
+
+Solution:
+1. git switch main
+2. git cherry-pick b3e8a1c
+Result: Git copies the exact changes from b3e8a1c and commits them directly onto main!
