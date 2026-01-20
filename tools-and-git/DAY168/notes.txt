@@ -1,0 +1,14 @@
+Day 168 - Modern Tooling: Node.js, NPM & Package Management
+
+Topic Overview:
+Modern web developers rely heavily on Node.js and NPM to manage third-party libraries, build tools, and local development servers.
+
+Keep an eye on:
+- Node.js allows running JavaScript on your computer outside the browser.
+- NPM (Node Package Manager) is the world's largest software registry.
+- 'package.json': The manifest file containing project metadata, custom scripts, and dependency lists.
+- 'package-lock.json': Locks exact versions of installed packages down to their cryptographic hash so your team gets identical builds.
+- dependencies vs devDependencies:
+  * dependencies: Code needed in production by users (e.g. lodash, chart.js).
+  * devDependencies (-D): Tools only needed during development (linters, formatters, bundlers).
+- NEVER edit package-lock.json manually.
