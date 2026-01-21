@@ -1,0 +1,16 @@
+Day 169 - Linters, Formatters & Live Deployment (Vercel / Netlify)
+
+Topic Overview:
+Automating code quality with Prettier and ESLint, and deploying Kushal's static web projects live to the internet.
+
+Keep an eye on:
+- Prettier: Opinionated code formatter (fixes indentation, quotes, trailing commas, line wrapping on save).
+- ESLint: Static code analysis tool (catches syntax bugs, unused variables, undeclared variables).
+- Modern Bundlers (Vite): Blazing fast development server with Hot Module Replacement (HMR).
+- Deploying to Vercel / Netlify:
+  * Connect GitHub account to Vercel/Netlify.
+  * Pick repository.
+  * Every time you run 'git push origin main', it automatically builds and deploys to a global CDN with free HTTPS SSL in 30 seconds!
+
+MILESTONE COMPLETE: FULL TOOLS & GIT MODULE DONE!
+From terminal commands and local repositories to branching, GitHub PRs, npm scripts, and automated live deployments.
