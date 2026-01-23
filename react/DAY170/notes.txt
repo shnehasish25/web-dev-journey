@@ -1,0 +1,9 @@
+Day 170 - Why React & Virtual DOM
+
+Topic Overview:
+Introduction to React, declarative UI, component architecture, and the Virtual DOM reconciliation.
+
+Keep an eye on:
+- Virtual DOM is a lightweight copy of the real DOM in JS memory. React diffs the trees and updates only what changed.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
