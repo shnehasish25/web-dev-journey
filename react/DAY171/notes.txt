@@ -1,0 +1,9 @@
+Day 171 - Vite + React Setup & Project Structure
+
+Topic Overview:
+Scaffolding modern React apps with Vite, understanding main.jsx and App.jsx.
+
+Keep an eye on:
+- Vite uses native ES modules for instant hot module replacement (HMR). main.jsx uses createRoot to mount App into root div.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
