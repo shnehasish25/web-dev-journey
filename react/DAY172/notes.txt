@@ -1,0 +1,9 @@
+Day 172 - JSX Rules & Embedded Expressions
+
+Topic Overview:
+JavaScript in XML syntax, className instead of class, self-closing tags, curly braces evaluation.
+
+Keep an eye on:
+- JSX must return a single root element (or Fragment <>...</>). JavaScript expressions go inside single curly braces {}.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
