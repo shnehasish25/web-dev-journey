@@ -1,0 +1,9 @@
+Day 173 - Functional Components & Reusability
+
+Topic Overview:
+Creating independent, reusable UI building blocks.
+
+Keep an eye on:
+- Component names MUST start with a Capital letter (e.g. Navbar, FoodCard). Lowercase tags are treated as native HTML.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
