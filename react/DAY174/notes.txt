@@ -1,0 +1,9 @@
+Day 174 - Props Basics: Passing Data Down
+
+Topic Overview:
+Passing properties from parent to child components.
+
+Keep an eye on:
+- Props flow unidirectionally (parent to child). Props are strictly READ-ONLY (immutable). Never modify props directly inside a child!
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
