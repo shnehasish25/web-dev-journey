@@ -1,0 +1,9 @@
+Day 175 - Props: Children Prop & Layout Wrappers
+
+Topic Overview:
+Using props.children to build flexible container cards and layout wrappers.
+
+Keep an eye on:
+- props.children captures whatever JSX is passed between the opening and closing component tags.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
