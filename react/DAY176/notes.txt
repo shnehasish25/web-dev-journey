@@ -1,0 +1,9 @@
+Day 176 - Conditional Rendering in React
+
+Topic Overview:
+Ternary operator, logical AND (&&) short-circuiting, and early returns.
+
+Keep an eye on:
+- Watch out: if count is 0, {count && <Component />} will print '0' onto the screen! Use {count > 0 && ...} instead.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
