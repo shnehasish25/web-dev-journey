@@ -1,0 +1,9 @@
+Day 177 - Rendering Lists & The Key Prop
+
+Topic Overview:
+Iterating with Array.map() and why unique keys are mandatory for React diffing.
+
+Keep an eye on:
+- Never use array index as key if list can be reordered, filtered, or deleted! Use a unique database ID.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
