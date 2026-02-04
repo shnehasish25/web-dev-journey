@@ -1,0 +1,9 @@
+Day 178 - useState Hook Fundamentals
+
+Topic Overview:
+Introduction to state, triggering re-renders, and the useState anatomy.
+
+Keep an eye on:
+- State preserves values across re-renders. When state updates via setter function, React automatically schedules a re-render of the component.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
