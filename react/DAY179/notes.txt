@@ -1,0 +1,9 @@
+Day 179 - Event Handling in React
+
+Topic Overview:
+Synthetic events, inline arrow handlers vs defined handlers, passing parameters.
+
+Keep an eye on:
+- Pass the function reference without calling it: onClick={handleClick}. If you write onClick={handleClick()}, it runs instantly on page render!
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
