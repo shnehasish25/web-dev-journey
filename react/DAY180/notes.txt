@@ -1,0 +1,9 @@
+Day 180 - Functional State Updates
+
+Topic Overview:
+Updating state based on previous state: setVal(prev => prev + 1).
+
+Keep an eye on:
+- React batches state updates! If you call setCount(count + 1) three times in a row, it only increments once. Always use functional updates for sequential calculations.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
