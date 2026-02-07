@@ -1,0 +1,9 @@
+Day 181 - Objects in State & Immutability
+
+Topic Overview:
+Managing multi-property objects in useState using the spread operator.
+
+Keep an eye on:
+- NEVER mutate state directly (e.g. user.city = 'Delhi'). React will NOT detect the change! Always return a fresh object with spread: setUser(prev => ({...prev, city: 'Delhi'})).
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
