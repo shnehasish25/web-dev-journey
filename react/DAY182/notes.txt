@@ -1,0 +1,9 @@
+Day 182 - Arrays in State (Add, Remove, Update)
+
+Topic Overview:
+Manipulating array state immutably with spread, filter, and map.
+
+Keep an eye on:
+- To add: [...prev, newItem]. To remove: prev.filter(item => item.id !== id). To update: prev.map(item => item.id === id ? {...item, done: true} : item).
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
