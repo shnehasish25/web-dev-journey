@@ -1,0 +1,9 @@
+Day 183 - Controlled Form Components
+
+Topic Overview:
+Binding HTML inputs to React state via value and onChange.
+
+Keep an eye on:
+- In controlled inputs, React state is the single source of truth. Every keystroke updates state, and state dictates input value.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
