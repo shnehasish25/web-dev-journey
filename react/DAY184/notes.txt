@@ -1,0 +1,9 @@
+Day 184 - Handling Multi-Input Forms
+
+Topic Overview:
+Using computed property names [e.target.name]: e.target.value for forms with 5+ inputs.
+
+Keep an eye on:
+- Give each HTML input a 'name' attribute matching the state object key. One single handleChange function handles all fields cleanly.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
