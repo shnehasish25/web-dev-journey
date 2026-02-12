@@ -1,0 +1,9 @@
+Day 185 - Lifting State Up
+
+Topic Overview:
+Moving shared state to the closest common parent component.
+
+Keep an eye on:
+- When two sibling components need access to the same data, lift the state up to their parent and pass data down via props and functions.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
