@@ -1,0 +1,66 @@
+/* Day 185 React Styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  padding: 24px;
+  margin: 0;
+}
+
+.card, .container, .dish-card, .weather-card, .budget-box, .metro-app {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 500px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  margin: 4px 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-card {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 380px;
+}
+
+.qr-placeholder {
+  padding: 40px;
+  background: #f1f5f9;
+  border: 2px dashed #94a3b8;
+  border-radius: 8px;
+  margin: 16px 0;
+  font-weight: bold;
+}
