@@ -1,0 +1,9 @@
+Day 186 - Mini-Project: Bengaluru Metro Smart Card Balance Manager
+
+Topic Overview:
+Interactive state management: top-up balance, deduct trip fare, and view transaction history.
+
+Keep an eye on:
+- Demonstrates state lifting, array state updates, and formatted INR currency display.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
