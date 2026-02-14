@@ -1,0 +1,9 @@
+Day 187 - useEffect Hook Fundamentals
+
+Topic Overview:
+Synchronizing components with external systems, understanding render lifecycle.
+
+Keep an eye on:
+- Effects run AFTER the browser renders. Used for data fetching, subscriptions, manual DOM mutations, and timers.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
