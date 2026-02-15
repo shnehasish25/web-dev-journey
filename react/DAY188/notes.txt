@@ -1,0 +1,9 @@
+Day 188 - The Dependency Array Deep Dive
+
+Topic Overview:
+No dependencies vs empty array [] vs specific dependencies [prop, state].
+
+Keep an eye on:
+- Empty array [] means run ONCE on component mount. [dep] means run only when 'dep' changes. Omitting array runs on EVERY render (watch out for infinite loops!).
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
