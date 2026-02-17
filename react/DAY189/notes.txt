@@ -1,0 +1,9 @@
+Day 189 - Effect Cleanups & Memory Leaks
+
+Topic Overview:
+Returning a cleanup function: return () => { clearInterval(timer); }.
+
+Keep an eye on:
+- Cleanup functions run when component unmounts and BEFORE the effect re-runs. Crucial for stopping timers and removing event listeners.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
