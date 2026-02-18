@@ -1,0 +1,9 @@
+Day 190 - Data Fetching with useEffect
+
+Topic Overview:
+Making asynchronous fetch calls inside useEffect with loading and error states.
+
+Keep an eye on:
+- Do NOT make the useEffect callback function itself async! Write an async function INSIDE the effect: useEffect(() => { async function get() {...} get(); }, []).
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
