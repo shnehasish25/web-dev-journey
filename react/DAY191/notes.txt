@@ -1,0 +1,9 @@
+Day 191 - Avoiding Race Conditions in Fetch
+
+Topic Overview:
+Using boolean flag or AbortController to discard responses from obsolete requests.
+
+Keep an eye on:
+- When user rapidly toggles options, earlier fetch requests might resolve AFTER later ones! Use a boolean 'let isCurrent = true' inside effect to ignore stale responses.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
