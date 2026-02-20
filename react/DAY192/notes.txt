@@ -1,0 +1,9 @@
+Day 192 - Syncing State with localStorage
+
+Topic Overview:
+Initializing state from localStorage and saving updates via useEffect.
+
+Keep an eye on:
+- Pass an initializer function to useState(() => JSON.parse(localStorage.getItem('k')) || default) so localStorage is read only ONCE on initial render.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
