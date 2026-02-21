@@ -1,0 +1,9 @@
+Day 193 - Window Event Listeners in useEffect
+
+Topic Overview:
+Listening to window resize and keypress events with proper cleanup.
+
+Keep an eye on:
+- Always clean up window event listeners in the return function to prevent duplicate triggers on re-render.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
