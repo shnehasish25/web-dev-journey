@@ -1,0 +1,9 @@
+Day 194 - Mini-Project: Live Bengaluru Weather Dashboard
+
+Topic Overview:
+Async weather fetching with Open-Meteo API, dynamic temperature colors, and auto-refresh.
+
+Keep an eye on:
+- Demonstrates useEffect fetch, loading states, error boundaries, and formatted Indian city data.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
