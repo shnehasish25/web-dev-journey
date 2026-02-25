@@ -1,0 +1,9 @@
+Day 195 - useRef Hook for DOM References
+
+Topic Overview:
+Direct DOM node access, focusing input on mount, text selection.
+
+Keep an eye on:
+- useRef returns a mutable object { current: initialValue }. Changing ref.current does NOT trigger a re-render! Use for direct DOM operations like input.focus().
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
