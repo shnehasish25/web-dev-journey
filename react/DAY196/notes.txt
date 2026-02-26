@@ -1,0 +1,9 @@
+Day 196 - useRef for Storing Mutable Values
+
+Topic Overview:
+Storing timer IDs and previous state values without causing re-renders.
+
+Keep an eye on:
+- Unlike state, modifying ref.current does not trigger component re-render. Perfect for holding setInterval IDs.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
