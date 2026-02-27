@@ -1,0 +1,9 @@
+Day 197 - Performance Optimization: useMemo
+
+Topic Overview:
+Memoizing expensive calculations across renders.
+
+Keep an eye on:
+- useMemo recalculates the cached value ONLY when one of its dependencies changes. Don't overuse for trivial calculations (overhead of memoization).
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
