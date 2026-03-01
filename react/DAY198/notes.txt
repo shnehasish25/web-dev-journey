@@ -1,0 +1,9 @@
+Day 198 - Performance Optimization: useCallback
+
+Topic Overview:
+Memoizing callback functions passed down to optimized children.
+
+Keep an eye on:
+- useCallback caches the function definition between renders so child components wrapped in React.memo don't needlessly re-render.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
