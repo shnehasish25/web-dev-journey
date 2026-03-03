@@ -1,0 +1,9 @@
+Day 199 - React.memo Component Memoization
+
+Topic Overview:
+Skipping re-renders when component props haven't changed.
+
+Keep an eye on:
+- React.memo does a shallow comparison of props. If props are identical, React skips rendering the component and reuses the last rendered result.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
