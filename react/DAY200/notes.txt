@@ -1,0 +1,9 @@
+Day 200 - useReducer Hook Basics
+
+Topic Overview:
+Managing complex state transitions with Reducer functions and action dispatches.
+
+Keep an eye on:
+- useReducer(reducer, initialState). A reducer is a pure function: (state, action) => newState. Excellent for predictable state machines.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
