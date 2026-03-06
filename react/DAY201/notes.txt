@@ -1,0 +1,9 @@
+Day 201 - useReducer with Complex State (Cart)
+
+Topic Overview:
+Shopping cart state with ADD_ITEM, REMOVE_ITEM, CLEAR actions.
+
+Keep an eye on:
+- Centralizing cart business logic in a reducer keeps UI components clean and free from messy state calculations.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
