@@ -1,0 +1,9 @@
+Day 202 - Mini-Project: Student Budget Planner with useReducer
+
+Topic Overview:
+Monthly allowance tracker, categorizing expenses, and maintaining ledger history.
+
+Keep an eye on:
+- Handles complex transactions (EXPENSE_ADDED, BUDGET_RESET, CATEGORY_FILTER) with useReducer.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
