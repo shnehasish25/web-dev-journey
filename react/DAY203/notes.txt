@@ -1,0 +1,9 @@
+Day 203 - The Prop Drilling Problem & React Context
+
+Topic Overview:
+Why passing props through 6 layers of intermediate components is painful.
+
+Keep an eye on:
+- Prop drilling makes intermediate components tightly coupled to data they don't even use. Context allows tele-porting data straight to consumers.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
