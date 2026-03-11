@@ -1,0 +1,9 @@
+Day 204 - createContext, Provider & useContext
+
+Topic Overview:
+Building a Theme Context with Light & Dark mode support.
+
+Keep an eye on:
+- Create context with createContext(), wrap parent in <ThemeContext.Provider value={...}>, and read in any descendant with useContext(ThemeContext).
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
