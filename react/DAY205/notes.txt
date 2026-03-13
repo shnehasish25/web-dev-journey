@@ -1,0 +1,9 @@
+Day 205 - Global Cart Context with Reducer
+
+Topic Overview:
+Combining React Context with useReducer for full global shopping cart state.
+
+Keep an eye on:
+- The ultimate state pattern before needing external libraries like Redux or Zustand. Clean, native, and scalable.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
