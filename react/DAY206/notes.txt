@@ -1,0 +1,9 @@
+Day 206 - Custom Hooks Part 1: useLocalStorage
+
+Topic Overview:
+Extracting reusable state logic into custom hooks (must start with 'use').
+
+Keep an eye on:
+- Custom hooks are normal JavaScript functions that call other React hooks. They let you share stateful logic across multiple components.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
