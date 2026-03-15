@@ -1,0 +1,9 @@
+Day 207 - Custom Hooks Part 2: useFetch
+
+Topic Overview:
+Building a reusable HTTP data fetching hook with loading, data, and error state.
+
+Keep an eye on:
+- Encapsulates async fetch boilerplate into a single line: const { data, loading, error } = useFetch(url);
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
