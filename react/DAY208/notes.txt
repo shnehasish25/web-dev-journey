@@ -1,0 +1,9 @@
+Day 208 - Custom Hooks Part 3: useDebounce
+
+Topic Overview:
+Debouncing rapid search queries to prevent flooding backend APIs.
+
+Keep an eye on:
+- Delays updating state until user stops typing for 500ms.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
