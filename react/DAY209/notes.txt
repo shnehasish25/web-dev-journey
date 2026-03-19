@@ -1,0 +1,9 @@
+Day 209 - React Router Basics: Navigation
+
+Topic Overview:
+BrowserRouter, Routes, Route, Link, and NavLink.
+
+Keep an eye on:
+- Never use regular <a href='...'> tags for internal navigation in React SPAs! It causes full browser reload. Always use <Link to='...'>.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
