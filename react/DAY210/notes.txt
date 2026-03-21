@@ -1,0 +1,9 @@
+Day 210 - React Router: URL Parameters & 404 Pages
+
+Topic Overview:
+Dynamic routes like /restaurant/:id and useParams() hook.
+
+Keep an eye on:
+- useParams() reads dynamic segments from URL. Use path='*' for catch-all 404 Page Not Found.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
