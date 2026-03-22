@@ -1,0 +1,9 @@
+Day 211 - Capstone Part 1: Food App Architecture in React
+
+Topic Overview:
+Building the Swiggy-inspired React Food Ordering App.
+
+Keep an eye on:
+- Planning component tree: Navbar, FilterBar, RestaurantList, DishCard, CartDrawer, and Context store.
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
