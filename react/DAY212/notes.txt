@@ -1,0 +1,9 @@
+Day 212 - Capstone Part 2 & Graduation: Full React Food App with UPI Modal! 🎉
+
+Topic Overview:
+Final graduation capstone: Live dish filtering, cart count, 5% GST calculation, and animated UPI QR payment checkout!
+
+Keep an eye on:
+- Marks the completion of 43 days of React and the entire Full-Stack Web Development curriculum! Congratulations Kushal!
+- Practice building functional components with clean JSX.
+- Check React DevTools in browser to inspect state and props.
