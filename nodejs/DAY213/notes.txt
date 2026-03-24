@@ -1,0 +1,9 @@
+Day 213 - Node.js Architecture & V8 Engine
+
+Topic Overview:
+Introduction to Node.js, V8 engine, Libuv thread pool, and non-blocking event-driven I/O.
+
+Keep an eye on:
+- Node is single-threaded for JS execution, but offloads heavy tasks (file system, crypto) to Libuv's thread pool.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
