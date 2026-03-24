@@ -1,0 +1,13 @@
+{
+  "name": "day-213",
+  "version": "1.0.0",
+  "description": "Node.js Architecture & V8 Engine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
