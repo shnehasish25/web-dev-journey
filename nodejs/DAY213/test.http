@@ -1,0 +1,6 @@
+### Day 213: Node.js Architecture & V8 Engine
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
