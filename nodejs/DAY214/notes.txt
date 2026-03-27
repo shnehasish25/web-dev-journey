@@ -1,0 +1,9 @@
+Day 214 - Node CLI & Process Object
+
+Topic Overview:
+Command-line execution, reading process.argv arguments, and exit codes.
+
+Keep an eye on:
+- process.argv[0] is node binary path, process.argv[1] is script path. Custom arguments start from index 2.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
