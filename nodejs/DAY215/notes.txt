@@ -1,0 +1,9 @@
+Day 215 - Global Objects in Node
+
+Topic Overview:
+Understanding __dirname, __filename, process, and globalThis.
+
+Keep an eye on:
+- __dirname gives absolute directory path of current file. Unlike browser 'window', Node's global object is 'global'.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
