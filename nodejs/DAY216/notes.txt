@@ -1,0 +1,9 @@
+Day 216 - CommonJS Modules: require & exports
+
+Topic Overview:
+Exporting and importing modules using module.exports and require().
+
+Keep an eye on:
+- module.exports is the actual object returned by require(). Do not reassign exports = ... directly or it breaks reference.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
