@@ -1,0 +1,9 @@
+Day 217 - ES Modules in Node.js
+
+Topic Overview:
+Modern import / export syntax using 'type': 'module' in package.json.
+
+Keep an eye on:
+- With ES Modules, file extensions (.js) are required in relative import paths: import { add } from './math.js'.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
