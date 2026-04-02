@@ -1,0 +1,9 @@
+Day 218 - Path Module: Cross-Platform Paths
+
+Topic Overview:
+path.join(), path.resolve(), path.extname() across Windows and POSIX.
+
+Keep an eye on:
+- Always use path.join(__dirname, 'file.txt') instead of string concatenation ('/' vs '\\') for cross-platform safety.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
