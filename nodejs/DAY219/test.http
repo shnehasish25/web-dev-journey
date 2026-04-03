@@ -1,0 +1,6 @@
+### Day 219: File System (fs) Module: Async & Promises
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
