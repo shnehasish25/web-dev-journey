@@ -1,0 +1,9 @@
+Day 219 - File System (fs) Module: Async & Promises
+
+Topic Overview:
+Reading and writing files with fs/promises, avoiding blocking synchronous calls.
+
+Keep an eye on:
+- Never use readFileSync in production servers! It freezes the single thread for all users while disk reads.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
