@@ -1,0 +1,9 @@
+Day 220 - Events & EventEmitter Module
+
+Topic Overview:
+Building event-driven pub-sub systems with EventEmitter.
+
+Keep an eye on:
+- emit() triggers event listeners synchronously in the order they were registered. Pass data as secondary arguments.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
