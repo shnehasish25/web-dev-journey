@@ -1,0 +1,9 @@
+Day 221 - Buffers & Streams Basics
+
+Topic Overview:
+Handling raw binary data and chunked memory-efficient streaming.
+
+Keep an eye on:
+- Streams process data in chunks without loading entire multi-gigabyte files into RAM.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
