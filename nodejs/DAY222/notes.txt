@@ -1,0 +1,9 @@
+Day 222 - Mini-Project: CLI System Health Monitor
+
+Topic Overview:
+Script checking CPU cores, free RAM in GB, uptime, and writing status logs.
+
+Keep an eye on:
+- Uses os module and fs/promises to generate periodic system diagnostic reports.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
