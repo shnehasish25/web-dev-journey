@@ -1,0 +1,6 @@
+### Day 223: Creating a Native HTTP Server
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
