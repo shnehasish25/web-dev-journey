@@ -1,0 +1,9 @@
+Day 223 - Creating a Native HTTP Server
+
+Topic Overview:
+http.createServer(), req/res objects, and listening on a local port.
+
+Keep an eye on:
+- The callback runs every time an incoming HTTP request hits the server. Always call res.end() or request hangs!
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
