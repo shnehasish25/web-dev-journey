@@ -1,0 +1,9 @@
+Day 224 - Inspecting Incoming HTTP Requests
+
+Topic Overview:
+Reading req.url, req.method, and req.headers.
+
+Keep an eye on:
+- req.method tells HTTP verb (GET, POST, etc.). req.url gives request path and query string.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
