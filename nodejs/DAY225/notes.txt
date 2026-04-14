@@ -1,0 +1,9 @@
+Day 225 - Constructing HTTP Responses & Headers
+
+Topic Overview:
+res.writeHead, status codes (200, 201, 404, 500), and JSON content types.
+
+Keep an eye on:
+- Status codes: 2xx = Success, 3xx = Redirection, 4xx = Client Error, 5xx = Server Error.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
