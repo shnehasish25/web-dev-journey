@@ -1,0 +1,6 @@
+### Day 225: Constructing HTTP Responses & Headers
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
