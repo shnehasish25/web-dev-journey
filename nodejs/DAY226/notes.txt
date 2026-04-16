@@ -1,0 +1,9 @@
+Day 226 - Basic Routing Without Frameworks
+
+Topic Overview:
+Switching routes based on req.url and req.method cleanly.
+
+Keep an eye on:
+- Without frameworks, manual URL parsing requires handling edge cases like trailing slashes and query strings.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
