@@ -1,0 +1,9 @@
+Day 227 - Serving Static HTML & CSS Files
+
+Topic Overview:
+Reading file streams and piping directly to HTTP response.
+
+Keep an eye on:
+- Using fs.createReadStream(path).pipe(res) streams file chunks directly to client without buffering in RAM.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
