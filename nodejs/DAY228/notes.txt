@@ -1,0 +1,9 @@
+Day 228 - Parsing POST Request Body Manually
+
+Topic Overview:
+Collecting data chunks on req.on('data') and parsing in req.on('end').
+
+Keep an eye on:
+- In native Node, request bodies arrive in binary chunks. Must concatenate buffers and parse JSON upon completion.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
