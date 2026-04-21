@@ -1,0 +1,9 @@
+Day 229 - Handling Query Parameters Natively
+
+Topic Overview:
+Using the WHATWG URL API (new URL) to parse search queries.
+
+Keep an eye on:
+- new URL(req.url, 'http://localhost') parses searchParams cleanly without third-party libraries.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
