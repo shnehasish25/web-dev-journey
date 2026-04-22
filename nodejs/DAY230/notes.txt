@@ -1,0 +1,9 @@
+Day 230 - Mini-Project: Native Node JSON CRUD Server
+
+Topic Overview:
+Complete in-memory student record manager built in pure Node.js without any dependencies.
+
+Keep an eye on:
+- Handles GET all, GET by ID, and POST new record with manual JSON parsing.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
