@@ -1,0 +1,6 @@
+### Day 230: Mini-Project: Native Node JSON CRUD Server
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
