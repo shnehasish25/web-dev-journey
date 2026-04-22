@@ -1,0 +1,13 @@
+{
+  "name": "day-230",
+  "version": "1.0.0",
+  "description": "Mini-Project: Native Node JSON CRUD Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
