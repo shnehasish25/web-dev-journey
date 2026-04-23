@@ -1,0 +1,9 @@
+Day 231 - Introduction to Express.js
+
+Topic Overview:
+Why Express? Fast, unopinionated, minimalist web framework for Node.js.
+
+Keep an eye on:
+- Express abstracts away repetitive HTTP parsing boilerplate (body collection, header formatting, routing).
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
