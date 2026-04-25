@@ -1,0 +1,9 @@
+Day 232 - Express Routing & HTTP Verbs
+
+Topic Overview:
+app.get, app.post, app.put, app.delete routing methods.
+
+Keep an eye on:
+- Use GET to read, POST to create, PUT to replace/update, DELETE to remove.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
