@@ -1,0 +1,9 @@
+Day 233 - Route Parameters: req.params
+
+Topic Overview:
+Extracting dynamic values from URL path segments.
+
+Keep an eye on:
+- Route parameters are defined with a colon: /users/:userId/orders/:orderId. Accessed on req.params.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
