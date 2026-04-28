@@ -1,0 +1,9 @@
+Day 234 - Query Strings: req.query
+
+Topic Overview:
+Reading URL query strings for filtering and pagination.
+
+Keep an eye on:
+- Express automatically parses /api/food?category=veg&sort=price into req.query.category and req.query.sort.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
