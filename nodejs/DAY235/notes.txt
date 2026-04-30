@@ -1,0 +1,9 @@
+Day 235 - Express Response Methods
+
+Topic Overview:
+res.json(), res.status(), res.send(), res.download().
+
+Keep an eye on:
+- res.json() automatically sets Content-Type: application/json and formats JS objects to JSON strings.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
