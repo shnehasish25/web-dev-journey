@@ -1,0 +1,13 @@
+{
+  "name": "day-235",
+  "version": "1.0.0",
+  "description": "Express Response Methods",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
