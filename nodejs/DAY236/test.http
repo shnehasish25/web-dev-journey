@@ -1,0 +1,6 @@
+### Day 236: Middleware Concept: (req, res, next)
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
