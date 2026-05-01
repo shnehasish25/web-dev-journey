@@ -1,0 +1,9 @@
+Day 236 - Middleware Concept: (req, res, next)
+
+Topic Overview:
+Understanding the Express middleware request-response pipeline.
+
+Keep an eye on:
+- Middleware functions have access to req, res, and next. If middleware doesn't call next(), the request hangs!
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
