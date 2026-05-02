@@ -1,0 +1,9 @@
+Day 237 - Built-in Middlewares: express.json()
+
+Topic Overview:
+Parsing JSON bodies and serving static assets with express.static.
+
+Keep an eye on:
+- Without app.use(express.json()), req.body is undefined on incoming POST requests!
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
