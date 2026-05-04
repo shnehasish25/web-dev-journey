@@ -1,0 +1,9 @@
+Day 238 - Custom Application-Level Middleware
+
+Topic Overview:
+Writing request timing and API key authorization middleware.
+
+Keep an eye on:
+- Middleware can modify req object (e.g. attaching req.user or req.requestTime) to pass data downstream.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
