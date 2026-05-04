@@ -1,0 +1,6 @@
+### Day 238: Custom Application-Level Middleware
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
