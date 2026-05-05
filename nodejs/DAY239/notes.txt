@@ -1,0 +1,9 @@
+Day 239 - Router-Level Middleware: express.Router()
+
+Topic Overview:
+Splitting routes into modular files by domain (users, dishes, orders).
+
+Keep an eye on:
+- express.Router() creates mini isolated Express apps that mount on specific base paths.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
