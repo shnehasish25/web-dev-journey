@@ -1,0 +1,9 @@
+Day 240 - Error-Handling Middleware in Express
+
+Topic Overview:
+The special 4-argument error handler (err, req, res, next).
+
+Keep an eye on:
+- Express identifies error handlers by the presence of all 4 parameters (err, req, res, next). Always place at end of middleware stack!
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
