@@ -1,0 +1,9 @@
+Day 241 - Third-Party Middleware: cors, morgan, helmet
+
+Topic Overview:
+Essential production middlewares for logging, security headers, and cross-origin requests.
+
+Keep an eye on:
+- cors() enables cross-origin requests from frontend (React). helmet() sets secure HTTP response headers.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
