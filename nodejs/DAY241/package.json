@@ -1,0 +1,13 @@
+{
+  "name": "day-241",
+  "version": "1.0.0",
+  "description": "Third-Party Middleware: cors, morgan, helmet",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
