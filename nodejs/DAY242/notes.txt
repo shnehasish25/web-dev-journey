@@ -1,0 +1,9 @@
+Day 242 - Mini-Project: Bengaluru Tech Jobs API
+
+Topic Overview:
+Modular REST API with express.Router, search query filters, and custom request logging.
+
+Keep an eye on:
+- Features job listings with role, tech stack, salary in LPA (Lakhs Per Annum), and location filter.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
