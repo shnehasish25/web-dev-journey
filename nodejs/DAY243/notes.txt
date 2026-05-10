@@ -1,0 +1,9 @@
+Day 243 - RESTful Architecture Principles
+
+Topic Overview:
+Resource-based naming, statelessness, idempotent vs non-idempotent methods.
+
+Keep an eye on:
+- Use nouns for endpoints (/api/orders), not verbs (/api/createOrder). GET, PUT, DELETE are idempotent; POST is not.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
