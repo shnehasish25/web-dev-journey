@@ -1,0 +1,9 @@
+Day 244 - Complete In-Memory CRUD API
+
+Topic Overview:
+Building Create, Read, Update, Delete with status codes 200, 201, 204, 404.
+
+Keep an eye on:
+- Always return 204 No Content for successful DELETE operations, or 200 with confirmation JSON.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
