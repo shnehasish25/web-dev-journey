@@ -1,0 +1,9 @@
+Day 245 - Pagination, Sorting & Filtering
+
+Topic Overview:
+Implementing page, limit, and sort queries for large datasets.
+
+Keep an eye on:
+- Calculate offset: skip = (page - 1) * limit. Never return unbounded millions of rows in a single API call!
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
