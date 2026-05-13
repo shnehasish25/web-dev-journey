@@ -1,0 +1,9 @@
+Day 246 - Request Validation with Zod / Joi
+
+Topic Overview:
+Validating request bodies before processing to reject malicious/malformed inputs.
+
+Keep an eye on:
+- Validate schemas strictly: check minimum length, email format, and custom regex (e.g. Indian mobile number).
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
