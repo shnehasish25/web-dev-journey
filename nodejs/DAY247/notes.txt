@@ -1,0 +1,9 @@
+Day 247 - Centralized AppError Class
+
+Topic Overview:
+Extending built-in Error to attach statusCode and isOperational properties.
+
+Keep an eye on:
+- Distinguish operational errors (user entered bad password, 400) from programming bugs (null pointer, 500).
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
