@@ -1,0 +1,9 @@
+Day 248 - Environment Variables with Dotenv
+
+Topic Overview:
+Safely loading secrets from .env file into process.env.
+
+Keep an eye on:
+- Never commit .env to GitHub! Always commit a template .env.example with dummy placeholder keys.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
