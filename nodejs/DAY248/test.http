@@ -1,0 +1,6 @@
+### Day 248: Environment Variables with Dotenv
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
