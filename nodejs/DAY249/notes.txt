@@ -1,0 +1,9 @@
+Day 249 - File Uploads with Multer: Setup
+
+Topic Overview:
+Configuring diskStorage, filename timestamps, and destination folders.
+
+Keep an eye on:
+- Multer handles multipart/form-data. Set file size limits to prevent malicious disk-filling attacks.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
