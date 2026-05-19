@@ -1,0 +1,9 @@
+Day 250 - File Uploads: Validation & Mime Types
+
+Topic Overview:
+Restricting uploads strictly to images (jpg, png, webp) using fileFilter.
+
+Keep an eye on:
+- Never trust file extensions alone; verify file.mimetype (e.g. image/jpeg, image/png).
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
