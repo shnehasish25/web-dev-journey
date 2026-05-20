@@ -1,0 +1,9 @@
+Day 251 - API Rate Limiting & Protection
+
+Topic Overview:
+Preventing brute-force attacks and abuse using express-rate-limit.
+
+Keep an eye on:
+- Limit authentication routes (e.g. /login) to 5 attempts per 15 minutes per IP address.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
