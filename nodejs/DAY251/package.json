@@ -1,0 +1,13 @@
+{
+  "name": "day-251",
+  "version": "1.0.0",
+  "description": "API Rate Limiting & Protection",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
