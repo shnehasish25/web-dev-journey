@@ -1,0 +1,9 @@
+Day 252 - Mini-Project: Food Delivery Menu API
+
+Topic Overview:
+Complete REST API with validation, error handling, and image upload endpoints.
+
+Keep an eye on:
+- Combines router, controllers, validation middleware, and formatted response payloads.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
