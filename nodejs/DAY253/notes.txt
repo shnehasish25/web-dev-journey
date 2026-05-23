@@ -1,0 +1,9 @@
+Day 253 - Databases: SQL vs NoSQL & MongoDB Overview
+
+Topic Overview:
+Relational tables vs BSON document collections.
+
+Keep an eye on:
+- MongoDB stores JSON-like documents with dynamic flexible schemas. Collections are like tables, documents are like rows.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
