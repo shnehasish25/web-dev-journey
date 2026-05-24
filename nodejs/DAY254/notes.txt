@@ -1,0 +1,9 @@
+Day 254 - Connecting to MongoDB with Mongoose
+
+Topic Overview:
+mongoose.connect(), connection events, handling connection errors.
+
+Keep an eye on:
+- Mongoose is an ODM (Object Data Modeling) library that provides schema validation and business logic over raw MongoDB.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
