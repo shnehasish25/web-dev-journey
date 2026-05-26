@@ -1,0 +1,9 @@
+Day 255 - Mongoose Schemas & Models
+
+Topic Overview:
+Defining field types (String, Number, Boolean, Date) and creating compiled Models.
+
+Keep an eye on:
+- Schema defines structure; Model is the compiled class used to query and create documents in collection.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
