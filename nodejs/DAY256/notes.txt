@@ -1,0 +1,9 @@
+Day 256 - Schema Validation & Custom Validators
+
+Topic Overview:
+min, max, enum, match regex, and custom validate functions.
+
+Keep an eye on:
+- Validation occurs at schema level before saving to database, ensuring clean data integrity.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
