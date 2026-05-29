@@ -1,0 +1,9 @@
+Day 257 - Mongoose CRUD: Create Documents
+
+Topic Overview:
+Model.create() and new Model().save().
+
+Keep an eye on:
+- create() is a convenient shortcut that instantiates and saves in one step.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
