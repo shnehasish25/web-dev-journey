@@ -1,0 +1,9 @@
+Day 258 - Mongoose CRUD: Read Queries
+
+Topic Overview:
+find(), findById(), findOne(), and query filtering.
+
+Keep an eye on:
+- find() returns an array of documents matching query, or empty array [] if none match.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
