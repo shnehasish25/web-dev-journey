@@ -1,0 +1,9 @@
+Day 259 - Mongoose CRUD: Update Documents
+
+Topic Overview:
+findByIdAndUpdate(), updateOne(), runValidators flag.
+
+Keep an eye on:
+- Always pass { new: true, runValidators: true } to findByIdAndUpdate to get the updated document and enforce schema rules!
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
