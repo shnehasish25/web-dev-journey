@@ -1,0 +1,9 @@
+Day 260 - Mongoose CRUD: Delete Documents
+
+Topic Overview:
+findByIdAndDelete() and the soft-delete pattern.
+
+Keep an eye on:
+- Soft delete sets isActive: false or deletedAt: timestamp instead of permanently destroying financial/order history.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
