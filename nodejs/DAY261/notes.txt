@@ -1,0 +1,9 @@
+Day 261 - Query Operators: Comparison & Pagination
+
+Topic Overview:
+$gte, $lte, $in, $regex, .skip(), .limit().
+
+Keep an eye on:
+- Query operators start with a dollar sign: Dish.find({ price: { $gte: 100, $lte: 300 } }).
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
