@@ -1,0 +1,9 @@
+Day 262 - Mongoose Middleware: Pre & Post Hooks
+
+Topic Overview:
+pre('save') for hashing passwords, post('save') for logging.
+
+Keep an eye on:
+- Pre-save hooks run automatically before document is persisted. Must call next() or return a promise.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
