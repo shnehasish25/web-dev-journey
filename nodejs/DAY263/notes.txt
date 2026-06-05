@@ -1,0 +1,9 @@
+Day 263 - Data Relationships: References & Populate
+
+Topic Overview:
+Modeling relationships using ObjectId refs and .populate().
+
+Keep an eye on:
+- populate() works like a SQL JOIN, replacing the referenced ObjectId with the actual document data from foreign collection.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
