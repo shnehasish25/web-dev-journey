@@ -1,0 +1,9 @@
+Day 264 - Mini-Project: MongoDB-Backed Food Delivery API
+
+Topic Overview:
+Full Mongoose CRUD API for restaurant orders with schema validation and population.
+
+Keep an eye on:
+- Integrates dishes schema, customer schema, and orders schema with total calculations.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
