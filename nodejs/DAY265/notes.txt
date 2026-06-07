@@ -1,0 +1,9 @@
+Day 265 - Authentication Fundamentals: Sessions vs JWT
+
+Topic Overview:
+Stateful server-side sessions vs stateless JSON Web Tokens.
+
+Keep an eye on:
+- JWTs scale horizontally because server doesn't need to look up session ID in shared database on every single request.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
