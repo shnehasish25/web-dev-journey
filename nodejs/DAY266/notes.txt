@@ -1,0 +1,9 @@
+Day 266 - Password Hashing with Bcrypt
+
+Topic Overview:
+bcrypt.hash(), bcrypt.compare(), and salt rounds.
+
+Keep an eye on:
+- Never store plain text passwords! Bcrypt adds a salt to defend against rainbow table attacks. Use 10-12 salt rounds.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
