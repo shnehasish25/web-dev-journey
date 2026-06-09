@@ -1,0 +1,9 @@
+Day 267 - Generating JSON Web Tokens (JWT)
+
+Topic Overview:
+jwt.sign(), setting payload, expiry time, and secret key.
+
+Keep an eye on:
+- Never put sensitive data (like passwords or full credit card numbers) in a JWT payload; payloads are easily decoded base64!
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
