@@ -1,0 +1,6 @@
+### Day 267: Generating JSON Web Tokens (JWT)
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
