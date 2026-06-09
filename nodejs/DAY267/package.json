@@ -1,0 +1,13 @@
+{
+  "name": "day-267",
+  "version": "1.0.0",
+  "description": "Generating JSON Web Tokens (JWT)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
