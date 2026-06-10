@@ -1,0 +1,9 @@
+Day 268 - Verifying JWTs & Protect Middleware
+
+Topic Overview:
+Extracting Bearer token from req.headers.authorization and verifying.
+
+Keep an eye on:
+- If token is missing, expired, or signature is invalid, return 401 Unauthorized immediately.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
