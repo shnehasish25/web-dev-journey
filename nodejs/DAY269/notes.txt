@@ -1,0 +1,9 @@
+Day 269 - Role-Based Access Control (RBAC)
+
+Topic Overview:
+Restricting admin routes: restrictTo('admin', 'moderator').
+
+Keep an eye on:
+- Place restrictTo middleware AFTER protect middleware so req.user is guaranteed to be available.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
