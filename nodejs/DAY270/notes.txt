@@ -1,0 +1,9 @@
+Day 270 - Secure Cookie Storage: httpOnly
+
+Topic Overview:
+Storing JWTs in httpOnly, secure, sameSite cookies.
+
+Keep an eye on:
+- httpOnly cookies cannot be read by JavaScript (document.cookie), protecting against XSS token theft.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
