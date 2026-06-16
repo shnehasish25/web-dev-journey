@@ -1,0 +1,9 @@
+Day 271 - Password Reset Flow & Crypto Tokens
+
+Topic Overview:
+Generating random reset tokens with crypto.randomBytes and expiring in 10 mins.
+
+Keep an eye on:
+- Hash the reset token before saving in database so a database leak doesn't compromise active reset links.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
