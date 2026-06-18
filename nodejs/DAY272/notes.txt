@@ -1,0 +1,9 @@
+Day 272 - Preventing NoSQL Injection & Sanitization
+
+Topic Overview:
+Using express-mongo-sanitize to strip $ and . operators from user inputs.
+
+Keep an eye on:
+- Attackers can pass { 'password': { '$gt': '' } } to bypass password checks if queries aren't sanitized!
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
