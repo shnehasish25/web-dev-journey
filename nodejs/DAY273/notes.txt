@@ -1,0 +1,9 @@
+Day 273 - Security Headers with Helmet
+
+Topic Overview:
+Setting Content-Security-Policy, HSTS, and X-Content-Type-Options.
+
+Keep an eye on:
+- helmet() sets 14+ secure HTTP headers automatically to protect against common web vulnerabilities.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
