@@ -1,0 +1,9 @@
+Day 274 - Mini-Project: Complete JWT Auth Microservice
+
+Topic Overview:
+User Registration, Bcrypt Hashing, Login, JWT Issuing, and Protected User Profile Route.
+
+Keep an eye on:
+- Clean MVC structure with authController, authRoutes, and protect middleware.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
