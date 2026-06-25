@@ -1,0 +1,9 @@
+Day 275 - WebSockets vs HTTP Polling
+
+Topic Overview:
+Full-duplex bidirectional persistent connection vs repeated HTTP polling.
+
+Keep an eye on:
+- WebSockets maintain single TCP connection; server can push data to client without client asking first.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
