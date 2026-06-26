@@ -1,0 +1,6 @@
+### Day 276: Setting Up Socket.io with Express
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
