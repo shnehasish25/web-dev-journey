@@ -1,0 +1,9 @@
+Day 276 - Setting Up Socket.io with Express
+
+Topic Overview:
+Attaching Socket.io to Node's HTTP server.
+
+Keep an eye on:
+- Socket.io wraps the HTTP server: const io = new Server(httpServer, { cors: { origin: '*' } }).
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
