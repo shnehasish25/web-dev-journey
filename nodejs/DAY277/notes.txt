@@ -1,0 +1,9 @@
+Day 277 - Emitting & Listening to Events
+
+Topic Overview:
+socket.emit (to self), socket.broadcast.emit (to all others), io.emit (to everyone).
+
+Keep an eye on:
+- Choose the right emit method to avoid echoing a user's own chat message back to them unnecessarily.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
