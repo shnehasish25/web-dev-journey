@@ -1,0 +1,9 @@
+Day 278 - Rooms & Namespaces in Socket.io
+
+Topic Overview:
+socket.join('room-id') and io.to('room-id').emit().
+
+Keep an eye on:
+- Rooms allow partitioning users (e.g. specific hostel block or live cricket match room).
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
