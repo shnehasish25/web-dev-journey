@@ -1,0 +1,9 @@
+Day 279 - Real-Time Live Cricket Score Ticker
+
+Topic Overview:
+Server pushing live score updates every 3 seconds to connected browser clients.
+
+Keep an eye on:
+- Demonstrates periodic server push without client polling.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
