@@ -1,0 +1,13 @@
+{
+  "name": "day-280",
+  "version": "1.0.0",
+  "description": "Mini-Project: Real-Time Coding Club Chat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
