@@ -1,0 +1,9 @@
+Day 280 - Mini-Project: Real-Time Coding Club Chat
+
+Topic Overview:
+Multi-user chatroom with active user counter, typing indicators, and message timestamps.
+
+Keep an eye on:
+- Combines Express static client with Socket.io backend broadcast.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
