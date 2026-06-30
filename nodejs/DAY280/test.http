@@ -1,0 +1,6 @@
+### Day 280: Mini-Project: Real-Time Coding Club Chat
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Health Check
+GET http://localhost:3000/api/health
