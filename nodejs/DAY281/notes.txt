@@ -1,0 +1,9 @@
+Day 281 - API Testing with Jest & Supertest
+
+Topic Overview:
+Writing automated tests for HTTP status codes, headers, and response bodies.
+
+Keep an eye on:
+- Run tests before every deployment: request(app).get('/api/health').expect(200).
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
