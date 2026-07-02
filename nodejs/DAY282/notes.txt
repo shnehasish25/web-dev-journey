@@ -1,0 +1,9 @@
+Day 282 - Production Logging with Winston
+
+Topic Overview:
+Log levels (error, warn, info, debug) and writing logs to rotating disk files.
+
+Keep an eye on:
+- Never use console.log in production! Winston writes structured JSON logs with timestamps for monitoring tools.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
