@@ -1,0 +1,9 @@
+Day 283 - Process Management with PM2
+
+Topic Overview:
+Running Node apps in background, cluster mode across all CPU cores, auto-restart on crashes.
+
+Keep an eye on:
+- pm2 start server.js -i max spawns worker processes across all CPU cores for maximum throughput.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
