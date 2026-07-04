@@ -1,0 +1,9 @@
+Day 284 - Dockerizing a Node.js Application
+
+Topic Overview:
+Writing Dockerfile, .dockerignore, creating lightweight container images.
+
+Keep an eye on:
+- Use node:18-alpine for minimal image size (~150MB instead of 1GB). Copy package.json first for layer caching.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
