@@ -1,0 +1,9 @@
+Day 285 - Capstone Part 1: Food Delivery & UPI Webhook Backend
+
+Topic Overview:
+Architecture of the complete full-stack backend: Auth, Menu, Cart, Orders, and Payment Webhooks.
+
+Keep an eye on:
+- Planning modular architecture, database models, and payment state machines.
+- Run tests locally using node server.js.
+- Inspect network requests and response headers.
