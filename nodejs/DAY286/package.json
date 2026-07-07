@@ -1,0 +1,13 @@
+{
+  "name": "day-286",
+  "version": "1.0.0",
+  "description": "Capstone Part 2 & Backend Graduation: Full Swiggy API with UPI Webhook! 🎉",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
