@@ -1,0 +1,9 @@
+Day 287 - MongoDB Architecture, mongosh & ObjectId
+
+Topic Overview:
+Introduction to MongoDB, BSON binary JSON format, mongosh shell commands, and ObjectId anatomy.
+
+Keep an eye on:
+- ObjectId is a 12-byte BSON type: 4-byte timestamp, 5-byte random value, 3-byte incrementing counter. You can extract timestamp using doc._id.getTimestamp().
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
