@@ -1,0 +1,9 @@
+Day 288 - CRUD: insertOne & insertMany
+
+Topic Overview:
+Inserting single and multiple BSON documents, write concerns, ordered vs unordered batch inserts.
+
+Keep an eye on:
+- By default, insertMany is ordered: if document #3 fails validation, operations halt and remaining docs are NOT inserted. Pass { ordered: false } to continue inserting the rest.
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
