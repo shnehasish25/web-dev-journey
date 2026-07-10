@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 289 - CRUD: Query Filters & Logical Operators</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #f8fafc; padding: 30px; margin: 0; }
+    .card { background: #1e293b; border: 1px solid #334155; padding: 24px; border-radius: 8px; max-width: 650px; }
+    pre { background: #020617; padding: 16px; border-radius: 6px; color: #38bdf8; overflow-x: auto; font-size: 13px; }
+    .badge { background: #10b981; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">MongoDB Day 289</span>
+    <h2>CRUD: Query Filters & Logical Operators</h2>
+    <p>find() and findOne() with $gt, $gte, $in, $and, $or comparison operators.</p>
+    <h3>Executable Query Snippet:</h3>
+    <pre><code>// Day 289: Query Filters
+// Find high-rated pure veg restaurants in Koramangala
+db.restaurants.find({
+  $and: [
+    { city: "Bengaluru" },
+    { locality: "Koramangala" },
+    { isVeg: true },
+    { rating: { $gte: 4.5 } }
+  ]
+});</code></pre>
+  </div>
+</body>
+</html>
