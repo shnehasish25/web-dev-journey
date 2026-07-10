@@ -1,0 +1,9 @@
+Day 289 - CRUD: Query Filters & Logical Operators
+
+Topic Overview:
+find() and findOne() with $gt, $gte, $in, $and, $or comparison operators.
+
+Keep an eye on:
+- $in takes an array of target values. An explicit $and is only needed when testing the same field multiple times, otherwise comma separation acts as implicit AND.
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
