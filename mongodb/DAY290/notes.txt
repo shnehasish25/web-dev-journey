@@ -1,0 +1,9 @@
+Day 290 - Projections, Sorting & Pagination
+
+Topic Overview:
+Projection inclusion/exclusion, ascending (1) and descending (-1) sort, skip and limit.
+
+Keep an eye on:
+- You cannot mix inclusion and exclusion in a single projection, with the sole exception of the _id field (e.g. { name: 1, price: 1, _id: 0 }).
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
