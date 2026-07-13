@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 290 - Projections, Sorting & Pagination</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #f8fafc; padding: 30px; margin: 0; }
+    .card { background: #1e293b; border: 1px solid #334155; padding: 24px; border-radius: 8px; max-width: 650px; }
+    pre { background: #020617; padding: 16px; border-radius: 6px; color: #38bdf8; overflow-x: auto; font-size: 13px; }
+    .badge { background: #10b981; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">MongoDB Day 290</span>
+    <h2>Projections, Sorting & Pagination</h2>
+    <p>Projection inclusion/exclusion, ascending (1) and descending (-1) sort, skip and limit.</p>
+    <h3>Executable Query Snippet:</h3>
+    <pre><code>// Day 290: Sorting and Pagination
+// Page 2: Skip 10, Limit 5, Sort by rating descending
+db.restaurants.find(
+  { city: "Bengaluru" },
+  { name: 1, rating: 1, locality: 1, _id: 0 } // Projection
+)
+.sort({ rating: -1 })
+.skip(10)
+.limit(5);</code></pre>
+  </div>
+</body>
+</html>
