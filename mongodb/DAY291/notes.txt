@@ -1,0 +1,9 @@
+Day 291 - CRUD: updateOne, updateMany & $inc
+
+Topic Overview:
+Modifying documents with $set, $inc, $unset, and the upsert flag.
+
+Keep an eye on:
+- Always use update operators like $set! If you pass a plain object to updateOne without $set, it replaces the entire document!
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
