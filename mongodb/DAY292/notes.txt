@@ -1,0 +1,9 @@
+Day 292 - Updating Arrays: $push, $pull & $addToSet
+
+Topic Overview:
+Manipulating array fields in documents without replacing the whole array.
+
+Keep an eye on:
+- $push adds duplicates; $addToSet adds an element ONLY if it does not already exist in the array (great for tags and categories).
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
