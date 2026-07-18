@@ -1,0 +1,9 @@
+Day 293 - CRUD: deleteOne, deleteMany & Soft Deletes
+
+Topic Overview:
+Removing documents from collection and implementing soft deletion.
+
+Keep an eye on:
+- In production, prefer soft deletion ($set: { isDeleted: true, deletedAt: new Date() }) so historical invoices and analytics aren't orphaned.
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
