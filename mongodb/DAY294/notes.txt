@@ -1,0 +1,9 @@
+Day 294 - Indexes & Query Performance (COLLSCAN vs IXSCAN)
+
+Topic Overview:
+createIndex(), compound indexes, unique constraints, and using explain('executionStats').
+
+Keep an eye on:
+- A query without an index performs a COLLSCAN (scans every single document in collection!). With an index, it performs an IXSCAN (lightning fast B-tree lookup).
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
