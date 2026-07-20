@@ -1,0 +1,9 @@
+Day 295 - Data Modeling: Embedding vs Referencing
+
+Topic Overview:
+Deciding when to embed subdocuments (1-to-Few) vs referencing ObjectIds (1-to-Many).
+
+Keep an eye on:
+- Rule of thumb: Embed if data is frequently read together and bounded in size (e.g. delivery addresses). Reference if data grows indefinitely (e.g. user orders over 5 years).
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
