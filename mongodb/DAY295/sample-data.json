@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "65b1f295001",
+    "restaurant": "Udupi Tiffin Hall",
+    "city": "Bengaluru",
+    "locality": "Koramangala",
+    "rating": 4.6,
+    "isVeg": true,
+    "items": [
+      { "dishName": "Ghee Masala Dosa", "price": 120, "quantity": 2 },
+      { "dishName": "Degree Filter Coffee", "price": 30, "quantity": 2 }
+    ],
+    "totalAmount": 300,
+    "status": "DELIVERED",
+    "createdAt": "2024-03-15T12:30:00.000Z"
+  },
+  {
+    "_id": "65b1f295002",
+    "restaurant": "Meghana Foods",
+    "city": "Bengaluru",
+    "locality": "Koramangala",
+    "rating": 4.5,
+    "isVeg": false,
+    "items": [
+      { "dishName": "Chicken Biryani", "price": 290, "quantity": 1 }
+    ],
+    "totalAmount": 290,
+    "status": "DELIVERED",
+    "createdAt": "2024-03-15T13:15:00.000Z"
+  }
+]
