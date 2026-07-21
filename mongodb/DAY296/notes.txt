@@ -1,0 +1,9 @@
+Day 296 - Aggregation Framework Part 1: $match & $project
+
+Topic Overview:
+Building data processing pipelines with $match, $project, $sort, and $limit stages.
+
+Keep an eye on:
+- Always place $match and $sort at the very start of the pipeline so MongoDB can leverage database indexes to filter data early!
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
