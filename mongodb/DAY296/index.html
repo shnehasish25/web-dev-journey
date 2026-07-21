@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 296 - Aggregation Framework Part 1: $match & $project</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #f8fafc; padding: 30px; margin: 0; }
+    .card { background: #1e293b; border: 1px solid #334155; padding: 24px; border-radius: 8px; max-width: 650px; }
+    pre { background: #020617; padding: 16px; border-radius: 6px; color: #38bdf8; overflow-x: auto; font-size: 13px; }
+    .badge { background: #10b981; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">MongoDB Day 296</span>
+    <h2>Aggregation Framework Part 1: $match & $project</h2>
+    <p>Building data processing pipelines with $match, $project, $sort, and $limit stages.</p>
+    <h3>Executable Query Snippet:</h3>
+    <pre><code>// Day 296: Aggregation Basics
+db.orders.aggregate([
+  // Stage 1: Filter paid orders in Bengaluru
+  { $match: { city: "Bengaluru", status: "DELIVERED" } },
+  
+  // Stage 2: Reshape fields and compute total with tax
+  { $project: {
+      orderId: 1,
+      totalAmount: 1,
+      gstAmount: { $multiply: ["$totalAmount", 0.05] }
+    }
+  },
+  
+  // Stage 3: Sort by total descending
+  { $sort: { totalAmount: -1 } },
+  { $limit: 10 }
+]);</code></pre>
+  </div>
+</body>
+</html>
