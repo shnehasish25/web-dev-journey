@@ -1,0 +1,9 @@
+Day 297 - Aggregation Framework Part 2: $group & Accumulators
+
+Topic Overview:
+Grouping data with $group and calculating $sum, $avg, $min, $max.
+
+Keep an eye on:
+- $group takes an _id expression representing the grouping key. Use null to aggregate across the entire collection into a single summary document.
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
