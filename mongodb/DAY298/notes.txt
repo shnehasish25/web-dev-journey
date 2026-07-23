@@ -1,0 +1,9 @@
+Day 298 - Aggregation Framework Part 3: $lookup & $unwind
+
+Topic Overview:
+Left outer joins across collections with $lookup and flattening arrays with $unwind.
+
+Keep an eye on:
+- $lookup outputs joined documents as an array. Use $unwind to flatten the array into individual document records for easier property access.
+- Test queries directly in mongosh or MongoDB Compass.
+- Always check executionStats to avoid unindexed full collection scans.
