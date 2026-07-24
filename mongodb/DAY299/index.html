@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 299 - MongoDB Capstone: Full Analytics Engine & Benchmark 🎉</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #f8fafc; padding: 30px; margin: 0; }
+    .card { background: #1e293b; border: 1px solid #334155; padding: 24px; border-radius: 8px; max-width: 650px; }
+    pre { background: #020617; padding: 16px; border-radius: 6px; color: #38bdf8; overflow-x: auto; font-size: 13px; }
+    .badge { background: #10b981; color: white; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">MongoDB Day 299</span>
+    <h2>MongoDB Capstone: Full Analytics Engine & Benchmark 🎉</h2>
+    <p>End-to-end database project: seed data, index benchmarking, complex business analytics pipeline, and graduation!</p>
+    <h3>Executable Query Snippet:</h3>
+    <pre><code>// Day 299: Capstone Business Analytics Pipeline
+db.orders.aggregate([
+  { $match: { status: "DELIVERED", createdAt: { $gte: new Date("2024-01-01") } } },
+  { $unwind: "$items" },
+  { $group: {
+      _id: "$items.dishName",
+      totalQuantitySold: { $sum: "$items.quantity" },
+      totalRevenueGenerated: { $sum: { $multiply: ["$items.price", "$items.quantity"] } }
+    }
+  },
+  { $sort: { totalQuantitySold: -1 } },
+  { $limit: 5 },
+  { $project: {
+      dish: "$_id",
+      totalQuantitySold: 1,
+      totalRevenueGenerated: 1,
+      formattedRevenue: { $concat: ["₹", { $toString: "$totalRevenueGenerated" }] },
+      _id: 0
+    }
+  }
+]);
+console.log("🎉 13-DAY MONGODB MODULE MASTERED! TOTAL 299 DAYS ACHIEVED!");</code></pre>
+  </div>
+</body>
+</html>
