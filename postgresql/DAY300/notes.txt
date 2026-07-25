@@ -1,0 +1,19 @@
+Day 300 - Relational DB Fundamentals & PostgreSQL Setup
+
+Topic Overview:
+Finally starting SQL with PostgreSQL! After spending the last few weeks in MongoDB's flexible schemaless world, switching to relational databases feels very structured and strict. Everything needs a predefined schema, tables, rows, and strict data types before you can insert a single byte.
+For anything involving money, ledgers, or inventory (like Razorpay payments or Swiggy wallet balances), SQL is king because you cannot afford random missing fields or corrupted types.
+
+Core Data Types to memorize:
+- VARCHAR(n): Variable length string with limit (e.g., VARCHAR(100) for full names).
+- TEXT: Unlimited string length (great for addresses, reviews, descriptions).
+- INT / INTEGER: 4-byte integer (up to ~2.1 billion).
+- BIGINT: 8-byte integer (perfect for phone numbers with country codes or large transaction IDs).
+- NUMERIC(precision, scale) / DECIMAL(p,s): Exact decimal arithmetic! Never ever use FLOAT or DOUBLE for Indian Rupee amounts because floating point precision bugs will lose paise! Use NUMERIC(10,2) for ₹ amounts up to 99,99,999.99.
+- BOOLEAN: TRUE / FALSE.
+- TIMESTAMPTZ: Timestamp with time zone (defaults to Asia/Kolkata when configured properly).
+
+Keep an eye on:
+- Never store currency in FLOAT or DOUBLE. IEEE 754 floating point arithmetic causes 0.1 + 0.2 = 0.30000000000000004. In a payment ledger, that will cause audit failures. Always use NUMERIC(12,2) or store paisa as BIGINT.
+- Always prefer TIMESTAMPTZ over TIMESTAMP. Bare TIMESTAMP ignores time zones, which causes nightmare bugs when reconciling server UTC time with Indian Standard Time (IST = UTC + 5:30).
+- SQL keywords are conventionally written in UPPERCASE, but table and column names should always be lowercase snake_case to avoid quoting issues in Postgres.
