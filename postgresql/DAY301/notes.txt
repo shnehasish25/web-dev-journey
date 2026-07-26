@@ -1,0 +1,19 @@
+Day 301 - Constraints & Primary Keys
+
+Topic Overview:
+Today was all about making the database guarantee data sanity using SQL Constraints. In NoSQL we usually write application-level validation in Mongoose, but if a rogue script or another microservice writes to the database directly, invalid data slips in.
+In PostgreSQL, the DB engine itself acts as the final gatekeeper.
+
+Key constraints explored:
+- PRIMARY KEY: Uniquely identifies each row; automatically creates a unique B-Tree index, never allows NULL.
+- NOT NULL: Column must have a value.
+- UNIQUE: Guarantees no two rows share the same value (like PAN card, email, or Aadhaar hash).
+- CHECK: Custom boolean expression that must evaluate to TRUE for every insert/update.
+  e.g., `CHECK (balance >= 0.00)` prevents negative account balances!
+  e.g., `CHECK (phone ~ '^[6-9][0-9]{9}$')` ensures valid 10-digit Indian mobile numbers.
+- DEFAULT: Provides a fallback value if none is supplied.
+
+Keep an eye on:
+- When a CHECK constraint fails, PostgreSQL aborts the entire transaction with error code `23514` (check_violation).
+- Naming your constraints explicitly is a huge pro tip! Write `CONSTRAINT chk_positive_balance CHECK (balance >= 0)` instead of bare `CHECK (balance >= 0)`. When an error occurs in production logs, you get the exact constraint name instead of an auto-generated cryptic string like `table_balance_check`.
+- Multiple columns can form a composite UNIQUE constraint, e.g., `UNIQUE(user_id, account_type)`.
