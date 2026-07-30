@@ -1,0 +1,18 @@
+Day 303 - Basic CRUD & Filtering in SQL
+
+Topic Overview:
+Today was focused on mastering query filtering, sorting, pagination, and the awesome Postgres-specific `RETURNING` clause.
+In MongoDB we used `find({ price: { $gte: 200 } })`. In SQL, the equivalent declarative query syntax `SELECT ... FROM ... WHERE ...` is cleaner and easier to reason about once you get the hang of it.
+
+Key features practiced today:
+- INSERT INTO ... RETURNING *: This is one of Postgres's superpower features! Instead of doing an INSERT followed by a second SELECT to get the newly generated `SERIAL` ID or default timestamp, you just append `RETURNING *` or `RETURNING order_id, created_at`.
+- LIKE vs ILIKE: `LIKE` is case-sensitive (`'kushal%'` won't match `'Kushal'`). `ILIKE` is PostgreSQL's case-insensitive matching operator (`ILIKE 'kushal%'` matches both!).
+- IN (...): Checks if a value matches any element in a list.
+- BETWEEN ... AND ...: Inclusive range check (great for price ranges or date bounds).
+- ORDER BY col ASC/DESC: Sorts results.
+- LIMIT and OFFSET: Standard pagination (e.g., `LIMIT 10 OFFSET 20` fetches page 3).
+
+Keep an eye on:
+- `%` in LIKE/ILIKE matches zero or more characters; `_` matches exactly one character.
+- `OFFSET` performs a sequential scan over the skipped rows under the hood. For huge datasets (100k+ rows), seek/keyset pagination (`WHERE id > last_seen_id LIMIT 10`) is way faster than `OFFSET 50000`.
+- Beware of SQL injection! In application code, NEVER concatenate user strings into queries. Always use parameterized queries (`$1, $2`).
