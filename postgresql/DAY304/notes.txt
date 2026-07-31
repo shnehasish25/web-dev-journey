@@ -1,0 +1,20 @@
+Day 304 - Advanced Filtering & Null Handling
+
+Topic Overview:
+SQL uses three-valued logic: TRUE, FALSE, and UNKNOWN (NULL).
+Coming from JavaScript, this can trip you up big time:
+In JS: `null === null` is true.
+In SQL: `NULL = NULL` is NULL (UNKNOWN)!
+Because NULL represents the absence of a value or an unknown value, two unknowns cannot be compared as equal.
+
+Key concepts mastered today:
+- IS NULL and IS NOT NULL: The only correct way to check for nullability.
+- COALESCE(val1, val2, ...): Returns the first non-null argument in the list.
+  Super practical example: User delivery addresses! If `landmark` is NULL, fallback to `'Near Main Road'`.
+- NULLIF(a, b): Returns NULL if a == b; otherwise returns a. Useful for avoiding division by zero (`amount / NULLIF(item_count, 0)`).
+- CASE WHEN ... THEN ... ELSE ... END: SQL's version of `if/else` or `switch`. Used directly inside SELECT queries to classify data on the fly (e.g. labeling customers into loyalty tiers based on lifetime spend).
+
+Keep an eye on:
+- Never write `WHERE column = NULL`. It will never match any row, not even rows where the column is null! Always use `WHERE column IS NULL`.
+- `NOT IN (subquery)` will return ZERO rows if the subquery returns even a single NULL! Either filter out nulls in the subquery or use `NOT EXISTS`.
+- `COALESCE` evaluates from left to right and short-circuits as soon as it hits a non-null value.
