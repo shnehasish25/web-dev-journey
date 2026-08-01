@@ -1,0 +1,23 @@
+Day 305 - Aggregate Functions & GROUP BY
+
+Topic Overview:
+Today was about summarizing data using SQL aggregate functions. When doing analytics, you rarely want raw rows; you want totals, averages, order counts, and revenue numbers.
+
+Standard Aggregate Functions:
+- COUNT(*): Counts all rows in group (including NULL rows).
+- COUNT(col): Counts non-null values of that column.
+- SUM(col): Sum of numeric values.
+- AVG(col): Average (mean).
+- MIN(col) / MAX(col): Minimum and maximum values.
+
+The Golden Rule of GROUP BY:
+Every column in your SELECT list that is NOT inside an aggregate function MUST be included in the GROUP BY clause! Otherwise, Postgres will throw error `42803: column must appear in the GROUP BY clause or be used in an aggregate function`.
+
+WHERE vs HAVING:
+- WHERE filters rows BEFORE they are grouped or aggregated.
+- HAVING filters groups AFTER aggregation has taken place!
+Example: `WHERE status = 'SUCCESS'` (filters successful payments), then `GROUP BY merchant_id`, then `HAVING SUM(amount) > 50000` (keeps only merchants with total volume > ₹50k).
+
+Keep an eye on:
+- You cannot use alias names from SELECT inside the WHERE or HAVING clause in Postgres because of query execution order: `FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY -> LIMIT`.
+- `ROUND(AVG(rating), 2)` is great for displaying restaurant ratings to 2 decimal places.
