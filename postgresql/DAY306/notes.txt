@@ -1,0 +1,18 @@
+Day 306 - Relational Joins: Part 1 (INNER & LEFT)
+
+Topic Overview:
+Today we explored joins! In MongoDB, doing joins requires `$lookup`, which often feels clunky and slow. In SQL, relational joins are first-class, lightning-fast operations optimized by the query planner.
+
+The two most important joins:
+1. INNER JOIN:
+   - Returns ONLY rows where there is a match in BOTH tables.
+   - If a customer has never placed an order, an INNER JOIN between `customers` and `orders` will exclude that customer completely.
+2. LEFT OUTER JOIN (or simply LEFT JOIN):
+   - Returns ALL rows from the left table, plus matched rows from the right table.
+   - If there is no match on the right side, all right-table columns will be NULL.
+   - Crucial business use case: "Show me all registered users, along with their order count (even if 0)". If you used INNER JOIN, you'd fail to find inactive users who need re-engagement campaigns!
+
+Keep an eye on:
+- Always use table aliases (`customers c JOIN orders o ON c.id = o.customer_id`) to keep queries clean and readable.
+- If you filter a LEFT JOIN table in the WHERE clause, you might accidentally turn it into an INNER JOIN!
+  For example: `WHERE o.status = 'DELIVERED'` drops rows where `o.status IS NULL`. To preserve left join behavior, put conditions in the `ON` clause or use `WHERE (o.status = 'DELIVERED' OR o.status IS NULL)`.
