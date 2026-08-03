@@ -1,0 +1,16 @@
+Day 307 - Relational Joins: Part 2 & Many-to-Many Relationships
+
+Topic Overview:
+Today we tackled Many-to-Many (N:M) relationships and advanced joins (RIGHT JOIN & FULL OUTER JOIN).
+Real-world scenario: An order can contain multiple food items, and a food item can be part of thousands of orders.
+You cannot put `item_id` in the `orders` table (that violates 1st Normal Form), and you cannot put `order_id` in `menu_items`.
+The solution is a Junction Table (also called Bridge or Associative table) — here named `order_line_items`.
+
+Key structural points:
+- The junction table contains foreign keys to both parent tables: `order_id` and `item_id`.
+- Composite Primary Key: `PRIMARY KEY (order_id, item_id)` guarantees you can't accidentally add the exact same item as duplicate separate rows instead of incrementing quantity.
+- Line items store the `unit_price_at_order`! Never rely on current menu price for past orders, because if the restaurant raises their Dosa price from ₹80 to ₹90 tomorrow, past order totals would get corrupted!
+
+Keep an eye on:
+- FULL OUTER JOIN returns all rows from both tables, filling with NULL wherever there is no match. Useful for payment reconciliation (matching bank statement records with internal order logs).
+- Always calculate line totals as `quantity * unit_price`, and use `SUM()` with `GROUP BY order_id` to compute the cart subtotal.
