@@ -1,0 +1,14 @@
+Day 308 - Subqueries & Correlated Subqueries
+
+Topic Overview:
+Today we mastered subqueries — queries nested inside another SQL statement.
+Types of subqueries:
+1. Scalar Subquery: Returns exactly 1 row and 1 column. Can be placed anywhere a single value is expected (like in SELECT or WHERE).
+   e.g., `WHERE amount > (SELECT AVG(amount) FROM orders)`.
+2. Multi-row Subquery: Returns a list of values, used with `IN`, `NOT IN`, `ANY`, or `ALL`.
+3. Correlated Subquery: The inner query references a column from the outer query row! The inner query executes once for each candidate row processed by the outer query.
+4. `EXISTS` and `NOT EXISTS`: Checks for existence of rows without fetching actual data. In Postgres, `EXISTS` short-circuits as soon as it finds the first matching row, making it super efficient!
+
+Keep an eye on:
+- Beware of `NOT IN (SELECT nullable_col FROM ...)`! If any returned value is NULL, the entire `NOT IN` expression evaluates to UNKNOWN and returns zero results. Always prefer `NOT EXISTS` instead.
+- Correlated subqueries can be slow if not backed by indexes because they evaluate per outer row. If performance lags, rewrite them into a JOIN or a CTE with a Window function.
