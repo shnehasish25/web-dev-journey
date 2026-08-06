@@ -1,0 +1,21 @@
+Day 309 - CTEs (Common Table Expressions) & Window Functions
+
+Topic Overview:
+Today was one of the biggest level-up days in SQL!
+Common Table Expressions (`WITH ... AS (...)`) allow you to write clean, modular, step-by-step queries instead of unreadable nests of subqueries.
+And Window Functions (`ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, `LEAD()`, `LAG()`) give you the power of aggregation WITHOUT collapsing rows!
+
+Key concepts:
+- CTE (`WITH` clause): Defines a temporary result set that you can reference like a table in the subsequent query.
+- Window Function Syntax: `FUNCTION() OVER (PARTITION BY group_col ORDER BY sort_col)`.
+  - `PARTITION BY`: Divides the rows into subsets (like GROUP BY, but keeps individual rows).
+  - `ORDER BY`: Defines the ranking sequence within each partition.
+- `ROW_NUMBER()`: Unique sequential number 1, 2, 3...
+- `RANK()`: Skips ranks on ties (1, 2, 2, 4).
+- `DENSE_RANK()`: Does not skip ranks on ties (1, 2, 2, 3).
+- `LAG(col, 1)`: Accesses the previous row's value (perfect for month-over-month growth calculations).
+
+Keep an eye on:
+- Window functions are evaluated in the SELECT phase, so you CANNOT filter by a window function directly in the WHERE clause (e.g. `WHERE ROW_NUMBER() <= 3` is illegal).
+- To filter by rank, wrap the query in a CTE and filter in the outer query:
+  `WITH ranked AS (SELECT ..., DENSE_RANK() OVER (...) as rnk FROM ...) SELECT * FROM ranked WHERE rnk <= 3;`
