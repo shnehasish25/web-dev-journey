@@ -1,0 +1,25 @@
+Day 310 - Built-in Functions & Date/Time Handling
+
+Topic Overview:
+Dates and timestamps in databases are a classic source of production incidents.
+Today I learned how PostgreSQL handles date/time intervals, timezones, and text manipulation.
+
+Crucial Date/Time functions:
+- TIMESTAMPTZ: Always stores UTC internally, but prints in the session timezone (e.g., IST).
+- `NOW()` or `CURRENT_TIMESTAMP`: Current transaction timestamp.
+- `CURRENT_DATE`: Today's date (without time).
+- Interval arithmetic:
+  `NOW() - INTERVAL '7 days'` (last week).
+  `NOW() + INTERVAL '30 minutes'` (OTP expiry).
+- `DATE_TRUNC('month', timestamp)`: Truncates timestamp to start of month (essential for monthly cohorts!).
+- `AGE(timestamp1, timestamp2)`: Returns interval difference in human-readable years, months, days.
+- `EXTRACT(DOW FROM timestamp)`: Day of week (0 = Sunday).
+
+String functions:
+- `CONCAT()`, `UPPER()`, `LOWER()`, `TRIM()`.
+- `SUBSTRING(col FROM start FOR length)`.
+- `SPLIT_PART(string, delimiter, field_number)`.
+
+Keep an eye on:
+- Setting session timezone: `SET timezone = 'Asia/Kolkata';` ensures all timestamps are rendered in Indian Standard Time (UTC+5:30).
+- When computing order duration (e.g. `delivered_at - placed_at`), Postgres returns an `INTERVAL`. You can extract total seconds using `EXTRACT(EPOCH FROM interval)`.
