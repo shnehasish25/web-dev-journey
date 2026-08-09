@@ -1,0 +1,19 @@
+Day 311 - Transactions & ACID Properties
+
+Topic Overview:
+Today was one of the most critical topics for backend developers: Transactions and ACID.
+- Atomicity: All or nothing. If step 3 fails, steps 1 and 2 are rolled back completely.
+- Consistency: DB moves from one valid state to another; all constraints are satisfied.
+- Isolation: Concurrent transactions don't interfere with each other or see intermediate uncommitted states.
+- Durability: Once committed, data is written to the WAL (Write-Ahead Log) and won't be lost even during sudden power failure.
+
+Commands:
+- `BEGIN`: Starts transaction block.
+- `COMMIT`: Saves all modifications.
+- `ROLLBACK`: Discards all modifications made in current transaction.
+- `SAVEPOINT savepoint_name`: Bookmark within a transaction for partial rollbacks.
+- `SELECT ... FOR UPDATE`: Row-level locking! Locks the selected rows until transaction ends. This stops race conditions (e.g., double-spending wallet balance).
+
+Keep an eye on:
+- Never do long external network calls (like calling Razorpay or Twilio API) while holding an open DB transaction! It holds locks and chokes the database connection pool. Perform API calls first or after committing.
+- Without `SELECT ... FOR UPDATE`, two concurrent requests can both read balance = ₹500, both pass the `balance >= 400` check, and both deduct ₹400, resulting in balance = -₹300!
