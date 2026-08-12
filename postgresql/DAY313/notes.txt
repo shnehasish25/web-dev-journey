@@ -1,0 +1,23 @@
+Day 313 - Advanced PostgreSQL Data Types: JSONB & Arrays
+
+Topic Overview:
+Today blew my mind: PostgreSQL has native JSON support with `JSONB` that rivals MongoDB!
+In fact, many tech companies in Bengaluru use Postgres as their primary database for BOTH structured SQL relations AND unstructured document payloads.
+
+JSON vs JSONB:
+- `JSON`: Stores exact raw string text; preserves whitespace and key order, but parses on every read (slow).
+- `JSONB`: Stores decomposed binary format. Slightly slower on write, but 10x faster on queries and supports GIN (Generalized Inverted Index) indexing!
+
+JSONB Operators:
+- `->`: Extracts JSON field as JSON object/array.
+- `->>`: Extracts JSON field as TEXT (use this when filtering strings or numbers in WHERE).
+- `#>` / `#>>`: Extracts nested paths (e.g. `payload #>> '{payment,entity,vpa}'`).
+- `@>`: JSON containment operator (does left JSON contain right JSON?).
+
+PostgreSQL Arrays:
+- You can declare columns like `tags TEXT[]` or `phone_numbers VARCHAR(15)[]`.
+- Query with `ANY(array_col)` or array containment `@>`.
+
+Keep an eye on:
+- Always use `->>` when comparing with strings in SQL: `WHERE data->>'status' = 'authorized'`. If you use `->`, you compare JSON `"authorized"` with SQL text `'authorized'`, which fails!
+- Create a GIN index on JSONB columns: `CREATE INDEX idx_gin_payload ON webhooks USING gin (payload);`. This enables instant lookups inside dynamic nested payloads.
