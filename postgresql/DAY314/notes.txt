@@ -1,0 +1,20 @@
+Day 314 - Views, Materialized Views & Triggers
+
+Topic Overview:
+Today we explored automation and encapsulation inside PostgreSQL using Views, Materialized Views, and Triggers.
+
+1. Views (`CREATE VIEW`):
+   - A saved query that acts like a virtual table.
+   - It doesn't store data physically; whenever you query the view, Postgres executes the underlying query on the fly.
+   - Great for hiding complex joins from frontend reporting teams or masking sensitive fields (like customer phone numbers or passwords).
+2. Materialized Views (`CREATE MATERIALIZED VIEW`):
+   - Unlike regular views, a Materialized View physically caches the query results on disk!
+   - Ideal for heavy, expensive analytical queries (e.g. daily sales aggregations across millions of rows).
+   - Must be refreshed periodically: `REFRESH MATERIALIZED VIEW CONCURRENTLY view_name;`.
+3. Database Triggers:
+   - Functions written in PL/pgSQL that run automatically BEFORE or AFTER an `INSERT`, `UPDATE`, or `DELETE`.
+   - Essential use cases: Automatically updating `updated_at = NOW()`, or maintaining an immutable audit log whenever sensitive bank KYC data changes.
+
+Keep an eye on:
+- For `REFRESH MATERIALIZED VIEW CONCURRENTLY` to work without locking reads, the materialized view MUST have at least one UNIQUE index.
+- Keep trigger functions lean! If a trigger does heavy computation on every single row update, batch imports will become painfully slow.
