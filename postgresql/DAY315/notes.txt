@@ -1,0 +1,17 @@
+Day 315 - Connecting Node.js to PostgreSQL (`pg` library)
+
+Topic Overview:
+Today we connected our Express backend to PostgreSQL using the official Node `pg` (node-postgres) driver.
+In MongoDB we used `mongoose.connect()`. In PostgreSQL, you should NEVER create a single standalone client per request. You must use a Connection Pool (`new Pool()`).
+
+Why Connection Pooling?
+Opening a new TCP connection to PostgreSQL requires a handshake, process spawning, and authentication, which takes 20-50ms per query.
+A Pool maintains a warmed-up set of reusable database connections. Requests borrow a connection, run their query in 1ms, and release it back to the pool immediately.
+
+Critical security rule:
+- ALWAYS use Parameterized Queries!
+  BAD: `pool.query("SELECT * FROM users WHERE email = '" + email + "'")` -> Vulnerable to SQL Injection!
+  GOOD: `pool.query('SELECT * FROM users WHERE email = $1', [email])` -> Secure! Postgres compiles the query structure first, treating parameters strictly as literals.
+
+Keep an eye on:
+- When using transactions in Node.js, you must checkout a specific client from the pool: `const client = await pool.connect()`. Run `BEGIN`, your queries, then `COMMIT`. And ALWAYS put `client.release()` inside a `finally` block, otherwise you will leak connections and your server will freeze when the pool is exhausted!
