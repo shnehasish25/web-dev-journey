@@ -1,0 +1,19 @@
+### 1. Fetch all menu items
+GET http://localhost:3000/api/menu
+Content-Type: application/json
+
+### 2. Fetch breakfast items only
+GET http://localhost:3000/api/menu?category=Breakfast
+Content-Type: application/json
+
+### 3. Place order (Atomic transaction test)
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+{
+  "customer_id": 1,
+  "items": [
+    { "item_id": 1, "quantity": 2 },
+    { "item_id": 2, "quantity": 1 }
+  ]
+}
