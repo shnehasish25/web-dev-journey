@@ -1,0 +1,23 @@
+Day 316 - Capstone Project: QuickBite Quick-Commerce Production Database
+
+Topic Overview:
+Today marks the capstone of our 17-day PostgreSQL journey!
+We designed and implemented a production-ready, fully normalized relational schema for "QuickBite" — a Bengaluru-based quick-commerce grocery and food delivery platform (inspired by Zepto & Swiggy Instamart).
+
+What makes this capstone production-grade:
+1. Complete 3NF Normalized Schema:
+   - `users`: Core authentication and user profile.
+   - `addresses`: 1-to-many user delivery locations with primary address flags.
+   - `merchants`: Dark stores and partner restaurants across Bengaluru.
+   - `categories` & `products`: Product catalog with SKU, brand, and pricing in NUMERIC(10,2).
+   - `orders`: Order header tracking customer, store, statuses, and payment reference.
+   - `order_items`: Order line items with historical snapshot prices.
+   - `payment_transactions`: UPI and card payment ledger with gateway transaction IDs.
+2. Performance & Integrity:
+   - Explicit check constraints on phone numbers, positive prices, and non-negative stock.
+   - Composite and partial B-Tree indexes for fast order lookups and pending status queues.
+   - Automatic `updated_at` trigger.
+   - Analytical reporting queries using CTEs, Window functions, and aggregations.
+
+Keep an eye on:
+- SQL vs NoSQL verdict: For e-commerce checkout, financial ledgers, and inventory counts, PostgreSQL's ACID guarantees, foreign keys, and atomic transactions prevent catastrophic inventory overselling and double-spending bugs. Use MongoDB for rapid prototyping or logs, but PostgreSQL is the backbone of real financial and transactional systems!
