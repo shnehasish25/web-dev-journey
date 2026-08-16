@@ -1,0 +1,21 @@
+Day 317 - Containers vs Virtual Machines & Docker Architecture
+
+Topic Overview:
+Finally starting DevOps and Docker!
+Up until now, the biggest pain point was "It works on my MacBook, but why does it crash on my teammate's Ubuntu laptop or AWS EC2 instance?"
+Differences in Node versions, missing environment variables, or different OS packages break things constantly. Docker solves this by packaging the application, its runtime, libraries, and system dependencies into a single immutable container.
+
+Containers vs Virtual Machines (VMs):
+- VM: Includes the entire Guest OS (gigabytes in size), boots in minutes, heavy on RAM and CPU because it runs on a Hypervisor.
+- Container: Shares the host Linux kernel! Only packages application-level user-space bins and libraries. Starts in milliseconds, uses megabytes of RAM.
+
+Docker Architecture:
+- Docker Client (CLI): The terminal commands we run (`docker build`, `docker run`).
+- Docker Daemon (`dockerd`): The background service running on host managing images, containers, networks, and storage.
+- Docker Image: The read-only blueprint/template (like a class in OOP).
+- Docker Container: A runnable, isolated instance of an image (like an object instantiated from a class).
+- Docker Registry (Docker Hub): The public/private cloud repository where images are stored.
+
+Keep an eye on:
+- Containers are ephemeral by default. When a container is removed, any files written inside its writable container layer vanish forever unless persisted via volumes!
+- On macOS, Docker runs inside a lightweight Linux hypervisor (Virtual Machine) under the hood because macOS has a Darwin/BSD kernel, not Linux.
