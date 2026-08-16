@@ -1,0 +1,6 @@
+Docker Verification Checklist for Day 317:
+1. Docker daemon running: check with `docker info`
+2. Images list: `docker images`
+3. Running containers: `docker ps`
+4. Stopped containers: `docker ps -a`
+5. Test command: `docker run --rm hello-world`
