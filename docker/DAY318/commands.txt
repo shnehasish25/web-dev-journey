@@ -1,0 +1,6 @@
+Quick Reference Guide - Docker Lifecycle:
+- Run detached: docker run -d --name my-app my-image
+- Inspect logs: docker logs -f --tail 50 my-app
+- Step inside: docker exec -it my-app sh
+- View resource usage: docker stats
+- Prune all stopped containers: docker container prune -f
