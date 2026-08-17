@@ -1,0 +1,23 @@
+Day 318 - Container Lifecycle & Essential CLI Commands
+
+Topic Overview:
+Today was focused on muscle memory for Docker CLI commands.
+A container moves through several lifecycle states: Created -> Running -> Paused -> Stopped -> Deleted.
+
+Essential Commands Mastered:
+- `docker run [options] image`: Creates and starts a container in one step.
+  - `-d` (detached mode): Runs container in the background (frees up terminal).
+  - `-it` (interactive + TTY): Attaches an interactive pseudo-terminal (e.g. `docker run -it alpine sh`).
+  - `--name <custom_name>`: Gives a friendly name instead of random auto-names like `flamboyant_einstein`.
+  - `--rm`: Automatically removes the container when it exits (super clean, stops disk clutter!).
+- `docker ps`: Lists running containers.
+- `docker ps -a`: Lists ALL containers (including exited/crashed ones).
+- `docker stop <id/name>`: Sends SIGTERM (graceful shutdown after 10s timeout).
+- `docker kill <id/name>`: Sends SIGKILL (instant termination).
+- `docker rm <id/name>`: Deletes stopped container.
+- `docker logs -f <id/name>`: Streams live logs from stdout/stderr.
+- `docker exec -it <container> sh`: Steps inside a running container to debug.
+
+Keep an eye on:
+- Always use `--rm` when running temporary debug containers, otherwise your disk will accumulate hundreds of stopped zombie containers.
+- If a container exits immediately after running, it's because its primary foreground process (`PID 1`) finished! A container only stays alive as long as its foreground process is running.
