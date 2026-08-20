@@ -1,0 +1,12 @@
+{
+  "name": "day320-docker-node",
+  "version": "1.0.0",
+  "description": "First Dockerized Node.js Microservice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
