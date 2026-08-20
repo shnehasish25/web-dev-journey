@@ -1,0 +1,17 @@
+Day 320 - Dockerizing a Simple Node.js Application
+
+Topic Overview:
+Today we built our very first custom Node.js application container from scratch!
+Key Dockerfile instructions used:
+- `FROM <image>:<tag>`: Defines the base parent image. Always use an explicit official tag like `node:20-alpine` instead of bare `node:latest` (latest can change unexpectedly and break builds!).
+- `WORKDIR /app`: Sets the current working directory inside the container for all subsequent commands (`COPY`, `RUN`, `CMD`). Creates the directory if it doesn't exist.
+- `COPY <src> <dest>`: Copies files from the host machine into the container filesystem.
+- `RUN <command>`: Executes commands during the image build process (creates a new image layer). Used for `npm install`.
+- `EXPOSE <port>`: Informative documentation indicating which port the app intends to listen on. (Does NOT actually publish the port; `-p` still required at runtime).
+- `CMD ["executable", "param1"]`: The default command executed when the container starts up at runtime.
+
+Keep an eye on:
+- `RUN` vs `CMD`:
+  - `RUN` executes during `docker build` (e.g. installing npm packages).
+  - `CMD` executes at runtime when `docker run` is called (e.g. `node server.js`).
+- Always use the JSON exec array format for CMD: `CMD ["node", "server.js"]` instead of shell format `CMD node server.js`. The exec format allows Node to receive POSIX signals like `SIGTERM` directly for clean shutdowns!
