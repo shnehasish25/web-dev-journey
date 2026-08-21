@@ -1,0 +1,30 @@
+Day 321 - Docker Layer Caching & Build Optimization
+
+Topic Overview:
+Today I discovered how Docker caches image layers and why naive Dockerfiles can be 10x slower to build!
+
+How Layer Caching Works:
+Each instruction in a Dockerfile (`RUN`, `COPY`, `ADD`) creates a read-only layer.
+When you run `docker build`, Docker checks if the files being copied or commands being run have changed:
+- If unchanged -> Uses cache (`Using cache`). Takes 0.01 seconds.
+- If changed -> The cache is INVALIDATED for that step AND every single subsequent step below it!
+
+The Naive Mistake:
+```dockerfile
+COPY . .
+RUN npm install
+```
+If you change a single comment or letter in `server.js`, `COPY . .` invalidates the cache, forcing `npm install` to download all packages from the internet every single time!
+
+The Optimized Pattern:
+```dockerfile
+COPY package*.json ./
+RUN npm install
+COPY . .
+```
+Now, `npm install` is cached as long as `package.json` and `package-lock.json` are untouched! Editing application code only invalidates the final `COPY . .`, making incremental builds instantaneous (under 1 second).
+
+Keep an eye on:
+- Place instructions that change least frequently at the TOP of your Dockerfile (system packages, npm install), and instructions that change frequently (`COPY . .`) near the BOTTOM.
+- Chain related `RUN` commands with `&&` to minimize the number of image layers:
+  `RUN apk update && apk add --no-cache curl` instead of separate RUN lines.
