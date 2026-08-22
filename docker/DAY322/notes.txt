@@ -1,0 +1,20 @@
+Day 322 - .dockerignore Best Practices
+
+Topic Overview:
+When you run `docker build`, the very first thing Docker does is upload the "Build Context" (the current working directory) to the Docker Daemon:
+`Sending build context to Docker daemon  350MB...`
+If your project contains a local `node_modules` folder (containing hundreds of megabytes of compiled binaries for your Mac OS architecture), you are wasting bandwidth, slowing down builds, and risking architecture conflicts inside the Linux container!
+
+The Solution: `.dockerignore`
+Just like `.gitignore`, `.dockerignore` tells Docker which files and directories to ignore when creating the build context.
+
+Essential items to always include in `.dockerignore`:
+- `node_modules`: Local dependencies should never be copied into the container; the container must build its own Linux dependencies via `npm install`!
+- `.git` and `.github`: Git commit history can be massive and has zero purpose in production containers.
+- `.env*`: Never leak local secrets, database passwords, or staging keys into Docker images!
+- `npm-debug.log`, `yarn-error.log`: Log files.
+- `README.md`, `tests/`, `coverage/`: Non-runtime assets.
+
+Keep an eye on:
+- Adding a proper `.dockerignore` dropped our build context size from 380MB down to 142KB!
+- If you copy local `node_modules` into an Alpine container, native binary packages (like `bcrypt` or `sharp`) compiled for macOS ARM64 will immediately crash with `invalid ELF header` errors.
