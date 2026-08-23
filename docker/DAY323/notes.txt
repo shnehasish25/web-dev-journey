@@ -1,0 +1,23 @@
+Day 323 - Container Volumes & Persistent Data: Part 1 (Bind Mounts)
+
+Topic Overview:
+During development, rebuilding the Docker image every time you fix a typo or change a CSS file takes too much time.
+Enter Bind Mounts!
+A Bind Mount maps a file or directory from your host machine directly into the container filesystem in real time.
+
+Syntax:
+`-v <HOST_ABSOLUTE_PATH>:<CONTAINER_PATH>`
+e.g. `-v $(pwd):/app`
+
+Live Reloading Workflow:
+By mounting our local project folder into `/app` and running `nodemon`, changes saved on our Mac in VS Code are immediately reflected inside the running Linux container without rebuilding or restarting it!
+
+The node_modules Catch:
+If you mount `$(pwd):/app`, your host folder will overwrite `/app` inside the container. If you don't have local `node_modules`, the container's installed `node_modules` gets hidden!
+The Fix: Anonymous Volume for `node_modules`:
+`-v $(pwd):/app -v /app/node_modules`
+Docker keeps `/app/node_modules` stored in an isolated internal volume so the host mount doesn't clobber it.
+
+Keep an eye on:
+- Use Bind Mounts ONLY for local development. Never use bind mounts in production Kubernetes or cloud clusters because the host filesystem won't exist or match across nodes!
+- File permissions: On Linux hosts, files created by root inside the container might be owned by root on the host. (macOS Docker desktop handles this gracefully via VirtioFS).
