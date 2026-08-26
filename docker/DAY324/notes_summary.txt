@@ -1,0 +1,4 @@
+Volume Summary:
+- Bind Mount: maps host directory (e.g. $(pwd):/app). Best for code syncing in dev.
+- Named Volume: managed by Docker (e.g. pg_data:/var/lib/postgresql/data). Best for databases in prod.
+- Anonymous Volume: temporary volume without a name. Best for protecting node_modules.
