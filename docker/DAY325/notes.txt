@@ -1,0 +1,18 @@
+Day 325 - Environment Variables & Configuration
+
+Topic Overview:
+The 3rd rule of the Twelve-Factor App methodology states: "Store config in the environment".
+Hardcoding database URLs, API secrets, or port numbers inside application code or Dockerfiles is a huge security and maintenance risk.
+Environment variables allow us to run the exact same container image across Local Development, Staging, and Production by simply changing the env variables passed at runtime!
+
+How to pass env variables in Docker:
+1. Inline flag: `-e KEY=VALUE`
+   e.g. `docker run -e NODE_ENV=production -e PORT=8080 my-image`
+2. Environment file: `--env-file .env`
+   Loads an entire key-value `.env` file cleanly.
+3. Setting Indian Timezone in containers:
+   Linux containers run in UTC by default. Setting `-e TZ=Asia/Kolkata` ensures logs and `new Date()` reflect Indian Standard Time (IST).
+
+Keep an eye on:
+- Never bake sensitive production secrets into the Dockerfile using `ENV API_KEY=xyz`! Anyone with access to the image can run `docker history <image>` or `docker inspect` and read the secret in plain text!
+- Pass secrets dynamically at runtime with `-e` or `--env-file` (or Docker Secrets / Kubernetes Secrets).
