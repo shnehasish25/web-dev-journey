@@ -1,0 +1,5 @@
+Network Cheatsheet:
+- List networks: docker network ls
+- Inspect network & connected containers: docker network inspect <network_name>
+- Connect running container: docker network connect <network> <container>
+- Disconnect: docker network disconnect <network> <container>
