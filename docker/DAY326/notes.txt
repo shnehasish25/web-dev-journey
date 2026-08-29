@@ -1,0 +1,23 @@
+Day 326 - Docker Networking Deep Dive
+
+Topic Overview:
+Today we explored how containers talk to each other.
+When you run multiple containers (e.g. an Express API container and a MongoDB container), how does Express connect to MongoDB?
+If you put `mongodb://localhost:27017` inside your Express code, it will FAIL!
+Why? Because `localhost` inside a container refers to the container itself, NOT your Mac and NOT the MongoDB container!
+
+Docker Network Drivers:
+1. `bridge` (Default): A private internal network on the host. Containers get IPs like `172.17.0.x`.
+2. `host`: Removes network isolation between container and host (Linux only; does not work on macOS).
+3. `none`: Completely disables networking for a container (used for isolated batch jobs).
+
+Custom Bridge Networks & Automatic DNS:
+On the default bridge network, containers cannot resolve each other by name; you'd have to use brittle IP addresses.
+BUT when you create a User-Defined Bridge Network:
+`docker network create app-network`
+PostgreSQL, Mongo, Redis, and Express containers attached to `app-network` can talk to each other using their container names as domain names!
+e.g. Express connects to: `postgres://orders-db:5432/db` or `mongodb://mongo-service:27017/db`. Docker's built-in DNS server handles resolution automatically.
+
+Keep an eye on:
+- Never rely on default bridge IP addresses (`172.17.0.2`) because container IPs change every time a container restarts.
+- Always create a custom bridge network so you can reference services by stable container names!
