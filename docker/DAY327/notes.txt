@@ -1,0 +1,22 @@
+Day 327 - Introduction to Docker Compose
+
+Topic Overview:
+Running 4 or 5 different `docker run` commands with 10 different flags (`-p`, `-v`, `-e`, `--network`, `--restart`) is error-prone, tedious, and impossible to share cleanly with a team.
+Docker Compose solves this by letting you define your entire multi-container infrastructure in a single declarative YAML file: `docker-compose.yml`.
+
+With Docker Compose, you manage your entire stack with two simple commands:
+- `docker compose up -d`: Creates networks, volumes, pulls/builds images, and starts all services in the background.
+- `docker compose down`: Gracefully stops and removes all containers and internal networks.
+
+Key YAML Directives:
+- `services`: Each container in the application (e.g. `web`, `db`, `cache`).
+- `build`: Path to the Dockerfile to build.
+- `image`: Image to pull from registry (if not building from local Dockerfile).
+- `ports`: Published ports (`"HOST:CONTAINER"`).
+- `environment`: Key-value env variables.
+- `volumes`: Persistent storage mounts.
+- `restart: unless-stopped`: Auto-restarts container if it crashes.
+
+Keep an eye on:
+- YAML indentation is strictly 2 spaces. Never use tabs in `docker-compose.yml`!
+- Compose automatically creates a dedicated bridge network for all services in the file. Service names automatically become hostnames (e.g. service `db` is reachable at `http://db:5432`).
