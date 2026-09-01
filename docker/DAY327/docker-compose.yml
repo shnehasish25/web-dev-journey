@@ -1,0 +1,19 @@
+# Day 327: First Docker Compose definition
+services:
+  web:
+    build: .
+    container_name: compose-web-app
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
+      - REGION=Bengaluru-South
+    restart: unless-stopped
+
+  cache:
+    image: redis:7-alpine
+    container_name: compose-redis-cache
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
