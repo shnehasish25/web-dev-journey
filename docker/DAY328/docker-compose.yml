@@ -1,0 +1,24 @@
+services:
+  api:
+    build: .
+    container_name: swiggy-order-api
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGO_URI=mongodb://mongo:27017/swiggy_orders
+    depends_on:
+      - mongo
+    restart: always
+
+  mongo:
+    image: mongo:7.0
+    container_name: swiggy-order-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: always
+
+volumes:
+  mongo_data:
