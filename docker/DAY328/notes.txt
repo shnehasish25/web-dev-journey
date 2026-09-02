@@ -1,0 +1,16 @@
+Day 328 - Multi-Container Setup: Node.js API + MongoDB
+
+Topic Overview:
+Today we wired up a full real-world 2-tier application: an Express REST API talking to a MongoDB database container using Docker Compose.
+
+How it works:
+- In `docker-compose.yml`, we define two services: `api` and `mongo`.
+- Docker Compose automatically places both services on a shared internal bridge network.
+- Inside our Express code, the MongoDB connection string is simply:
+  `mongodb://mongo:27017/swiggy_orders`
+  Notice the hostname is `mongo` (the service name in docker-compose)!
+- We attach a named volume `mongo_data` to `/data/db` inside the mongo container to persist customer orders across restarts.
+
+Keep an eye on:
+- Startup race condition: When you run `docker compose up`, Docker starts both containers at the same time. The Express container might try to connect to MongoDB before Mongo has finished initializing its storage engine!
+- In production, your Node app should implement a retry loop with exponential backoff when connecting to databases.
