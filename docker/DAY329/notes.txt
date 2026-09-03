@@ -1,0 +1,21 @@
+Day 329 - Multi-Container Setup: Node.js + PostgreSQL + Adminer
+
+Topic Overview:
+Today we configured a 3-tier microservice architecture:
+1. `api`: Express app querying relational records using `pg` pool.
+2. `postgres`: Relational database storing customer accounts and UPI transactions with named volume `pgdata`.
+3. `adminer`: A lightweight web-based database management GUI (like pgAdmin or phpMyAdmin, but in a single 10MB container!). Accessible on port 8080.
+
+The Power of Docker Compose:
+Instead of forcing every developer on the team to install PostgreSQL locally, configure users, and set up pgAdmin, a single command:
+`docker compose up -d`
+spins up the entire environment in 15 seconds.
+
+Keep an eye on:
+- Adminer connection parameters:
+  - System: PostgreSQL
+  - Server: `postgres` (the Docker Compose service name, NOT localhost!)
+  - Username: `postgres`
+  - Password: `postgrespassword`
+  - Database: `payment_db`
+- `depends_on`: Tells Compose to start `postgres` before `api`, but remember `depends_on` only waits until the container is created, not until Postgres is fully ready to accept incoming TCP connections. (We will add healthchecks tomorrow!).
