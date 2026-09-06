@@ -1,0 +1,4 @@
+Healthcheck Best Practices:
+1. Lightweight tests: Use `pg_isready` for Postgres, `redis-cli ping` for Redis, `mongosh --eval 'db.runCommand({ping: 1})'` for Mongo.
+2. For Web APIs: Create a dedicated `/api/health` endpoint that checks DB connection and returns 200 OK.
+3. Don't set interval too low (e.g. 1s) because running health check commands consumes CPU cycles.
