@@ -1,0 +1,30 @@
+Day 330 - Container Healthchecks & Restart Policies
+
+Topic Overview:
+Today we solved the classic container race condition: "My API container crashed because PostgreSQL was still warming up when Express tried to connect!"
+By default, Docker Compose's `depends_on: [db]` only waits for the `db` container to enter the `running` state. But PostgreSQL takes 3 to 5 seconds to run initialization scripts and start listening on port 5432.
+
+The Solution: Native Docker `HEALTHCHECK`:
+A healthcheck tells Docker how to test if the service inside the container is ACTUALLY operational and ready to serve requests.
+
+Healthcheck Directives:
+- `test`: Command to execute (e.g. `pg_isready -U postgres` or `curl -f http://localhost:3000/health`).
+- `interval`: How often to run test (e.g. `10s`).
+- `timeout`: Max duration allowed for test to respond (e.g. `5s`).
+- `retries`: Number of consecutive failures before marking container as `unhealthy` (e.g. `5`).
+- `start_period`: Grace period before failures count against retries (e.g. `10s`).
+
+Conditional Dependency in Compose:
+```yaml
+depends_on:
+  db:
+    condition: service_healthy
+```
+Now Docker Compose will deliberately hold the `api` service until `db`'s healthcheck passes!
+
+Keep an eye on:
+- Restart policies:
+  - `no`: Never restart (default).
+  - `always`: Always restart if stopped or crashed.
+  - `on-failure`: Restart only if exited with non-zero code.
+  - `unless-stopped`: Always restart, unless manually stopped by user. (Recommended for production!).
