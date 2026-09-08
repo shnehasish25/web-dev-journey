@@ -1,0 +1,11 @@
+{
+  "name": "day331-multistage-node",
+  "version": "1.0.0",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.0"
+  }
+}
