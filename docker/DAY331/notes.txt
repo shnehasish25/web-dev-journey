@@ -1,0 +1,20 @@
+Day 331 - Multi-Stage Builds for Node.js
+
+Topic Overview:
+Today we learned how to drastically shrink Docker images using Multi-Stage Builds.
+A standard Node.js Docker image containing Python (for node-gyp builds), devDependencies (TypeScript compiler, ESLint, test runners), and source code easily bloats to 800MB - 1.2GB!
+Large images take forever to push/pull in CI/CD, eat up disk space, and increase the security attack surface.
+
+How Multi-Stage Works:
+You use multiple `FROM` lines in a single Dockerfile:
+- Stage 1 (Builder): Uses full Node image, copies devDependencies, compiles TypeScript or bundles assets.
+- Stage 2 (Production Runner): Starts with a squeaky clean, minimal `node:alpine` base. Copies ONLY the compiled `/dist` and production `node_modules` from Stage 1 (`COPY --from=builder ...`).
+All the heavy compilers, dev tools, and temporary cache from Stage 1 are completely discarded!
+
+Results:
+- Single stage image: ~850MB
+- Multi-stage image: ~78MB (Over 90% reduction!).
+
+Keep an eye on:
+- Always use `npm ci --only=production` in the production stage to install only runtime dependencies.
+- You can name stages using `AS <stage_name>`, e.g. `FROM node:20-alpine AS builder`.
