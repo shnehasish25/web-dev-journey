@@ -1,0 +1,18 @@
+Day 332 - Containerizing React (Vite) with Nginx Multi-Stage Build
+
+Topic Overview:
+How should a React single-page application (SPA) be served in production?
+In development, we use `vite` or `webpack-dev-server` with Hot Module Replacement (HMR).
+In PRODUCTION, you should NEVER run `npm run dev` or a Node server just to serve static HTML/JS/CSS files!
+The industry standard is:
+1. Stage 1 (Node.js): Build the production static bundle (`npm run build`), generating pure HTML, CSS, and minified JS in `/dist`.
+2. Stage 2 (Nginx): Copy `/dist` into a super-fast, tiny Nginx Alpine web server (only ~20MB in size!).
+
+The React Router SPA Gotcha:
+If a user navigates to `http://mysite.com/orders/track` and refreshes the browser, Nginx looks for a file named `/orders/track/index.html` on disk and throws a `404 Not Found`!
+The Fix: Custom Nginx Configuration:
+`try_files $uri $uri/ /index.html;`
+This tells Nginx: if the requested static file doesn't exist, fallback to `/index.html` so React Router can handle client-side routing.
+
+Keep an eye on:
+- Nginx handles static file compression (Gzip), caching headers, and concurrent connections with a fraction of the memory that Node.js would consume.
