@@ -1,0 +1,18 @@
+Day 333 - Dockerizing Redis & Caching Layer
+
+Topic Overview:
+When thousands of users in Bengaluru search for "Meghana Foods Biryani" at 8:00 PM on Friday, hitting PostgreSQL for every single search query will overload the database.
+Today we integrated Redis as an in-memory caching layer using Docker Compose.
+
+The Cache-Aside Pattern:
+1. User requests restaurant menu: `GET /api/menu/meghana-foods`.
+2. App checks Redis first (`redisClient.get('menu:meghana-foods')`).
+3. If Cache HIT: Return JSON from Redis in 1ms! DB is completely spared.
+4. If Cache MISS: Query PostgreSQL, write result to Redis with a TTL (e.g. `EX 600` for 10 minutes), and return response.
+
+Docker Compose Setup:
+We add a `redis:7-alpine` service with a named volume `redis_data` for RDB/AOF disk persistence.
+
+Keep an eye on:
+- Always set a Time-To-Live (TTL) on cached keys in Redis (`SETEX key 300 value`). Without TTL, stale menu prices or out-of-stock dishes will remain cached indefinitely!
+- Redis stores data in RAM. Allocate appropriate memory limits in production.
