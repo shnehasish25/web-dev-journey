@@ -1,0 +1,22 @@
+Day 334 - Reverse Proxy with Nginx & Docker Compose
+
+Topic Overview:
+In production, you never expose multiple microservice ports (`:3000`, `:5000`, `:8080`) directly to the public internet.
+Instead, you place a single Reverse Proxy (Nginx) on port 80/443 that acts as the front door.
+
+Routing Architecture:
+- `http://localhost/` -> Proxied to Frontend React Container (`http://frontend:80`)
+- `http://localhost/api/*` -> Proxied to Backend Express Container (`http://backend:5000/api/*`)
+
+Benefits of an Nginx Reverse Proxy:
+1. Unified single domain / single port entry point (avoids CORS issues!).
+2. SSL/TLS termination at the proxy level.
+3. Load balancing across multiple backend replicas.
+4. Gzip compression and rate limiting.
+
+Keep an eye on:
+- Passing headers in Nginx proxy:
+  `proxy_set_header Host $host;`
+  `proxy_set_header X-Real-IP $remote_addr;`
+  `proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;`
+  Without these headers, your Express backend will see every single request coming from Nginx's internal container IP instead of the user's actual client IP address!
