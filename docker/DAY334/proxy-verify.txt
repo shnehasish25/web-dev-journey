@@ -1,0 +1,4 @@
+Proxy Verification:
+- Access http://localhost/ -> Nginx forwards internally to frontend
+- Access http://localhost/api/health -> Nginx forwards internally to backend
+- No CORS errors because both share same origin!
