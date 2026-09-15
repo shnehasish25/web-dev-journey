@@ -1,0 +1,34 @@
+Day 335 - Container Logging, Monitoring & Resource Limits
+
+Topic Overview:
+Today we learned how to monitor container resource usage and prevent a single runaway container from taking down your entire host machine!
+
+1. Resource Limits (CPU & Memory):
+By default, a Docker container has no resource limits and can consume all CPU cycles and RAM on the host. If your Node app has a memory leak, it can freeze your entire server!
+In Docker Compose, you cap resources using `deploy.resources`:
+```yaml
+deploy:
+  resources:
+    limits:
+      cpus: '0.5'     # Max 50% of 1 CPU core
+      memory: 256M    # Max 256 Megabytes RAM
+```
+
+2. Docker Logging Drivers:
+Containers write logs to `stdout` and `stderr`.
+By default, Docker's `json-file` driver stores logs on disk indefinitely. On busy production servers, logs can silently fill up your entire SSD!
+Best Practice: Configure log rotation:
+```yaml
+logging:
+  driver: "json-file"
+  options:
+    max-size: "10m"   # Rotate when file reaches 10MB
+    max-file: "3"     # Keep max 3 historical files
+```
+
+3. Monitoring Commands:
+- `docker stats`: Live streaming CPU, Memory, Network I/O, and PIDs per container!
+- `docker top <container>`: View running processes inside container.
+
+Keep an eye on:
+- When a container exceeds its memory limit, Linux OOM (Out Of Memory) Killer immediately terminates it with Exit Code 137 (`128 + 9 = SIGKILL`).
