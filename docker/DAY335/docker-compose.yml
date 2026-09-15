@@ -1,0 +1,18 @@
+services:
+  monitored_service:
+    image: alpine:3.19
+    container_name: bounded-worker
+    command: sh -c "while true; do echo 'Processing batch orders in Bengaluru...' && sleep 2; done"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 128M
+        reservations:
+          memory: 64M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "5m"
+        max-file: "2"
+    restart: unless-stopped
