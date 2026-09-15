@@ -1,0 +1,5 @@
+Exit Codes in Docker:
+- Exit 0: Normal graceful exit
+- Exit 1: Application crash / uncaught exception
+- Exit 137: Container was OOM-Killed (Out Of Memory) by host kernel!
+- Exit 143: Gracefully terminated by SIGTERM (docker stop)
