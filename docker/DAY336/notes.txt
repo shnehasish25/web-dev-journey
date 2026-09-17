@@ -1,0 +1,20 @@
+Day 336 - Docker Security Best Practices
+
+Topic Overview:
+Security is often overlooked in containerization. Running containers as `root` (the default) is a massive security vulnerability. If an attacker exploits a remote code execution vulnerability in your Express app, they gain root privileges inside the container and could potentially escape to the host kernel!
+
+Core Security Rules:
+1. NEVER run as root:
+   The official `node:alpine` image already comes with a built-in unprivileged user named `node`.
+   Always add `USER node` at the end of your Dockerfile!
+2. Use minimal Alpine or Distroless base images:
+   Fewer preinstalled binaries = fewer CVEs and vulnerabilities.
+3. Read-Only Root Filesystem:
+   Run with `--read-only` flag. If an attacker breaches the app, they cannot download malicious scripts or modify binaries.
+4. Drop Linux Capabilities:
+   `--cap-drop=ALL` strips all superuser capabilities.
+
+Keep an eye on:
+- Before switching to `USER node`, ensure the `/app` working directory is owned by `node`:
+  `RUN chown -R node:node /app`
+  Otherwise, `USER node` won't have write permissions to necessary temporary directories.
