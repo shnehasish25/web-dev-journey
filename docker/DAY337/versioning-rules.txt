@@ -1,0 +1,4 @@
+Registry Best Practices:
+1. Always tag with Semantic Versioning: MAJOR.MINOR.PATCH (e.g. 1.2.0).
+2. Tag with Git Commit SHA for automated CI/CD builds.
+3. Use automated security vulnerability scanning in Docker Hub or ECR.
