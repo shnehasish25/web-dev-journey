@@ -1,0 +1,20 @@
+Day 337 - Container Registries (Docker Hub & ECR)
+
+Topic Overview:
+Building Docker images locally is only half the battle. To deploy containers to AWS, DigitalOcean, or production Kubernetes, you must push images to a Container Registry.
+Popular Registries: Docker Hub, Amazon Elastic Container Registry (ECR), GitHub Container Registry (ghcr.io).
+
+The Tagging Convention:
+`<registry_username>/<repository_name>:<tag>`
+Examples:
+- `kushaldev/swiggy-order-api:1.0.0`
+- `kushaldev/swiggy-order-api:latest`
+
+Workflow:
+1. `docker login`: Authenticate with registry using personal access token.
+2. `docker tag local-image:latest kushaldev/swiggy-order-api:1.0.0`: Creates an alias pointing to the image ID.
+3. `docker push kushaldev/swiggy-order-api:1.0.0`: Uploads the image layers to the registry.
+4. `docker pull kushaldev/swiggy-order-api:1.0.0`: Downloads the image on any production server.
+
+Keep an eye on:
+- Never push production images using only the `:latest` tag! The `:latest` tag is mutable and changes on every push. If a deployment rolls back, `:latest` makes it impossible to know which exact version is running. Always use semantic version tags (`:v1.2.3` or git commit SHA `:git-a1b2c3d`).
