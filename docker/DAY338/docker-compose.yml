@@ -1,0 +1,28 @@
+services:
+  user-service:
+    image: node:20-alpine
+    container_name: ms-user-service
+    command: sh -c "echo 'User service on public net' && sleep 3600"
+    networks:
+      - public-net
+
+  order-service:
+    image: node:20-alpine
+    container_name: ms-order-service
+    command: sh -c "echo 'Order service on public and internal net' && sleep 3600"
+    networks:
+      - public-net
+      - internal-net
+
+  payment-service:
+    image: node:20-alpine
+    container_name: ms-payment-service
+    command: sh -c "echo 'Payment service isolated on internal net' && sleep 3600"
+    networks:
+      - internal-net
+
+networks:
+  public-net:
+    driver: bridge
+  internal-net:
+    driver: bridge
