@@ -1,0 +1,17 @@
+Day 338 - Microservices Architecture with Docker Compose
+
+Topic Overview:
+Today we brought multiple independent microservices together into a cohesive ecosystem.
+Architecture:
+1. `user-service`: Manages customer authentication and Bengaluru delivery addresses (Port 5001).
+2. `order-service`: Handles order cart, dish selections, and restaurant routing (Port 5002).
+3. `payment-service`: Simulates Razorpay UPI transaction settlement (Port 5003).
+4. `event-broker`: Redis container serving as a Pub/Sub message broker between Order and Payment services.
+
+Network Isolation with Multiple Networks:
+In a secure microservices design, you don't connect all containers to a single giant network.
+- `public-net`: Accessible by frontend gateway and services.
+- `internal-net`: Strictly for payment service and database transactions. The user service has zero access to this network!
+
+Keep an eye on:
+- Defining multiple networks in `docker-compose.yml` prevents unauthorized inter-service communication and enforces zero-trust architecture principles.
