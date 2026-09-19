@@ -1,0 +1,6 @@
+Microservices Network Topology:
+[User Service] <--> [public-net] <--> [Order Service]
+                                             |
+                                     [internal-net]
+                                             |
+                                    [Payment Service] (Isolated from User Service)
