@@ -1,0 +1,14 @@
+Day 339 - Docker in CI/CD (GitHub Actions Pipeline)
+
+Topic Overview:
+Today we automated building, testing, and verifying our Docker images inside a GitHub Actions CI/CD pipeline.
+Whenever code is pushed to `main`, GitHub Actions spins up a runner, builds the Docker image, runs integration tests inside the container, and caches Docker layers so subsequent builds finish in seconds.
+
+Key Actions Used:
+- `docker/setup-buildx-action`: Sets up Docker Buildx (extended builder supporting multi-architecture builds like AMD64 and ARM64).
+- `docker/build-push-action`: Official Docker action to build and push images.
+- Cache with GitHub Actions Cache (`type=gha`): Keeps Docker build layers between CI runs!
+
+Keep an eye on:
+- Build Multi-Platform Images: If you build on a MacBook (M1/M2/M3 Apple Silicon ARM64), the image might fail on an AWS EC2 instance running Linux x86_64!
+  Use Buildx with `--platform linux/amd64,linux/arm64` so your container runs on both architectures seamlessly.
