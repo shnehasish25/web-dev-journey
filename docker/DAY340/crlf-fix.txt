@@ -1,0 +1,5 @@
+Fixing CRLF Line Ending Issue:
+If a bash script written on Windows fails in an Alpine container with:
+'/bin/sh: ./entrypoint.sh: /bin/sh^M: bad interpreter'
+Fix with dos2unix:
+RUN apk add --no-cache dos2unix && dos2unix ./entrypoint.sh
