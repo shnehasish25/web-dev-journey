@@ -1,0 +1,24 @@
+Day 340 - Debugging Broken Containers & Troubleshooting
+
+Topic Overview:
+Today was all about debugging real-world production incidents when containers fail to start or crash silently.
+
+Debugging Toolkit:
+1. `docker logs <container>`: Check for unhandled exceptions or syntax errors.
+2. `docker inspect <container>`: View exit codes, state, health status, and mounted volumes.
+3. `docker top <container>`: View processes running inside.
+4. Overriding Entrypoint for broken containers:
+   If a container crashes immediately on start, you can override its command to inspect its filesystem:
+   `docker run --rm -it --entrypoint sh my-broken-image`
+5. Network Troubleshooting with `netshoot`:
+   Run a Swiss-army-knife network debugging container attached to the same network:
+   `docker run --rm -it --network my-net nicolaka/netshoot` (has `curl`, `dig`, `tcpdump`, `iperf`).
+
+Top Gotchas Solved:
+- Windows vs Linux CRLF line endings in shell scripts (`/bin/sh^M: bad interpreter`).
+- Port already in use on host (`bind: address already in use`).
+- Host machine out of disk space (`no space left on device` -> solved with `docker system prune -a --volumes`).
+
+Keep an eye on:
+- `docker system df`: Checks total disk space consumed by images, containers, and volumes.
+- `docker system prune`: Cleans up unused dangling images and stopped containers.
