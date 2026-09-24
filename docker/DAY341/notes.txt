@@ -1,0 +1,22 @@
+Day 341 - Capstone Project: Production Multi-Tier QuickBite Delivery Infrastructure
+
+Topic Overview:
+Today marks the capstone of our 25-day Docker & DevOps deep dive!
+We architected and orchestrated a complete, production-grade microservices stack for "QuickBite" — our Bengaluru quick-commerce platform.
+
+The Full 5-Tier Production Stack:
+1. `reverse-proxy` (Nginx Alpine): Port 80 front door. Routes `/` to React frontend and `/api/*` to Express backend. Includes gzip compression and client-side routing fallback.
+2. `frontend` (React + Vite served via Nginx): Ultra-lean multi-stage static image (under 25MB).
+3. `backend` (Express Node.js API): Multi-stage build running as non-root `node` user. Connects to PostgreSQL and Redis.
+4. `database` (PostgreSQL 16): Persistent storage backed by named volume `quickbite_pgdata`, with built-in `HEALTHCHECK` using `pg_isready`.
+5. `cache` (Redis 7 Alpine): Fast menu caching and session store backed by volume `quickbite_redisdata`.
+
+What makes this capstone production-grade:
+- Strict healthcheck gating (`depends_on: { condition: service_healthy }`).
+- Hardened security with non-root users.
+- Automated log rotation (`max-size: 10m`, `max-file: 3`).
+- Resource limits on memory and CPU to prevent noisy-neighbor host crashes.
+- Single-command bootup: `./deploy.sh` starts the entire system cleanly.
+
+Keep an eye on:
+- Containerization is the foundation of modern cloud engineering. Having this entire 5-tier stack containerized means any developer on the team can clone the repo and have a full production replica running in 30 seconds!
